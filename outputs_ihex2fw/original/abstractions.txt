@@ -1,0 +1,20 @@
+(set-info :source |printed by MathSAT|)
+
+0 (1) @38:
+(assert true)
+
+3 (4,5) @140:
+(assert true)
+
+4 () @140:
+(assert true)
+
+1 (2) @45:
+(assert true)
+
+5 () @170:
+(assert true)
+
+2 (3) @139:
+(assert true)
+

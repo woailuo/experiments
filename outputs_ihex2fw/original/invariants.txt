@@ -1,0 +1,24 @@
+loop__main__4406:
+(set-info :source |printed by MathSAT|)
+(assert true)
+
+loop__process_ihex__4471:
+(set-info :source |printed by MathSAT|)
+(assert true)
+
+loop__process_ihex__4471:
+(set-info :source |printed by MathSAT|)
+(assert true)
+
+loop__process_ihex__4510:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
+loop__file_record__4586:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
+loop__output_records__4598:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
