@@ -1,0 +1,47 @@
+/usr/include/getopt.h, line 73:	N1047 -{extern int optind;}-> N1048
+line 15:	N1168 -{int Num = 0;}-> N1169
+lines 412-472:	N1192 -{int cpio_mkfile_line(const char *line);}-> N1193
+lines 553-574:	N388 -{while}-> N389
+line 554:	N392 -{opt = getopt(argc, argv, "t:h");}-> N393
+line 557:	N394 -{[opt == -1]}-> N396
+line 576:	N391 -{[!((argc - optind) != 1)]}-> N421
+lines 581-588:	N429 -{__CPAchecker_TMP_1 = strcmp(filename, "-");}-> N430
+line 581:	N430 -{[!(__CPAchecker_TMP_1 == 0)]}-> N428
+lines 583-588:	N428 -{cpio_list = fopen(filename, "r");}-> N434
+line 583:	N434 -{[!(cpio_list == 0)]}-> N432
+lines 590-641:	N426 -{while}-> N442
+lines 590-641:	N445 -{__CPAchecker_TMP_4 = fgets(line, 8242, cpio_list);}-> N446
+line 590:	N446 -{[!(__CPAchecker_TMP_4 == 0)]}-> N443
+line 592:	N448 -{slen = strlen(line);}-> N449
+line 596:	N452 -{[!('#' == (*line))]}-> N453
+lines 601-607:	N453 -{type = strtok(line, " \t");}-> N458
+line 601:	N458 -{[!(type == 0)]}-> N456
+line 609:	N456 -{[!('\xa' == (*type))]}-> N462
+lines 614-617:	N467 -{__CPAchecker_TMP_6 = strlen(type);}-> N468
+line 614:	N468 -{[!(slen == __CPAchecker_TMP_6)]}-> N465
+lines 619-624:	N465 -{args = strtok((void *)0, "\n");}-> N472
+line 619:	N472 -{[args == 0]}-> N471
+lines 620-622:	N471 -{fprintf(stderr, "ERROR: incorrect format, newline required line %d: '%s'\n", line_nr, line);}-> N473
+line 626:	N476 -{[!(((file_handler_table[type_idx]).type) == 0)]}-> N478
+lines 628-634:	N483 -{__CPAchecker_TMP_7 = strcmp(line, (file_handler_table[type_idx]).type);}-> N484
+line 628:	N484 -{[__CPAchecker_TMP_7 == 0]}-> N482
+lines 629-632:	N502 -{[((file_handler_table[type_idx]).handler) == (&cpio_mkfile_line)]}-> N504
+lines 629-632:	N504 -{cpio_mkfile_line(args)}-> N303
+line 421:	N311 -{int end = 0;}-> N312
+lines 424-429:	N317 -{__CPAchecker_TMP_0 = sscanf(line, "%4096s %4096s %o %d %d %n", name, location, &mode, &uid, &gid, &end);}-> N318
+lines 424-426:	N318 -{[!(5 > __CPAchecker_TMP_0)]}-> N315
+line 430:	N315 -{[end == 0]}-> N323
+lines 461-462:	N365 -{cpio_replace_env(location)}-> N280
+lines 400-407:	N285 -{while}-> N286
+lines 400-407:	N286 -{start = strstr(new_location, "${");}-> N290
+line 400:	N290 -{[!(start == 0)]}-> N289
+lines 400-407:	N289 -{end = strchr(start + 2, '}');}-> N291
+lines 400-401:	N291 -{[end == 0]}-> N288
+lines 461-462:	N366 -{cpio_mkfile(dname, __CPAchecker_TMP_9, mode, uid, gid, nlinks)}-> N198
+line 313:	N209 -{file = open(location, 0);}-> N210
+line 314:	N210 -{[!(file < 0)]}-> N211
+line 319:	N211 -{retval = fstat(file, &buf);}-> N215
+line 320:	N215 -{[retval == 0]}-> N216
+line 327:	N220 -{Num = Num - 1;}-> N221
+line 328:	N221 -{[!(Num >= 0)]}-> N223
+line 328:	N223 -{__assert_fail("Num >= 0", "tf/gen_init_cpio.c", 328, "__PRETTY_FUNCTION__");}-> N224

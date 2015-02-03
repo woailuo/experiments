@@ -1,0 +1,194 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_5920 () Bool (<= (to_real 1) Num))
+(define-fun .def_4916 () Bool (<= (to_real 0) Num))
+(define-fun .def_5926 () Bool (and .def_4916 .def_5920))
+(declare-fun __ADDRESS_OF_file_handler_table () Real)
+(declare-fun |cpio_mkfile_line::nlinks| () Real)
+(declare-fun |cpio_mkfile_line::dname_len| () Real)
+(declare-fun |main::type_idx| () Real)
+(declare-fun |*(char)*| (Real) Real)
+(define-fun .def_21143 () Real (* (to_real 8) |main::type_idx|))
+(define-fun .def_21144 () Real (+ __ADDRESS_OF_file_handler_table .def_21143))
+(define-fun .def_21146 () Real (|*(char)*| .def_21144))
+(define-fun .def_21147 () Bool (= .def_21146 (to_real 0)))
+(define-fun .def_21169 () Bool (not .def_21147))
+(define-fun .def_21141 () Bool (= |cpio_mkfile_line::dname_len| (to_real 0)))
+(define-fun .def_21170 () Bool (and .def_21141 .def_21169))
+(define-fun .def_21139 () Bool (<= (to_real 1) |cpio_mkfile_line::nlinks|))
+(define-fun .def_21171 () Bool (and .def_21139 .def_21170))
+(define-fun .def_21172 () Bool (and .def_5920 .def_21171))
+(define-fun .def_21173 () Bool (and .def_4916 .def_21172))
+(declare-fun |cpio_mkfile::nlinks| () Real)
+(declare-fun |cpio_mkfile::i| () Real)
+(declare-fun |cpio_mkfile::filebuf| () Real)
+(declare-fun |cpio_mkfile::file| () Real)
+(define-fun .def_21155 () Bool (= |cpio_mkfile::filebuf| (to_real 0)))
+(define-fun .def_21212 () Bool (not .def_21155))
+(define-fun .def_21157 () Bool (<= (to_real 0) |cpio_mkfile::file|))
+(define-fun .def_21213 () Bool (and .def_21157 .def_21212))
+(define-fun .def_21153 () Bool (<= |cpio_mkfile::i| |cpio_mkfile::nlinks|))
+(define-fun .def_21214 () Bool (and .def_21153 .def_21213))
+(define-fun .def_21215 () Bool (and .def_21169 .def_21214))
+(define-fun .def_21216 () Bool (and .def_21141 .def_21215))
+(define-fun .def_21217 () Bool (and .def_4916 .def_21216))
+(define-fun .def_21933 () Bool (and .def_21169 .def_21213))
+(define-fun .def_21934 () Bool (and .def_21141 .def_21933))
+(define-fun .def_21935 () Bool (and .def_4916 .def_21934))
+
+208 (209,215) @12:
+(assert .def_21935)
+
+126 (127,224,226,225,223) @442:
+(assert .def_5926)
+
+207 () @12:
+(assert .def_21935)
+
+210 (220,211) @236:
+(assert .def_21935)
+
+151 () @442:
+(assert .def_5926)
+
+153 () @442:
+(assert .def_5926)
+
+212 () @12:
+(assert .def_21935)
+
+130 () @30:
+(assert .def_5926)
+
+137 () @345:
+(assert false)
+
+148 () @30:
+(assert .def_5926)
+
+124 (125,126) @389:
+(assert .def_5926)
+
+220 () @442:
+(assert .def_5926)
+
+219 () @442:
+(assert .def_5926)
+
+225 () @442:
+(assert .def_5926)
+
+133 (134,135) @12:
+(assert .def_5926)
+
+131 (152,132) @30:
+(assert .def_5926)
+
+203 (204,222,205) @286:
+(assert .def_21173)
+
+184 () @442:
+(assert .def_5926)
+
+214 () @12:
+(assert .def_21935)
+
+215 () @236:
+(assert .def_21935)
+
+186 () @442:
+(assert .def_5926)
+
+223 () @442:
+(assert .def_5926)
+
+226 (228,227) @30:
+(assert .def_5926)
+
+217 () @236:
+(assert .def_21935)
+
+149 (185,150) @30:
+(assert .def_5926)
+
+147 (184,148) @30:
+(assert .def_5926)
+
+222 () @442:
+(assert .def_5926)
+
+135 (136,153) @12:
+(assert .def_5926)
+
+185 () @442:
+(assert .def_5926)
+
+132 () @30:
+(assert .def_5926)
+
+206 (219,208,207,210) @12:
+(assert .def_21935)
+
+211 (221,216,213,212) @12:
+(assert .def_21935)
+
+152 () @442:
+(assert .def_5926)
+
+213 (214,217) @12:
+(assert .def_21935)
+
+221 () @442:
+(assert .def_5926)
+
+209 () @12:
+(assert .def_21935)
+
+127 (186,133,128,131,137,203,149,147,129) @476:
+(assert .def_5926)
+
+136 () @12:
+(assert .def_5926)
+
+0 (124) @379:
+(assert true)
+
+205 (206,218) @236:
+(assert .def_21217)
+
+216 () @236:
+(assert .def_21935)
+
+134 () @12:
+(assert .def_5926)
+
+229 () @55:
+(assert .def_4916)
+
+227 () @30:
+(assert .def_5926)
+
+224 () @442:
+(assert .def_5926)
+
+125 () @389:
+(assert .def_5926)
+
+150 () @30:
+(assert .def_5926)
+
+128 () @476:
+(assert .def_5926)
+
+218 () @442:
+(assert false)
+
+129 (151,130) @30:
+(assert .def_5926)
+
+228 (229) @55:
+(assert .def_4916)
+
+204 () @286:
+(assert .def_21173)
+

@@ -1,0 +1,17 @@
+digraph ARG {
+node [style="filled" shape="box" color="white"]
+0 [fillcolor="cornflowerblue" label="0 @ N17\nmain entry\nAbstractionState: ABS0: true" id="0"]
+3 [label="3 @ N12\ngen_init_cpio entry\n" id="3"]
+5 [label="5 @ N1\nM entry\n" id="5"]
+11 [label="11 @ N0\nM exit\n" id="11"]
+13 [label="13 @ N1\nM entry\n" id="13"]
+16 [fillcolor="orange" label="16 @ N4\nM\n" id="16"]
+18 [fillcolor="red" label="18 @ N6\nM\nAbstractionState: ABS1: true
+ AutomatonState: AssertionAutomaton: _predefinedState_ERROR" id="18"]
+0 -> 3 []
+3 -> 5 []
+5 -> 11 []
+11 -> 13 []
+13 -> 18 []
+13 -> 16 []
+}

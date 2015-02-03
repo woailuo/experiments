@@ -1,0 +1,15 @@
+digraph gen_init_cpio {
+12 [shape="circle" label="N12\n4"]
+13 [shape="circle" label="N13\n3"]
+14 [shape="circle" label="N14\n2"]
+15 [shape="circle" label="N15\n1"]
+11 [shape="circle" label="N11\n0"]
+12 -> 13 [label="Function start dummy edge" fontname="Courier New"]
+100001 [shape="component" label="M"]
+13 -> 100001 [label="M();" fontname="Courier New"]
+100001 -> 14 [label="" fontname="Courier New"]
+100002 [shape="component" label="M"]
+14 -> 100002 [label="M();" fontname="Courier New"]
+100002 -> 15 [label="" fontname="Courier New"]
+15 -> 11 [label="default return" fontname="Courier New"]
+}

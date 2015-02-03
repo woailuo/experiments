@@ -1,0 +1,60 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun __ADDRESS_OF_file_handler_table () Real)
+(declare-fun Num () Real)
+(declare-fun |cpio_mkfile_line::dname_len| () Real)
+(declare-fun |main::type_idx| () Real)
+(declare-fun |*(char)*| (Real) Real)
+(declare-fun |cpio_mkfile::filebuf| () Real)
+(declare-fun |cpio_mkfile::file| () Real)
+(define-fun .def_21155 () Bool (= |cpio_mkfile::filebuf| (to_real 0)))
+(define-fun .def_21212 () Bool (not .def_21155))
+(define-fun .def_21157 () Bool (<= (to_real 0) |cpio_mkfile::file|))
+(define-fun .def_21213 () Bool (and .def_21157 .def_21212))
+(define-fun .def_21143 () Real (* (to_real 8) |main::type_idx|))
+(define-fun .def_21144 () Real (+ __ADDRESS_OF_file_handler_table .def_21143))
+(define-fun .def_21146 () Real (|*(char)*| .def_21144))
+(define-fun .def_21147 () Bool (= .def_21146 (to_real 0)))
+(define-fun .def_21169 () Bool (not .def_21147))
+(define-fun .def_21933 () Bool (and .def_21169 .def_21213))
+(define-fun .def_21141 () Bool (= |cpio_mkfile_line::dname_len| (to_real 0)))
+(define-fun .def_21934 () Bool (and .def_21141 .def_21933))
+(define-fun .def_5920 () Bool (<= (to_real 1) Num))
+(define-fun .def_22497 () Bool (or .def_5920 .def_21934))
+(define-fun .def_4916 () Bool (<= (to_real 0) Num))
+(define-fun .def_22498 () Bool (and .def_4916 .def_22497))
+(define-fun .def_5926 () Bool (and .def_4916 .def_5920))
+(define-fun .def_21935 () Bool (and .def_4916 .def_21934))
+(declare-fun |cpio_mkfile_line::nlinks| () Real)
+(define-fun .def_21170 () Bool (and .def_21141 .def_21169))
+(define-fun .def_21139 () Bool (<= (to_real 1) |cpio_mkfile_line::nlinks|))
+(define-fun .def_21171 () Bool (and .def_21139 .def_21170))
+(define-fun .def_21172 () Bool (and .def_5920 .def_21171))
+(define-fun .def_21173 () Bool (and .def_4916 .def_21172))
+
+push_pad N12:
+(assert .def_22498)
+
+push_rest N30:
+(assert .def_5926)
+
+cpio_trailer N55:
+(assert .def_4916)
+
+cpio_mkfile N236:
+(assert .def_21935)
+
+cpio_replace_env N286:
+(assert .def_21173)
+
+cpio_mkfile_line N345:
+(assert false)
+
+main N389:
+(assert .def_5926)
+
+main N442:
+(assert .def_5926)
+
+main N476:
+(assert .def_5926)
+

@@ -1,0 +1,11 @@
+_IO_2_1_stdout_	0
+_IO_2_1_stderr_	0
+stdin	0
+M::__retval__	7
+stdout	0
+sys_errlist	0
+Num	4
+gen_init_cpio::__retval__	7
+_IO_2_1_stdin_	0
+stderr	0
+sys_nerr	7

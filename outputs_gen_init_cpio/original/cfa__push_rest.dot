@@ -1,0 +1,16 @@
+digraph push_rest {
+20 [shape="circle" label="N20\n11"]
+21 [shape="circle" label="N21\n10"]
+30 [shape="doublecircle" label="N30\n4"]
+32 [shape="circle" label="N32\n1"]
+31 [shape="circle" label="N31\n3"]
+19 [shape="circle" label="N19\n0"]
+21 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">21</td><td align="left">size_t __CPAchecker_TMP_0;</td></tr><tr><td align="right">22</td><td align="left">__CPAchecker_TMP_0 = strlen(name);</td></tr><tr><td align="right">23</td><td align="left">unsigned int name_len = __CPAchecker_TMP_0 + 1; unsigned int tmp_ofs;</td></tr><tr><td align="right">25</td><td align="left">fputs(name, stdout);</td></tr><tr><td align="right">26</td><td align="left">putchar(0);</td></tr><tr><td align="right">27</td><td align="left">offset = offset + name_len; tmp_ofs = name_len + 110; while</td></tr></table>>]
+21 -> 30[label=""]
+31 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">31</td><td align="left">putchar(0);</td></tr><tr><td align="right">33</td><td align="left">unsigned int __CPAchecker_TMP_1 = offset; offset = offset + 1; __CPAchecker_TMP_1; unsigned int __CPAchecker_TMP_2 = tmp_ofs; tmp_ofs = tmp_ofs + 1; __CPAchecker_TMP_2; </td></tr></table>>]
+31 -> 30[label=""]
+20 -> 21 [label="Function start dummy edge" fontname="Courier New"]
+30 -> 32 [label="[(tmp_ofs & 3) == 0]" fontname="Courier New"]
+30 -> 31 [label="[!((tmp_ofs & 3) == 0)]" fontname="Courier New"]
+32 -> 19 [label="default return" fontname="Courier New"]
+}
