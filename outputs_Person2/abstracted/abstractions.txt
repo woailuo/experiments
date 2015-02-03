@@ -1,0 +1,15 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_51 () Bool (<= (to_real 4) Num))
+(define-fun .def_43 () Bool (<= (to_real 0) Num))
+(define-fun .def_57 () Bool (and .def_43 .def_51))
+
+6 () @14:
+(assert .def_57)
+
+5 (6) @14:
+(assert .def_57)
+
+0 (5) @25:
+(assert true)
+

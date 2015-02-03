@@ -1,0 +1,16 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_80 () Bool (<= (to_real 0) Num))
+(define-fun .def_88 () Bool (<= (to_real 4) Num))
+
+*:
+(assert .def_80)
+
+Person_create N8:
+(assert .def_80)
+(assert false)
+
+main N41:
+(assert .def_80)
+(assert .def_88)
+
