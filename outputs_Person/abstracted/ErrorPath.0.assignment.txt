@@ -1,0 +1,6 @@
+Num@2 : Real: 2
+Num@3 : Real: 1
+Num@4 : Real: 0
+Num@5 : Real: -1
+__ADDRESS_OF_Num : Real: 3
+__BASE_ADDRESS_OF__(3) : Real: 3

@@ -1,0 +1,12 @@
+line 4:	N218 -{int Num = 2;}-> N219
+line 31:	N24 -{person()}-> N12
+line 19:	N13 -{M()}-> N1
+line 8:	N2 -{Num = Num - 1;}-> N3
+line 9:	N3 -{[Num >= 0]}-> N4
+line 20:	N14 -{M()}-> N1
+line 8:	N2 -{Num = Num - 1;}-> N3
+line 9:	N3 -{[Num >= 0]}-> N4
+line 21:	N15 -{M()}-> N1
+line 8:	N2 -{Num = Num - 1;}-> N3
+line 9:	N3 -{[!(Num >= 0)]}-> N5
+line 9:	N5 -{__assert_fail("Num >= 0", "tf/behavior.c", 9, "__PRETTY_FUNCTION__");}-> N6

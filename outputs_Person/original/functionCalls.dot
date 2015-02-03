@@ -1,0 +1,22 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+malloc [shape="box", color=grey];
+Person_create -> malloc;
+__assert_fail [shape="box", color=grey];
+Person_create -> __assert_fail;
+strdup [shape="box", color=grey];
+Person_create -> strdup;
+__assert_fail [shape="box", color=grey];
+Person_destroy -> __assert_fail;
+free [shape="box", color=grey];
+Person_destroy -> free;
+printf [shape="box", color=grey];
+Person_print -> printf;
+main -> Person_create;
+printf [shape="box", color=grey];
+main -> printf;
+main -> Person_print;
+main -> Person_destroy;
+}
