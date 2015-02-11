@@ -1,0 +1,14 @@
+digraph GetHead {
+69 [shape="circle" label="N69\n5"]
+70 [shape="circle" label="N70\n4"]
+71 [shape="diamond" label="N71\n3"]
+73 [shape="circle" label="N73\n1"]
+72 [shape="circle" label="N72\n2"]
+68 [shape="circle" label="N68\n0"]
+69 -> 70 [label="Function start dummy edge" fontname="Courier New"]
+71 -> 73 [label="[(Q.front) == (Q.rear)]" fontname="Courier New"]
+71 -> 72 [label="[!((Q.front) == (Q.rear))]" fontname="Courier New"]
+73 -> 68 [label="return 0;" fontname="Courier New"]
+70 -> 71 [label="struct QNode *p;" fontname="Courier New"]
+72 -> 68 [label="p = Q.front->next; *e = p->data; return 1;" fontname="Courier New"]
+}

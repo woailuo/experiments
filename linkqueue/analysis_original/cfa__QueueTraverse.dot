@@ -1,0 +1,18 @@
+digraph QueueTraverse {
+117 [shape="doublecircle" label="N117\n5"]
+119 [shape="circle" label="N119\n2"]
+118 [shape="circle" label="N118\n4"]
+120 [shape="circle" label="N120\n3"]
+122 [shape="circle" label="N122\n1"]
+112 [shape="circle" label="N112\n0"]
+113 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">113</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">114</td><td align="left">struct QNode *p; p = Q.front-&gt;next; while</td></tr></table>>]
+113 -> 117[label=""]
+117 -> 119 [label="[p == 0]" fontname="Courier New"]
+117 -> 118 [label="[!(p == 0)]" fontname="Courier New"]
+100001 [shape="component" label="visit"]
+118 -> 100001 [label="visit(p->data);" fontname="Courier New"]
+100001 -> 120 [label="" fontname="Courier New"]
+119 -> 122 [label="printf(\"\n\");" fontname="Courier New"]
+120 -> 117 [label="p = p->next; " fontname="Courier New"]
+122 -> 112 [label="return 1;" fontname="Courier New"]
+}

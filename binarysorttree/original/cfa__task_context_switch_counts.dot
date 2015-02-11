@@ -1,0 +1,4 @@
+digraph task_context_switch_counts {
+142 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">142</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">143</td><td align="left">unsigned long long __CPAchecker_TMP_0 = (unsigned long long)(t-&gt;nvcsw); unsigned long long __CPAchecker_TMP_1 = (unsigned long long)(t-&gt;nivcsw);</td></tr><tr><td align="right">145</td><td align="left">printf(\"\n\nTask %15s%15s\n %15llu%15llu\n\", \"voluntary\", \"nonvoluntary\", __CPAchecker_TMP_0, __CPAchecker_TMP_1);</td></tr><tr><td align="right">146</td><td align="left">default return</td></tr></table>>]
+142 -> 141[label=""]
+}

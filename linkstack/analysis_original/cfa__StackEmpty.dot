@@ -1,0 +1,12 @@
+digraph StackEmpty {
+35 [shape="circle" label="N35\n4"]
+36 [shape="diamond" label="N36\n3"]
+38 [shape="circle" label="N38\n1"]
+39 [shape="circle" label="N39\n2"]
+34 [shape="circle" label="N34\n0"]
+35 -> 36 [label="Function start dummy edge" fontname="Courier New"]
+36 -> 38 [label="[(S.count) == 0]" fontname="Courier New"]
+36 -> 39 [label="[!((S.count) == 0)]" fontname="Courier New"]
+38 -> 34 [label="return 1;" fontname="Courier New"]
+39 -> 34 [label="return 0;" fontname="Courier New"]
+}

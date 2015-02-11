@@ -1,0 +1,13 @@
+digraph ClearQueue {
+38 [shape="doublecircle" label="N38\n5"]
+40 [shape="circle" label="N40\n1"]
+39 [shape="circle" label="N39\n4"]
+30 [shape="circle" label="N30\n0"]
+31 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">31</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">32</td><td align="left">struct QNode *p; struct QNode *q; Q-&gt;rear = Q-&gt;front; p = Q-&gt;front-&gt;next; Q-&gt;front-&gt;next = (void *)0; while</td></tr></table>>]
+31 -> 38[label=""]
+39 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">39</td><td align="left">q = p; p = p-&gt;next;</td></tr><tr><td align="right">42</td><td align="left">free(q);</td></tr><tr><td align="right">43</td><td align="left">Num = Num + 1; </td></tr></table>>]
+39 -> 38[label=""]
+38 -> 40 [label="[p == 0]" fontname="Courier New"]
+38 -> 39 [label="[!(p == 0)]" fontname="Courier New"]
+40 -> 30 [label="return 1;" fontname="Courier New"]
+}

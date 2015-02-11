@@ -1,8 +1,0 @@
-loop__Database_create__2197:
-(set-info :source |printed by MathSAT|)
-(assert true)
-
-loop__Database_list__2242:
-(set-info :source |printed by MathSAT|)
-(assert true)
-

@@ -1,0 +1,7 @@
+digraph slab_size {
+225 [shape="circle" label="N225\n2"]
+226 [shape="circle" label="N226\n1"]
+224 [shape="circle" label="N224\n0"]
+225 -> 226 [label="Function start dummy edge" fontname="Courier New"]
+226 -> 224 [label="return (s->slabs) * (page_size << (s->order));" fontname="Courier New"]
+}

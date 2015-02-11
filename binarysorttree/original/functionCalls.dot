@@ -1,0 +1,21 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+free [shape="box", color=grey];
+Delete -> free;
+DeleteBST -> DeleteBST;
+DeleteBST -> Delete;
+InsertBST -> InsertBST;
+InsertBST -> SearchBST;
+malloc [shape="box", color=grey];
+InsertBST -> malloc;
+__assert_fail [shape="box", color=grey];
+InsertBST -> __assert_fail;
+SearchBST -> SearchBST;
+printf [shape="box", color=grey];
+main -> printf;
+main -> main;
+main -> DeleteBST;
+main -> InsertBST;
+}

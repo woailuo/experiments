@@ -1,0 +1,137 @@
+(declare-fun |*(struct_Node)*| (Int ) Int)
+(declare-fun |__ADDRESS_OF_main::L| () Int)
+(declare-fun Num () Int)
+(declare-fun |main::j| () Int)
+(declare-fun |ListInsert::p| () Int)
+(declare-fun |ListInsert::i| () Int)
+(declare-fun |ListInsert::j| () Int)
+
+326 (328,327) @32:
+(assert (>= Num 0))
+
+323 () @144:
+(assert (>= Num 0))
+
+213 (214,292) @46:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (and (>= Num 0) (<= 0 (+ Num (- 5))) (not (= 0 .cse0)) (distinct .cse0 0))))
+
+311 (315,312) @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse20 (- 1)) (.cse19 (- 2)) (.cse18 (- 3)) (.cse17 (- 4)) (.cse21 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse21))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse21)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse17))) (.cse9 (<= 0 (+ Num .cse18))) (.cse6 (not (= |ListInsert::p| 0))) (.cse7 (distinct .cse21 0)) (.cse8 (distinct |ListInsert::p| 0)) (.cse10 (<= 0 (+ Num .cse19))) (.cse11 (<= 0 (+ Num .cse20))) (.cse12 (not (= (+ |main::j| .cse20) 0))) (.cse13 (<= 0 (+ |main::j| .cse19))) (.cse14 (<= 0 (+ |main::j| .cse18))) (.cse15 (<= 0 (+ |main::j| .cse17))) (.cse16 (not (<= 0 (+ |main::j| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse1 .cse2 .cse3 .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse6 .cse7 .cse8 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))))))))
+
+292 (294,293) @224:
+(assert (let ((.cse1 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse5 (- 1)) (.cse4 (- 2)) (.cse3 (- 3)) (.cse2 (- 4)) (.cse0 (- 5))) (and (>= Num 0) (<= 0 (+ Num .cse0)) (not (= 0 .cse1)) (<= 1 1) (<= 0 (+ Num .cse2)) (distinct .cse1 0) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (<= 0 (+ Num .cse5)) (= (+ |main::j| .cse5) 0) (not (<= 0 (+ |main::j| .cse4))) (not (<= 0 (+ |main::j| .cse3))) (not (<= 0 (+ |main::j| .cse2))) (not (<= 0 (+ |main::j| .cse0))) (not (<= 0 (+ |main::j| (- 6)))))))
+
+328 (329) @46:
+(assert (and (>= Num 0) (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (distinct .cse0 0))) (ite (= 0 .cse0) (not .cse1) .cse1)))))
+
+309 (310,311) @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4)) (.cse18 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse18))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse14))) (.cse5 (<= 0 (+ Num .cse15))) (.cse4 (distinct .cse18 0)) (.cse6 (<= 0 (+ Num .cse16))) (.cse7 (<= 0 (+ Num .cse17))) (.cse8 (not (= (+ |main::j| .cse17) 0))) (.cse9 (<= 0 (+ |main::j| .cse16))) (.cse10 (<= 0 (+ |main::j| .cse15))) (.cse11 (<= 0 (+ |main::j| .cse14))) (.cse12 (not (<= 0 (+ |main::j| .cse0)))) (.cse13 (not (<= 0 (+ |main::j| (- 6)))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13))))))))
+
+293 () @144:
+(assert false)
+
+312 (313,320) @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse20 (- 4)) (.cse24 (- 1)) (.cse23 (- 2)) (.cse22 (- 3)) (.cse21 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse8 (distinct |ListInsert::p| 0))) (let ((.cse19 (not .cse8)) (.cse7 (distinct .cse21 0)) (.cse9 (<= 0 (+ Num .cse22))) (.cse10 (<= 0 (+ Num .cse23))) (.cse11 (<= 0 (+ Num .cse24))) (.cse12 (not (= (+ |main::j| .cse24) 0))) (.cse13 (<= 0 (+ |main::j| .cse23))) (.cse14 (<= 0 (+ |main::j| .cse22))) (.cse15 (<= 0 (+ |main::j| .cse20))) (.cse16 (not (<= 0 (+ |main::j| .cse0)))) (.cse18 (= |ListInsert::p| 0))) (let ((.cse1 (not (= 0 .cse21))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse21)) (.cse6 (not .cse18)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse20))) (.cse17 (ite .cse18 (and .cse7 .cse19 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse5 .cse17))) (and .cse1 .cse2 (ite .cse3 (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse6 .cse7 .cse8 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))) (and .cse4 (ite .cse5 .cse17 (ite .cse18 (and .cse7 .cse19 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))))))))))))
+
+310 () @144:
+(assert false)
+
+331 () @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4)) (.cse18 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse18))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse14))) (.cse4 (distinct .cse18 0)) (.cse5 (<= 0 (+ Num .cse15))) (.cse6 (<= 0 (+ Num .cse16))) (.cse7 (<= 0 (+ Num .cse17))) (.cse8 (not (= (+ |main::j| .cse17) 0))) (.cse9 (<= 0 (+ |main::j| .cse16))) (.cse10 (<= 0 (+ |main::j| .cse15))) (.cse11 (<= 0 (+ |main::j| .cse14))) (.cse12 (<= 0 (+ |main::j| .cse0))) (.cse13 (<= 0 (+ |main::j| (- 6))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (ite .cse6 (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse8 .cse9 .cse10 .cse11 .cse12 .cse13)))))))))))
+
+306 (307,314) @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse18 (- 4)) (.cse23 (- 1)) (.cse22 (- 2)) (.cse21 (- 3)) (.cse20 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse7 (distinct .cse20 0)) (.cse8 (distinct |ListInsert::p| 0)) (.cse9 (<= 0 (+ Num .cse21))) (.cse10 (<= 0 (+ Num .cse22))) (.cse11 (<= 0 (+ Num .cse23))) (.cse12 (not (= (+ |main::j| .cse23) 0))) (.cse13 (<= 0 (+ |main::j| .cse22))) (.cse14 (<= 0 (+ |main::j| .cse21))) (.cse15 (not (<= 0 (+ |main::j| .cse18)))) (.cse16 (not (<= 0 (+ |main::j| .cse0)))) (.cse19 (= |ListInsert::p| 0))) (let ((.cse1 (not (= 0 .cse20))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse20)) (.cse6 (not .cse19)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse17 (ite .cse19 (and .cse7 (not .cse8) .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (let ((.cse5 (<= 0 (+ Num .cse18)))) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse5 .cse17)))) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse17)))))))))
+
+318 (319,331) @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse21 (- 4)) (.cse25 (- 1)) (.cse24 (- 2)) (.cse23 (- 3)) (.cse22 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse8 (distinct |ListInsert::p| 0))) (let ((.cse20 (not .cse8)) (.cse7 (distinct .cse22 0)) (.cse9 (<= 0 (+ Num .cse23))) (.cse10 (<= 0 (+ Num .cse24))) (.cse11 (<= 0 (+ Num .cse25))) (.cse12 (not (= (+ |main::j| .cse25) 0))) (.cse13 (<= 0 (+ |main::j| .cse24))) (.cse14 (<= 0 (+ |main::j| .cse23))) (.cse15 (<= 0 (+ |main::j| .cse21))) (.cse16 (<= 0 (+ |main::j| .cse0))) (.cse19 (= |ListInsert::p| 0))) (let ((.cse1 (not (= 0 .cse22))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse22)) (.cse6 (not .cse19)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse21))) (.cse17 (ite .cse19 (and .cse7 .cse20 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse5 .cse17))) (and .cse1 .cse2 (let ((.cse18 (ite .cse9 (and .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite .cse3 (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse6 .cse7 .cse8 .cse18))) (and .cse4 (ite .cse5 .cse17 (ite .cse19 (and .cse7 .cse20 .cse18) (and .cse7 .cse8 .cse18)))))))))))))
+
+327 () @32:
+(assert (>= Num 0))
+
+304 () @144:
+(assert false)
+
+298 () @144:
+(assert false)
+
+320 () @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4)) (.cse18 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse18))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse14))) (.cse4 (distinct .cse18 0)) (.cse5 (<= 0 (+ Num .cse15))) (.cse6 (<= 0 (+ Num .cse16))) (.cse7 (<= 0 (+ Num .cse17))) (.cse8 (not (= (+ |main::j| .cse17) 0))) (.cse9 (<= 0 (+ |main::j| .cse16))) (.cse10 (<= 0 (+ |main::j| .cse15))) (.cse11 (<= 0 (+ |main::j| .cse14))) (.cse12 (<= 0 (+ |main::j| .cse0))) (.cse13 (not (<= 0 (+ |main::j| (- 6)))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13))))))))))
+
+300 (308,301) @97:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (and (>= Num 0) (not (= 0 .cse0)) (<= 1 1) (let ((.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4))) (let ((.cse1 (<= |ListInsert::j| |ListInsert::i|)) (.cse2 (<= 0 (+ Num .cse14))) (.cse3 (= |ListInsert::p| 0)) (.cse4 (distinct .cse0 0)) (.cse5 (distinct |ListInsert::p| 0)) (.cse6 (<= 0 (+ Num .cse15))) (.cse7 (<= 0 (+ Num .cse16))) (.cse8 (<= 0 (+ Num .cse17))) (.cse9 (not (= (+ |main::j| .cse17) 0))) (.cse10 (<= 0 (+ |main::j| .cse16))) (.cse11 (not (<= 0 (+ |main::j| .cse15)))) (.cse12 (not (<= 0 (+ |main::j| .cse14)))) (.cse13 (not (<= 0 (+ |main::j| (- 5)))))) (ite (= |ListInsert::p| .cse0) (and .cse1 .cse2 (not .cse3) .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 (not .cse5) .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13)))))))))
+
+330 () @97:
+(assert false)
+
+303 (304,305) @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse3 (- 4)) (.cse16 (- 1)) (.cse15 (- 2)) (.cse14 (- 3)) (.cse17 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse17))) (.cse2 (<= 1 1)) (.cse4 (distinct .cse17 0)) (.cse5 (<= 0 (+ Num .cse14))) (.cse6 (<= 0 (+ Num .cse15))) (.cse7 (<= 0 (+ Num .cse16))) (.cse8 (not (= (+ |main::j| .cse16) 0))) (.cse9 (<= 0 (+ |main::j| .cse15))) (.cse10 (<= 0 (+ |main::j| .cse14))) (.cse11 (not (<= 0 (+ |main::j| .cse3)))) (.cse12 (not (<= 0 (+ |main::j| .cse0)))) (.cse13 (not (<= 0 (+ |main::j| (- 6)))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (<= 0 (+ Num .cse3)) .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13))))))
+
+295 (296,302) @97:
+(assert (let ((.cse0 (- 5)) (.cse1 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (and (>= Num 0) (<= 0 (+ Num .cse0)) (not (= 0 .cse1)) (<= 1 1) (let ((.cse18 (- 1)) (.cse17 (- 2)) (.cse16 (- 3)) (.cse15 (- 4))) (let ((.cse2 (<= |ListInsert::j| |ListInsert::i|)) (.cse3 (<= 0 (+ Num .cse15))) (.cse4 (= |ListInsert::p| 0)) (.cse5 (distinct .cse1 0)) (.cse6 (distinct |ListInsert::p| 0)) (.cse7 (<= 0 (+ Num .cse16))) (.cse8 (<= 0 (+ Num .cse17))) (.cse9 (<= 0 (+ Num .cse18))) (.cse10 (= (+ |main::j| .cse18) 0)) (.cse11 (not (<= 0 (+ |main::j| .cse17)))) (.cse12 (not (<= 0 (+ |main::j| .cse16)))) (.cse13 (not (<= 0 (+ |main::j| .cse15)))) (.cse14 (not (<= 0 (+ |main::j| .cse0))))) (ite (= |ListInsert::p| .cse1) (and .cse2 .cse3 (not .cse4) .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14) (and .cse2 .cse3 (ite .cse4 (and .cse5 (not .cse6) .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14) (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14)))))))))
+
+313 () @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse20 (- 4)) (.cse24 (- 1)) (.cse23 (- 2)) (.cse22 (- 3)) (.cse21 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse8 (distinct |ListInsert::p| 0))) (let ((.cse19 (not .cse8)) (.cse7 (distinct .cse21 0)) (.cse9 (<= 0 (+ Num .cse22))) (.cse10 (<= 0 (+ Num .cse23))) (.cse11 (<= 0 (+ Num .cse24))) (.cse12 (not (= (+ |main::j| .cse24) 0))) (.cse13 (<= 0 (+ |main::j| .cse23))) (.cse14 (<= 0 (+ |main::j| .cse22))) (.cse15 (<= 0 (+ |main::j| .cse20))) (.cse16 (not (<= 0 (+ |main::j| .cse0)))) (.cse18 (= |ListInsert::p| 0))) (let ((.cse1 (not (= 0 .cse21))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse21)) (.cse6 (not .cse18)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse20))) (.cse17 (ite .cse18 (and .cse7 .cse19 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse5 .cse17))) (and .cse1 .cse2 (ite .cse3 (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse6 .cse7 .cse8 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))) (and .cse4 (ite .cse5 .cse17 (ite .cse18 (and .cse7 .cse19 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))))))))))))
+
+301 () @97:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (and (>= Num 0) (not (= 0 .cse0)) (<= 1 1) (let ((.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4))) (let ((.cse1 (<= |ListInsert::j| |ListInsert::i|)) (.cse2 (<= 0 (+ Num .cse14))) (.cse3 (= |ListInsert::p| 0)) (.cse4 (distinct .cse0 0)) (.cse5 (distinct |ListInsert::p| 0)) (.cse6 (<= 0 (+ Num .cse15))) (.cse7 (<= 0 (+ Num .cse16))) (.cse8 (<= 0 (+ Num .cse17))) (.cse9 (not (= (+ |main::j| .cse17) 0))) (.cse10 (<= 0 (+ |main::j| .cse16))) (.cse11 (not (<= 0 (+ |main::j| .cse15)))) (.cse12 (not (<= 0 (+ |main::j| .cse14)))) (.cse13 (not (<= 0 (+ |main::j| (- 5)))))) (ite (= |ListInsert::p| .cse0) (and .cse1 .cse2 (not .cse3) .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 (not .cse5) .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13)))))))))
+
+305 (309,306) @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse5 (- 4)) (.cse19 (- 1)) (.cse18 (- 2)) (.cse17 (- 3)) (.cse20 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse20))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse20)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse6 (not (= |ListInsert::p| 0))) (.cse7 (distinct .cse20 0)) (.cse8 (distinct |ListInsert::p| 0)) (.cse9 (<= 0 (+ Num .cse17))) (.cse10 (<= 0 (+ Num .cse18))) (.cse11 (<= 0 (+ Num .cse19))) (.cse12 (not (= (+ |main::j| .cse19) 0))) (.cse13 (<= 0 (+ |main::j| .cse18))) (.cse14 (<= 0 (+ |main::j| .cse17))) (.cse15 (not (<= 0 (+ |main::j| .cse5)))) (.cse16 (not (<= 0 (+ |main::j| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 (<= 0 (+ Num .cse5)) .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse1 .cse2 .cse3 .cse4 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))))))
+
+316 () @144:
+(assert false)
+
+321 (322,330) @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4)) (.cse18 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse18))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse14))) (.cse4 (distinct .cse18 0)) (.cse5 (<= 0 (+ Num .cse15))) (.cse6 (<= 0 (+ Num .cse16))) (.cse7 (<= 0 (+ Num .cse17))) (.cse8 (not (= (+ |main::j| .cse17) 0))) (.cse9 (<= 0 (+ |main::j| .cse16))) (.cse10 (<= 0 (+ |main::j| .cse15))) (.cse11 (<= 0 (+ |main::j| .cse14))) (.cse12 (<= 0 (+ |main::j| .cse0))) (.cse13 (<= 0 (+ |main::j| (- 6))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (ite .cse6 (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse8 .cse9 .cse10 .cse11 .cse12 .cse13)))))))))))
+
+319 () @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse21 (- 4)) (.cse25 (- 1)) (.cse24 (- 2)) (.cse23 (- 3)) (.cse22 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse8 (distinct |ListInsert::p| 0))) (let ((.cse20 (not .cse8)) (.cse7 (distinct .cse22 0)) (.cse9 (<= 0 (+ Num .cse23))) (.cse10 (<= 0 (+ Num .cse24))) (.cse11 (<= 0 (+ Num .cse25))) (.cse12 (not (= (+ |main::j| .cse25) 0))) (.cse13 (<= 0 (+ |main::j| .cse24))) (.cse14 (<= 0 (+ |main::j| .cse23))) (.cse15 (<= 0 (+ |main::j| .cse21))) (.cse16 (<= 0 (+ |main::j| .cse0))) (.cse19 (= |ListInsert::p| 0))) (let ((.cse1 (not (= 0 .cse22))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse22)) (.cse6 (not .cse19)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse21))) (.cse17 (ite .cse19 (and .cse7 .cse20 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse5 .cse17))) (and .cse1 .cse2 (let ((.cse18 (ite .cse9 (and .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite .cse3 (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse6 .cse7 .cse8 .cse18))) (and .cse4 (ite .cse5 .cse17 (ite .cse19 (and .cse7 .cse20 .cse18) (and .cse7 .cse8 .cse18)))))))))))))
+
+296 () @97:
+(assert (let ((.cse0 (- 5)) (.cse1 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (and (>= Num 0) (<= 0 (+ Num .cse0)) (not (= 0 .cse1)) (<= 1 1) (let ((.cse18 (- 1)) (.cse17 (- 2)) (.cse16 (- 3)) (.cse15 (- 4))) (let ((.cse2 (<= |ListInsert::j| |ListInsert::i|)) (.cse3 (<= 0 (+ Num .cse15))) (.cse4 (= |ListInsert::p| 0)) (.cse5 (distinct .cse1 0)) (.cse6 (distinct |ListInsert::p| 0)) (.cse7 (<= 0 (+ Num .cse16))) (.cse8 (<= 0 (+ Num .cse17))) (.cse9 (<= 0 (+ Num .cse18))) (.cse10 (= (+ |main::j| .cse18) 0)) (.cse11 (not (<= 0 (+ |main::j| .cse17)))) (.cse12 (not (<= 0 (+ |main::j| .cse16)))) (.cse13 (not (<= 0 (+ |main::j| .cse15)))) (.cse14 (not (<= 0 (+ |main::j| .cse0))))) (ite (= |ListInsert::p| .cse1) (and .cse2 .cse3 (not .cse4) .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14) (and .cse2 .cse3 (ite .cse4 (and .cse5 (not .cse6) .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14) (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14)))))))))
+
+317 (321,318) @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse20 (- 1)) (.cse19 (- 2)) (.cse18 (- 3)) (.cse17 (- 4)) (.cse21 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse21))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse21)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse17))) (.cse6 (not (= |ListInsert::p| 0))) (.cse7 (distinct .cse21 0)) (.cse8 (distinct |ListInsert::p| 0)) (.cse9 (<= 0 (+ Num .cse18))) (.cse10 (<= 0 (+ Num .cse19))) (.cse11 (<= 0 (+ Num .cse20))) (.cse12 (not (= (+ |main::j| .cse20) 0))) (.cse13 (<= 0 (+ |main::j| .cse19))) (.cse14 (<= 0 (+ |main::j| .cse18))) (.cse15 (<= 0 (+ |main::j| .cse17))) (.cse16 (<= 0 (+ |main::j| .cse0)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse1 .cse2 .cse3 .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse6 .cse7 .cse8 (ite .cse9 (and .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse11 .cse12 .cse13 .cse14 .cse15 .cse16))))))))))
+
+322 (323,324) @144:
+(assert (>= Num 0))
+
+314 () @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4)) (.cse18 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse18))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse14))) (.cse5 (<= 0 (+ Num .cse15))) (.cse4 (distinct .cse18 0)) (.cse6 (<= 0 (+ Num .cse16))) (.cse7 (<= 0 (+ Num .cse17))) (.cse8 (not (= (+ |main::j| .cse17) 0))) (.cse9 (<= 0 (+ |main::j| .cse16))) (.cse10 (<= 0 (+ |main::j| .cse15))) (.cse11 (<= 0 (+ |main::j| .cse14))) (.cse12 (not (<= 0 (+ |main::j| .cse0)))) (.cse13 (not (<= 0 (+ |main::j| (- 6)))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13))))))))
+
+315 (316,317) @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse17 (- 1)) (.cse16 (- 2)) (.cse15 (- 3)) (.cse14 (- 4)) (.cse18 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse18))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse14))) (.cse4 (distinct .cse18 0)) (.cse5 (<= 0 (+ Num .cse15))) (.cse6 (<= 0 (+ Num .cse16))) (.cse7 (<= 0 (+ Num .cse17))) (.cse8 (not (= (+ |main::j| .cse17) 0))) (.cse9 (<= 0 (+ |main::j| .cse16))) (.cse10 (<= 0 (+ |main::j| .cse15))) (.cse11 (<= 0 (+ |main::j| .cse14))) (.cse12 (<= 0 (+ |main::j| .cse0))) (.cse13 (not (<= 0 (+ |main::j| (- 6)))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13))))))))))
+
+329 () @46:
+(assert (and (>= Num 0) (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (distinct .cse0 0))) (ite (= 0 .cse0) (not .cse1) .cse1)))))
+
+0 (213) @212:
+(assert true)
+
+214 () @46:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (and (>= Num 0) (<= 0 (+ Num (- 5))) (not (= 0 .cse0)) (distinct .cse0 0))))
+
+297 (298,299) @224:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse4 (- 1)) (.cse3 (- 2)) (.cse2 (- 3)) (.cse1 (- 4))) (and (>= Num 0) (not (= 0 .cse0)) (<= 1 1) (<= 0 (+ Num .cse1)) (distinct .cse0 0) (<= 0 (+ Num .cse2)) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (not (= (+ |main::j| .cse4) 0)) (<= 0 (+ |main::j| .cse3)) (not (<= 0 (+ |main::j| .cse2))) (not (<= 0 (+ |main::j| .cse1))) (not (<= 0 (+ |main::j| (- 5)))) (not (<= 0 (+ |main::j| (- 6)))))))
+
+302 () @224:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse4 (- 1)) (.cse3 (- 2)) (.cse2 (- 3)) (.cse1 (- 4))) (and (>= Num 0) (not (= 0 .cse0)) (<= 1 1) (<= 0 (+ Num .cse1)) (distinct .cse0 0) (<= 0 (+ Num .cse2)) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (not (= (+ |main::j| .cse4) 0)) (<= 0 (+ |main::j| .cse3)) (not (<= 0 (+ |main::j| .cse2))) (not (<= 0 (+ |main::j| .cse1))) (not (<= 0 (+ |main::j| (- 5)))) (not (<= 0 (+ |main::j| (- 6)))))))
+
+294 (295,297) @97:
+(assert (let ((.cse1 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse5 (- 1)) (.cse4 (- 2)) (.cse3 (- 3)) (.cse2 (- 4)) (.cse0 (- 5))) (and (>= Num 0) (<= 0 (+ Num .cse0)) (not (= 0 .cse1)) (<= 1 1) (= |ListInsert::p| .cse1) (<= |ListInsert::j| |ListInsert::i|) (<= 0 (+ Num .cse2)) (not (= |ListInsert::p| 0)) (distinct .cse1 0) (distinct |ListInsert::p| 0) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (<= 0 (+ Num .cse5)) (= (+ |main::j| .cse5) 0) (not (<= 0 (+ |main::j| .cse4))) (not (<= 0 (+ |main::j| .cse3))) (not (<= 0 (+ |main::j| .cse2))) (not (<= 0 (+ |main::j| .cse0))))))
+
+299 (300,303) @97:
+(assert (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|)) (.cse4 (- 1)) (.cse3 (- 2)) (.cse2 (- 3)) (.cse1 (- 4))) (and (>= Num 0) (not (= 0 .cse0)) (<= 1 1) (= |ListInsert::p| .cse0) (<= |ListInsert::j| |ListInsert::i|) (<= 0 (+ Num .cse1)) (not (= |ListInsert::p| 0)) (distinct .cse0 0) (distinct |ListInsert::p| 0) (<= 0 (+ Num .cse2)) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (not (= (+ |main::j| .cse4) 0)) (<= 0 (+ |main::j| .cse3)) (not (<= 0 (+ |main::j| .cse2))) (not (<= 0 (+ |main::j| .cse1))) (not (<= 0 (+ |main::j| (- 5)))))))
+
+325 () @46:
+(assert (and (>= Num 0) (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (distinct .cse0 0))) (ite (= 0 .cse0) (not .cse1) .cse1)))))
+
+324 (325,326) @46:
+(assert (and (>= Num 0) (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (distinct .cse0 0))) (ite (= 0 .cse0) (not .cse1) .cse1)))))
+
+307 () @97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse18 (- 4)) (.cse23 (- 1)) (.cse22 (- 2)) (.cse21 (- 3)) (.cse20 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse7 (distinct .cse20 0)) (.cse8 (distinct |ListInsert::p| 0)) (.cse9 (<= 0 (+ Num .cse21))) (.cse10 (<= 0 (+ Num .cse22))) (.cse11 (<= 0 (+ Num .cse23))) (.cse12 (not (= (+ |main::j| .cse23) 0))) (.cse13 (<= 0 (+ |main::j| .cse22))) (.cse14 (<= 0 (+ |main::j| .cse21))) (.cse15 (not (<= 0 (+ |main::j| .cse18)))) (.cse16 (not (<= 0 (+ |main::j| .cse0)))) (.cse19 (= |ListInsert::p| 0))) (let ((.cse1 (not (= 0 .cse20))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse20)) (.cse6 (not .cse19)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse17 (ite .cse19 (and .cse7 (not .cse8) .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (let ((.cse5 (<= 0 (+ Num .cse18)))) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse5 .cse17)))) (and .cse1 .cse2 (ite .cse3 (and .cse4 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16) (and .cse4 .cse17)))))))))
+
+308 () @224:
+(assert (and (>= Num 0) (let ((.cse0 (- 5)) (.cse3 (- 4)) (.cse16 (- 1)) (.cse15 (- 2)) (.cse14 (- 3)) (.cse17 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse17))) (.cse2 (<= 1 1)) (.cse4 (distinct .cse17 0)) (.cse5 (<= 0 (+ Num .cse14))) (.cse6 (<= 0 (+ Num .cse15))) (.cse7 (<= 0 (+ Num .cse16))) (.cse8 (not (= (+ |main::j| .cse16) 0))) (.cse9 (<= 0 (+ |main::j| .cse15))) (.cse10 (<= 0 (+ |main::j| .cse14))) (.cse11 (not (<= 0 (+ |main::j| .cse3)))) (.cse12 (not (<= 0 (+ |main::j| .cse0)))) (.cse13 (not (<= 0 (+ |main::j| (- 6)))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (<= 0 (+ Num .cse3)) .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13) (and .cse1 .cse2 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13))))))
+

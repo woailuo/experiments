@@ -1,0 +1,26 @@
+(declare-fun Num () Int)
+
+28 (29) @15:
+(assert (and (>= Num 0) (let ((.cse0 (<= 0 (+ Num (- 4)))) (.cse1 (<= 0 (+ Num (- 3)))) (.cse2 (<= 0 (+ Num (- 2)))) (.cse3 (<= 0 (+ Num (- 1))))) (ite (<= 0 (+ Num (- 5))) (and .cse0 .cse1 .cse2 .cse3) (ite .cse0 (and .cse1 .cse2 .cse3) (ite .cse1 (and .cse2 .cse3) (or (not .cse2) .cse3)))))))
+
+25 (26) @15:
+(assert (and (>= Num 0) (let ((.cse0 (<= 0 (+ Num (- 3)))) (.cse1 (<= 0 (+ Num (- 2)))) (.cse2 (<= 0 (+ Num (- 1))))) (ite (<= 0 (+ Num (- 5))) (and (<= 0 (+ Num (- 4))) .cse0 .cse1 .cse2) (and .cse0 .cse1 .cse2)))))
+
+27 (28) @15:
+(assert (and (>= Num 0) (let ((.cse0 (<= 0 (+ Num (- 4)))) (.cse1 (<= 0 (+ Num (- 3)))) (.cse2 (<= 0 (+ Num (- 2)))) (.cse3 (<= 0 (+ Num (- 1))))) (ite (<= 0 (+ Num (- 5))) (and .cse0 .cse1 .cse2 .cse3) (ite .cse0 (and .cse1 .cse2 .cse3) (ite .cse1 (and .cse2 .cse3) .cse3))))))
+
+0 (23) @23:
+(assert true)
+
+23 (24) @15:
+(assert (and (>= Num 0) (<= 0 (+ Num (- 5))) (<= 0 (+ Num (- 4))) (<= 0 (+ Num (- 3))) (<= 0 (+ Num (- 2))) (<= 0 (+ Num (- 1)))))
+
+29 () @6:
+(assert true)
+
+26 (27) @15:
+(assert (and (>= Num 0) (let ((.cse0 (<= 0 (+ Num (- 4)))) (.cse1 (<= 0 (+ Num (- 3)))) (.cse2 (<= 0 (+ Num (- 2)))) (.cse3 (<= 0 (+ Num (- 1))))) (ite (<= 0 (+ Num (- 5))) (and .cse0 .cse1 .cse2 .cse3) (ite .cse0 (and .cse1 .cse2 .cse3) (and .cse2 .cse3))))))
+
+24 (25) @15:
+(assert (and (>= Num 0) (<= 0 (+ Num (- 4))) (<= 0 (+ Num (- 3))) (<= 0 (+ Num (- 2))) (<= 0 (+ Num (- 1)))))
+

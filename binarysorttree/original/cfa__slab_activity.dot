@@ -1,0 +1,7 @@
+digraph slab_activity {
+229 [shape="circle" label="N229\n2"]
+230 [shape="circle" label="N230\n1"]
+228 [shape="circle" label="N228\n0"]
+229 -> 230 [label="Function start dummy edge" fontname="Courier New"]
+230 -> 228 [label="return (((s->alloc_fastpath) + (s->free_fastpath)) + (s->alloc_slowpath)) + (s->free_slowpath);" fontname="Courier New"]
+}

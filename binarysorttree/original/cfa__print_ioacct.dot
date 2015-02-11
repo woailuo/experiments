@@ -1,0 +1,7 @@
+digraph print_ioacct {
+157 [shape="circle" label="N157\n4"]
+158 [shape="circle" label="N158\n3"]
+158 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">158</td><td align="left">unsigned long long __CPAchecker_TMP_0 = (unsigned long long)(t-&gt;read_bytes); unsigned long long __CPAchecker_TMP_1 = (unsigned long long)(t-&gt;write_bytes); unsigned long long __CPAchecker_TMP_2 = (unsigned long long)(t-&gt;cancelled_write_bytes);</td></tr><tr><td align="right">161</td><td align="left">printf(\"%s: read=%llu, write=%llu, cancelled_write=%llu\n\", t-&gt;ac_comm, __CPAchecker_TMP_0, __CPAchecker_TMP_1, __CPAchecker_TMP_2);</td></tr><tr><td align="right">162</td><td align="left">default return</td></tr></table>>]
+158 -> 156[label=""]
+157 -> 158 [label="Function start dummy edge" fontname="Courier New"]
+}

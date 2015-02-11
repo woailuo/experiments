@@ -1,0 +1,13 @@
+digraph ClearStack {
+25 [shape="doublecircle" label="N25\n5"]
+27 [shape="circle" label="N27\n1"]
+26 [shape="circle" label="N26\n4"]
+19 [shape="circle" label="N19\n0"]
+20 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">20</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">21</td><td align="left">struct StackNode *p; struct StackNode *q; p = S-&gt;top; while</td></tr></table>>]
+20 -> 25[label=""]
+26 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">26</td><td align="left">q = p; p = p-&gt;next;</td></tr><tr><td align="right">29</td><td align="left">free(q);</td></tr><tr><td align="right">30</td><td align="left">Num = Num + 1; </td></tr></table>>]
+26 -> 25[label=""]
+25 -> 27 [label="[p == 0]" fontname="Courier New"]
+25 -> 26 [label="[!(p == 0)]" fontname="Courier New"]
+27 -> 19 [label="S->count = 0; return 1;" fontname="Courier New"]
+}

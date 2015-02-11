@@ -1,0 +1,14 @@
+digraph QueueLength {
+55 [shape="circle" label="N55\n5"]
+56 [shape="circle" label="N56\n4"]
+60 [shape="doublecircle" label="N60\n3"]
+61 [shape="circle" label="N61\n0"]
+62 [shape="circle" label="N62\n2"]
+54 [shape="circle" label="N54\n1"]
+55 -> 56 [label="Function start dummy edge" fontname="Courier New"]
+60 -> 61 [label="[(Q.rear) != p]" fontname="Courier New"]
+60 -> 62 [label="[!((Q.rear) != p)]" fontname="Courier New"]
+61 -> 60 [label="int __CPAchecker_TMP_0 = i; i = i + 1; __CPAchecker_TMP_0; p = p->next; " fontname="Courier New"]
+56 -> 60 [label="int i = 0; struct QNode *p; p = Q.front; while" fontname="Courier New"]
+62 -> 54 [label="return i;" fontname="Courier New"]
+}

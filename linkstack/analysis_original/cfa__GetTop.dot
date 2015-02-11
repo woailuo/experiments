@@ -1,0 +1,12 @@
+digraph GetTop {
+48 [shape="diamond" label="N48\n3"]
+50 [shape="circle" label="N50\n1"]
+51 [shape="circle" label="N51\n2"]
+46 [shape="circle" label="N46\n0"]
+47 [shape="circle" label="N47\n4"]
+48 -> 50 [label="[(S.top) == ((void *)0)]" fontname="Courier New"]
+48 -> 51 [label="[!((S.top) == ((void *)0))]" fontname="Courier New"]
+50 -> 46 [label="return 0;" fontname="Courier New"]
+47 -> 48 [label="Function start dummy edge" fontname="Courier New"]
+51 -> 46 [label="*e = S.top->data; return 1;" fontname="Courier New"]
+}

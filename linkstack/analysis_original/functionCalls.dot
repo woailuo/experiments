@@ -1,0 +1,33 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+free [shape="box", color=grey];
+ClearStack -> free;
+malloc [shape="box", color=grey];
+InitStack -> malloc;
+__assert_fail [shape="box", color=grey];
+InitStack -> __assert_fail;
+Pop -> StackEmpty;
+free [shape="box", color=grey];
+Pop -> free;
+malloc [shape="box", color=grey];
+Push -> malloc;
+__assert_fail [shape="box", color=grey];
+Push -> __assert_fail;
+StackTraverse -> visit;
+printf [shape="box", color=grey];
+StackTraverse -> printf;
+main -> InitStack;
+printf [shape="box", color=grey];
+main -> printf;
+main -> StackTraverse;
+main -> Pop;
+main -> StackEmpty;
+main -> GetTop;
+main -> StackLength;
+main -> ClearStack;
+main -> Push;
+printf [shape="box", color=grey];
+visit -> printf;
+}

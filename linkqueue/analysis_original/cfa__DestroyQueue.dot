@@ -1,0 +1,15 @@
+digraph DestroyQueue {
+20 [shape="circle" label="N20\n7"]
+21 [shape="circle" label="N21\n6"]
+22 [shape="doublecircle" label="N22\n5"]
+24 [shape="circle" label="N24\n1"]
+23 [shape="circle" label="N23\n4"]
+19 [shape="circle" label="N19\n0"]
+23 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">23</td><td align="left">Q-&gt;rear = Q-&gt;front-&gt;next;</td></tr><tr><td align="right">25</td><td align="left">free(Q-&gt;front);</td></tr><tr><td align="right">26</td><td align="left">Num = Num + 1; Q-&gt;front = Q-&gt;rear; </td></tr></table>>]
+23 -> 22[label=""]
+20 -> 21 [label="Function start dummy edge" fontname="Courier New"]
+22 -> 24 [label="[(Q->front) == 0]" fontname="Courier New"]
+22 -> 23 [label="[!((Q->front) == 0)]" fontname="Courier New"]
+24 -> 19 [label="return 1;" fontname="Courier New"]
+21 -> 22 [label="while" fontname="Courier New"]
+}

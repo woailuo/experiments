@@ -1,0 +1,12 @@
+digraph onoff {
+338 [shape="circle" label="N338\n4"]
+339 [shape="diamond" label="N339\n3"]
+340 [shape="circle" label="N340\n1"]
+341 [shape="circle" label="N341\n2"]
+337 [shape="circle" label="N337\n0"]
+338 -> 339 [label="Function start dummy edge" fontname="Courier New"]
+339 -> 340 [label="[x == 0]" fontname="Courier New"]
+339 -> 341 [label="[!(x == 0)]" fontname="Courier New"]
+340 -> 337 [label="return \"Off\";" fontname="Courier New"]
+341 -> 337 [label="return \"On \";" fontname="Courier New"]
+}

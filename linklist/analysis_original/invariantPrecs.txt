@@ -1,0 +1,38 @@
+(declare-fun Num () Int)
+(declare-fun |*(struct_Node)*| (Int ) Int)
+(declare-fun |__ADDRESS_OF_main::L| () Int)
+(declare-fun |main::j| () Int)
+(declare-fun |ListInsert::p| () Int)
+(declare-fun |ListInsert::i| () Int)
+(declare-fun |ListInsert::j| () Int)
+
+ClearList N32:
+(assert (>= Num 0))
+
+ListLength N46:
+(assert (and (>= Num 0) (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (distinct .cse0 0))) (ite (= 0 .cse0) (not .cse1) .cse1)))))
+
+GetElem N61:
+(assert false)
+
+LocateElem N78:
+(assert false)
+
+ListInsert N97:
+(assert (and (>= Num 0) (let ((.cse0 (- 5))) (let ((.cse25 (<= 0 (+ |main::j| .cse0))) (.cse30 (- 4))) (let ((.cse24 (<= 0 (+ |main::j| .cse30))) (.cse19 (not .cse25)) (.cse28 (- 3))) (let ((.cse26 (- 1)) (.cse27 (- 2)) (.cse8 (distinct |ListInsert::p| 0)) (.cse17 (<= 0 (+ |main::j| .cse28))) (.cse23 (or .cse24 .cse19)) (.cse18 (not .cse24)) (.cse13 (= |ListInsert::p| 0)) (.cse29 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse29))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse29)) (.cse6 (not .cse13)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse30))) (.cse20 (ite .cse17 .cse23 (and .cse18 .cse19))) (.cse14 (not .cse8)) (.cse7 (distinct .cse29 0)) (.cse9 (<= 0 (+ Num .cse28))) (.cse10 (<= 0 (+ Num .cse27))) (.cse11 (<= 0 (+ Num .cse26))) (.cse16 (<= 0 (+ |main::j| .cse27))) (.cse15 (= (+ |main::j| .cse26) 0))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (let ((.cse12 (ite .cse15 (and (not .cse16) (not .cse17) .cse18 .cse19) (and .cse16 .cse20)))) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12) (and .cse4 .cse5 (ite .cse13 (and .cse7 .cse14 .cse9 .cse10 .cse11 .cse12) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12)))))) (and .cse1 .cse2 (let ((.cse21 (not .cse15))) (let ((.cse22 (ite .cse9 (and .cse10 .cse11 .cse21 .cse16 .cse17 .cse23) (ite .cse10 (and .cse11 .cse21 .cse16 .cse17 .cse24) (and .cse11 .cse21 .cse16 .cse17 .cse24 .cse25))))) (ite .cse3 (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse21 .cse16 .cse20) (and .cse6 .cse7 .cse8 .cse22))) (and .cse4 (ite .cse5 (ite .cse13 (and .cse7 .cse14 .cse9 .cse10 .cse11 .cse21 .cse16 .cse20) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse21 .cse16 .cse20)) (ite .cse13 (and .cse7 .cse14 .cse22) (and .cse7 .cse8 .cse22))))))))))))))))
+
+ListDelete N124:
+(assert false)
+
+ListTraverse N144:
+(assert (>= Num 0))
+
+CreateListHead N166:
+(assert false)
+
+CreateListTail N196:
+(assert false)
+
+main N224:
+(assert (and (>= Num 0) (let ((.cse20 (<= 0 (+ |main::j| (- 6)))) (.cse0 (- 5))) (let ((.cse19 (<= 0 (+ |main::j| .cse0))) (.cse13 (not .cse20)) (.cse25 (- 4))) (let ((.cse17 (<= 0 (+ |main::j| .cse25))) (.cse18 (or .cse19 .cse13)) (.cse12 (not .cse19)) (.cse23 (- 3))) (let ((.cse21 (- 1)) (.cse22 (- 2)) (.cse10 (<= 0 (+ |main::j| .cse23))) (.cse16 (ite .cse17 .cse18 (and .cse12 .cse13))) (.cse11 (not .cse17)) (.cse24 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse24))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse25))) (.cse14 (ite .cse10 .cse16 (and .cse11 .cse12 .cse13))) (.cse4 (distinct .cse24 0)) (.cse5 (<= 0 (+ Num .cse23))) (.cse6 (<= 0 (+ Num .cse22))) (.cse7 (<= 0 (+ Num .cse21))) (.cse9 (<= 0 (+ |main::j| .cse22))) (.cse8 (= (+ |main::j| .cse21) 0))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 (ite .cse8 (and (not .cse9) (not .cse10) .cse11 .cse12 .cse13) (and .cse9 .cse14))) (and .cse1 .cse2 (let ((.cse15 (not .cse8))) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse15 .cse9 .cse14) (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse15 .cse9 .cse10 .cse16) (ite .cse6 (and .cse7 .cse15 .cse9 .cse10 .cse17 .cse18) (ite .cse7 (and .cse15 .cse9 .cse10 .cse17 .cse19) (and .cse15 .cse9 .cse10 .cse17 .cse19 .cse20))))))))))))))))
+

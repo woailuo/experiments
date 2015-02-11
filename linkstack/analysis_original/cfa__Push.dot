@@ -1,0 +1,17 @@
+digraph Push {
+56 [shape="circle" label="N56\n8"]
+57 [shape="circle" label="N57\n7"]
+61 [shape="diamond" label="N61\n4"]
+62 [shape="circle" label="N62\n2"]
+63 [shape="circle" label="N63\n3"]
+64 [shape="circle" label="N64\n1"]
+55 [shape="circle" label="N55\n0"]
+57 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">57</td><td align="left">void *__CPAchecker_TMP_0;</td></tr><tr><td align="right">58</td><td align="left">__CPAchecker_TMP_0 = malloc(8);</td></tr><tr><td align="right">59</td><td align="left">struct StackNode *s = (LinkStackPtr )__CPAchecker_TMP_0; Num = Num - 1;</td></tr></table>>]
+57 -> 61[label=""]
+56 -> 57 [label="Function start dummy edge" fontname="Courier New"]
+61 -> 62 [label="[Num >= 0]" fontname="Courier New"]
+61 -> 63 [label="[!(Num >= 0)]" fontname="Courier New"]
+64 -> 55 [label="s->data = e; s->next = S->top; S->top = s; int __CPAchecker_TMP_2 = S->count; S->count = (S->count) + 1; __CPAchecker_TMP_2; return 1;" fontname="Courier New"]
+63 -> 64 [label="__assert_fail(\"Num >= 0\", \"tf/linkstack.c\", 93, \"__PRETTY_FUNCTION__\");" fontname="Courier New"]
+62 -> 64 [label="(void)0;" fontname="Courier New"]
+}

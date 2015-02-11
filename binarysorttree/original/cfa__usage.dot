@@ -1,0 +1,7 @@
+digraph usage {
+1 [shape="circle" label="N1\n8"]
+2 [shape="circle" label="N2\n7"]
+2 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">2</td><td align="left">fprintf(stderr, \"getdelays [-dilv] [-w logfile] [-r bufsize] [-m cpumask] [-t tgid] [-p pid]\n\");</td></tr><tr><td align="right">3</td><td align="left">fprintf(stderr, \" -d: print delayacct stats\n\");</td></tr><tr><td align="right">4</td><td align="left">fprintf(stderr, \" -i: print IO accounting (works only with -p)\n\");</td></tr><tr><td align="right">5</td><td align="left">fprintf(stderr, \" -l: listen forever\n\");</td></tr><tr><td align="right">6</td><td align="left">fprintf(stderr, \" -v: debug on\n\");</td></tr><tr><td align="right">7</td><td align="left">fprintf(stderr, \" -C: container path\n\");</td></tr><tr><td align="right">8</td><td align="left">default return</td></tr></table>>]
+2 -> 0[label=""]
+1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
+}

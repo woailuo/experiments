@@ -1,0 +1,16 @@
+digraph slab_shrink {
+188 [shape="diamond" label="N188\n4"]
+186 [shape="circle" label="N186\n1"]
+185 [shape="circle" label="N185\n3"]
+190 [shape="circle" label="N190\n2"]
+182 [shape="circle" label="N182\n0"]
+183 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">183</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">184</td><td align="left">int __CPAchecker_TMP_0;</td></tr><tr><td align="right">187</td><td align="left">__CPAchecker_TMP_0 = strcmp(s-&gt;name, \"*\");</td></tr></table>>]
+183 -> 188[label=""]
+188 -> 186 [label="[__CPAchecker_TMP_0 == 0]" fontname="Courier New"]
+188 -> 185 [label="[!(__CPAchecker_TMP_0 == 0)]" fontname="Courier New"]
+100115 [shape="component" label="set_obj"]
+185 -> 100115 [label="set_obj(s, \"shrink\", 1);" fontname="Courier New"]
+100115 -> 190 [label="" fontname="Courier New"]
+186 -> 182 [label="return;" fontname="Courier New"]
+190 -> 182 [label="default return" fontname="Courier New"]
+}

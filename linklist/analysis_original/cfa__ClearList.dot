@@ -1,0 +1,13 @@
+digraph ClearList {
+32 [shape="doublecircle" label="N32\n5"]
+34 [shape="circle" label="N34\n1"]
+33 [shape="circle" label="N33\n4"]
+26 [shape="circle" label="N26\n0"]
+27 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">27</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">28</td><td align="left">struct Node *p; struct Node *q; p = (*L)-&gt;next; while</td></tr></table>>]
+27 -> 32[label=""]
+33 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">33</td><td align="left">q = p-&gt;next;</td></tr><tr><td align="right">35</td><td align="left">free(p);</td></tr><tr><td align="right">36</td><td align="left">Num = Num + 1; p = q; </td></tr></table>>]
+33 -> 32[label=""]
+32 -> 34 [label="[p == 0]" fontname="Courier New"]
+32 -> 33 [label="[!(p == 0)]" fontname="Courier New"]
+34 -> 26 [label="(*L)->next = (void *)0; return 1;" fontname="Courier New"]
+}

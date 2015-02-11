@@ -1,0 +1,10 @@
+line 10:	N624 -{int Num = 1;}-> N625
+line 173:	N140 -{[!(argc < 3)]}-> N141
+line 177:	N146 -{Database_open(filename, action)}-> N24
+line 53:	N26 -{conn = malloc(8);}-> N27
+line 55:	N27 -{Num = Num - 1;}-> N28
+line 56:	N28 -{[Num >= 0]}-> N29
+line 58:	N31 -{[!(conn == 0)]}-> N32
+line 62:	N35 -{Num = Num - 1;}-> N36
+line 63:	N36 -{[!(Num >= 0)]}-> N38
+line 63:	N38 -{__assert_fail("Num >=0", "tf/database.c", 63, "__PRETTY_FUNCTION__");}-> N39

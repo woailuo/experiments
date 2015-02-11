@@ -1,0 +1,5 @@
+(declare-fun Num@5 () Int)
+(declare-fun Num@4 () Int)
+(declare-fun Num@3 () Int)
+(declare-fun Num@2 () Int)
+(assert (and (= Num@2 2) (= Num@3 (- Num@2 1)) (>= Num@3 0) (= Num@4 (- Num@3 1)) (>= Num@4 0) (= Num@5 (- Num@4 1)) (not (>= Num@5 0))))

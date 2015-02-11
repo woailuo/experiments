@@ -1,0 +1,18 @@
+digraph read_slab_obj {
+88 [shape="circle" label="N88\n11"]
+89 [shape="circle" label="N89\n10"]
+94 [shape="diamond" label="N94\n7"]
+96 [shape="circle" label="N96\n2"]
+97 [shape="circle" label="N97\n6"]
+95 [shape="circle" label="N95\n1"]
+87 [shape="circle" label="N87\n0"]
+89 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">89</td><td align="left">char x[100]; FILE *f; unsigned long int l;</td></tr><tr><td align="right">92</td><td align="left">snprintf(x, 100, \"%s/%s\", s-&gt;name, name);</td></tr><tr><td align="right">93</td><td align="left">f = fopen(x, \"r\");</td></tr></table>>]
+89 -> 94[label=""]
+97 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">97</td><td align="left">l = fread(buffer, 1, 4096, f);</td></tr><tr><td align="right">100</td><td align="left">buffer[l] = 0;</td></tr><tr><td align="right">101</td><td align="left">fclose(f);</td></tr><tr><td align="right">102</td><td align="left"></td></tr></table>>]
+97 -> 95[label=""]
+88 -> 89 [label="Function start dummy edge" fontname="Courier New"]
+94 -> 96 [label="[f == 0]" fontname="Courier New"]
+94 -> 97 [label="[!(f == 0)]" fontname="Courier New"]
+95 -> 87 [label="return l;" fontname="Courier New"]
+96 -> 95 [label="buffer[0] = 0; l = 0; " fontname="Courier New"]
+}

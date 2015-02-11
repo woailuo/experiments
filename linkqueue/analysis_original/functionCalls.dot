@@ -1,0 +1,39 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+free [shape="box", color=grey];
+ClearQueue -> free;
+free [shape="box", color=grey];
+DeQueue -> free;
+free [shape="box", color=grey];
+DestroyQueue -> free;
+malloc [shape="box", color=grey];
+EnQueue -> malloc;
+__assert_fail [shape="box", color=grey];
+EnQueue -> __assert_fail;
+exit [shape="box", color=grey];
+EnQueue -> exit;
+malloc [shape="box", color=grey];
+InitQueue -> malloc;
+__assert_fail [shape="box", color=grey];
+InitQueue -> __assert_fail;
+exit [shape="box", color=grey];
+InitQueue -> exit;
+QueueTraverse -> visit;
+printf [shape="box", color=grey];
+QueueTraverse -> printf;
+main -> InitQueue;
+printf [shape="box", color=grey];
+main -> printf;
+main -> QueueEmpty;
+main -> QueueLength;
+main -> EnQueue;
+main -> QueueTraverse;
+main -> GetHead;
+main -> DeQueue;
+main -> ClearQueue;
+main -> DestroyQueue;
+printf [shape="box", color=grey];
+visit -> printf;
+}

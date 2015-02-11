@@ -1,0 +1,12 @@
+/usr/include/assert.h, line 90:	N212 -{int Num = 2;}-> N213
+line 21:	N19 -{database()}-> N12
+line 15:	N13 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 16:	N14 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 17:	N15 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[!(Num >= 0)]}-> N5
+line 7:	N5 -{__assert_fail("Num >= 0", "tf/behavior.c", 7, "__PRETTY_FUNCTION__");}-> N6

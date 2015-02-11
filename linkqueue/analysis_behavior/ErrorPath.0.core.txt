@@ -1,0 +1,23 @@
+/usr/include/assert.h, line 90:	N216 -{int Num = 4;}-> N217
+line 25:	N23 -{linkqueue()}-> N12
+line 15:	N13 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 16:	N14 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 17:	N15 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 18:	N16 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 19:	N17 -{F()}-> N8
+line 11:	N9 -{Num = Num + 1;}-> N10
+line 20:	N18 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[Num >= 0]}-> N4
+line 21:	N19 -{M()}-> N1
+line 6:	N2 -{Num = Num - 1;}-> N3
+line 7:	N3 -{[!(Num >= 0)]}-> N5
+line 7:	N5 -{__assert_fail("Num >= 0", "tf/behavior.c", 7, "__PRETTY_FUNCTION__");}-> N6
