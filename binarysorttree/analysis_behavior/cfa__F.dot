@@ -1,0 +1,7 @@
+digraph F {
+8 [shape="circle" label="N8\n2"]
+9 [shape="circle" label="N9\n1"]
+7 [shape="circle" label="N7\n0"]
+8 -> 9 [label="Function start dummy edge" fontname="Courier New"]
+9 -> 7 [label="Num = Num + 1; default return" fontname="Courier New"]
+}

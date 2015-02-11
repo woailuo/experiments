@@ -1,0 +1,13 @@
+digraph binarytree {
+12 [shape="circle" label="N12\n3"]
+13 [shape="circle" label="N13\n2"]
+14 [shape="doublecircle" label="N14\n1"]
+15 [shape="circle" label="N15\n0"]
+12 -> 13 [label="Function start dummy edge" fontname="Courier New"]
+100001 [shape="component" label="M"]
+14 -> 100001 [label="M();" fontname="Courier New"]
+100001 -> 15 [label="" fontname="Courier New"]
+14 -> 15 [label="M();" fontname="Courier New"]
+15 -> 14 [label="Goto: l1" fontname="Courier New"]
+13 -> 14 [label="Label: l1" fontname="Courier New"]
+}

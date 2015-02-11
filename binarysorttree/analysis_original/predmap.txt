@@ -1,0 +1,34 @@
+(declare-fun |main::i| () Int)
+(declare-fun Num () Int)
+
+*:
+(assert (>= Num 0))
+
+InsertBST N36:
+(assert (>= Num 0))
+(assert false)
+
+main N115:
+(assert (<= 0 (+ |main::i| (- 3))))
+(assert (>= Num 0))
+(assert (<= 0 (+ |main::i| (- 4))))
+(assert (<= 0 (+ Num (- 10))))
+(assert (<= 0 (+ |main::i| (- 5))))
+(assert (<= 0 (+ |main::i| (- 6))))
+(assert (<= 0 (+ Num (- 9))))
+(assert (<= 0 (+ |main::i| (- 7))))
+(assert (<= 0 (+ Num (- 8))))
+(assert (<= 0 (+ |main::i| (- 8))))
+(assert (<= 0 (+ Num (- 7))))
+(assert (<= 0 (+ |main::i| (- 9))))
+(assert (<= 0 (+ Num (- 6))))
+(assert (<= 0 (+ |main::i| (- 10))))
+(assert (<= 0 (+ Num (- 5))))
+(assert (<= 0 (+ Num (- 4))))
+(assert (<= 0 (+ Num (- 3))))
+(assert (<= 0 (+ Num (- 2))))
+(assert (<= 0 (+ Num (- 1))))
+(assert (<= 0 |main::i|))
+(assert (<= 0 (+ |main::i| (- 1))))
+(assert (<= 0 (+ |main::i| (- 2))))
+

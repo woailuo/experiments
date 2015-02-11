@@ -20,13 +20,11 @@
 #include <regex.h>
 #include <errno.h>
 
-#include <assert.h>
-
 #define MAX_SLABS 500
 #define MAX_ALIASES 500
 #define MAX_NODES 1024
 
-int Num = 1;
+int Num = 3;
 
 struct slabinfo {
 	char *name;
@@ -104,7 +102,6 @@ static void fatal(const char *x, ...)
 	va_end(ap);
 	exit(EXIT_FAILURE);
 }
-
 static void usage(void)
 {
 	printf("slabinfo 4/15/2011. (c) 2007 sgi/(c) 2011 Linux Foundation.\n\n"
@@ -181,16 +178,8 @@ static unsigned long get_obj_and_str(const char *name, char **x)
 	result = strtoul(buffer, &p, 10);
 	while (*p == ' ')
 		p++;
-	/* if (*p) */
-	/* 	*x = strdup(p); */
-	/* assert */
 	if (*p)
-	  {
-	    *x = strdup(p);
-	    Num = Num - 1;
-	    assert(Num >= 0);
-	  }
-
+		*x = strdup(p);
 	return result;
 }
 
@@ -1139,7 +1128,7 @@ static void rename_slabs(void)
 
 static int slab_mismatch(char *slab)
 {
-  return 0; // regexec(&pattern, slab, 0, NULL, 0);
+	return regexec(&pattern, slab, 0, NULL, 0);
 }
 
 static void read_slab_dir(void)
@@ -1197,9 +1186,8 @@ static void read_slab_dir(void)
 			slab->partial = get_obj_and_str("partial", &t);
 			decode_numa_list(slab->numa_partial, t);
 			free(t);
-			/* assert */
-			Num = Num + 1;
-
+                        Num = Num - 1;
+                        
 			slab->poison = get_obj("poison");
 			slab->reclaim_account = get_obj("reclaim_account");
 			slab->red_zone = get_obj("red_zone");
@@ -1208,9 +1196,8 @@ static void read_slab_dir(void)
 			slab->slabs = get_obj_and_str("slabs", &t);
 			decode_numa_list(slab->numa, t);
 			free(t);
-			/* assert */
-			Num = Num + 1;
-
+                        Num = Num -1;
+                        
 			slab->store_user = get_obj("store_user");
 			slab->trace = get_obj("trace");
 			slab->alloc_fastpath = get_obj("alloc_fastpath");

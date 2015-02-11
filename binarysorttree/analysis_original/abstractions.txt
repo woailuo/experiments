@@ -1,0 +1,87 @@
+(declare-fun |main::i| () Int)
+(declare-fun Num () Int)
+
+205 (207,206) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (<= 0 (+ |main::i| .cse25))) (.cse16 (not (<= 0 (+ |main::i| .cse24)))) (.cse17 (not (<= 0 (+ |main::i| .cse23)))) (.cse18 (not (<= 0 (+ |main::i| .cse22)))) (.cse19 (not (<= 0 (+ |main::i| .cse21)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20)))))))))
+
+208 () @121:
+(assert false)
+
+211 (212,213) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (<= 0 (+ |main::i| .cse25))) (.cse16 (<= 0 (+ |main::i| .cse24))) (.cse17 (<= 0 (+ |main::i| .cse23))) (.cse18 (<= 0 (+ |main::i| .cse22))) (.cse19 (not (<= 0 (+ |main::i| .cse21)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse4 (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse6 (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20))))))))))))
+
+210 () @121:
+(assert false)
+
+217 (218,219) @72:
+(assert (>= Num 0))
+
+220 () @121:
+(assert (>= Num 0))
+
+203 (205,204) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (not (<= 0 (+ |main::i| .cse25)))) (.cse16 (not (<= 0 (+ |main::i| .cse24)))) (.cse17 (not (<= 0 (+ |main::i| .cse23)))) (.cse18 (not (<= 0 (+ |main::i| .cse22)))) (.cse19 (not (<= 0 (+ |main::i| .cse21)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20))))))))
+
+196 () @121:
+(assert false)
+
+201 (202,203) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (not (<= 0 (+ |main::i| .cse26)))) (.cse15 (not (<= 0 (+ |main::i| .cse25)))) (.cse16 (not (<= 0 (+ |main::i| .cse24)))) (.cse17 (not (<= 0 (+ |main::i| .cse23)))) (.cse18 (not (<= 0 (+ |main::i| .cse22)))) (.cse19 (not (<= 0 (+ |main::i| .cse21)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20)))))))
+
+219 () @121:
+(assert (>= Num 0))
+
+206 () @121:
+(assert false)
+
+202 () @121:
+(assert false)
+
+199 (200,201) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse1 (- 9)) (.cse28 (- 1)) (.cse27 (- 2)) (.cse26 (- 3)) (.cse25 (- 4)) (.cse24 (- 5)) (.cse23 (- 6)) (.cse22 (- 7)) (.cse21 (- 8))) (let ((.cse2 (<= 0 (+ Num .cse21))) (.cse3 (<= 0 (+ Num .cse22))) (.cse4 (<= 0 (+ Num .cse23))) (.cse5 (<= 0 (+ Num .cse24))) (.cse6 (<= 0 (+ Num .cse25))) (.cse7 (<= 0 (+ Num .cse26))) (.cse8 (<= 0 (+ Num .cse27))) (.cse9 (<= 0 (+ Num .cse28))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse28))) (.cse12 (<= 0 (+ |main::i| .cse27))) (.cse13 (not (<= 0 (+ |main::i| .cse26)))) (.cse14 (not (<= 0 (+ |main::i| .cse25)))) (.cse15 (not (<= 0 (+ |main::i| .cse24)))) (.cse16 (not (<= 0 (+ |main::i| .cse23)))) (.cse17 (not (<= 0 (+ |main::i| .cse22)))) (.cse18 (not (<= 0 (+ |main::i| .cse21)))) (.cse19 (not (<= 0 (+ |main::i| .cse1)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and (<= 0 (+ Num .cse1)) .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20))))))
+
+197 (198,199) @115:
+(assert (let ((.cse8 (- 1)) (.cse7 (- 2)) (.cse6 (- 3)) (.cse5 (- 4)) (.cse4 (- 5)) (.cse3 (- 6)) (.cse2 (- 7)) (.cse1 (- 8)) (.cse0 (- 9))) (and (>= Num 0) (<= 0 (+ Num .cse0)) (<= 0 (+ Num .cse1)) (<= 0 (+ Num .cse2)) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (<= 0 (+ Num .cse5)) (<= 0 (+ Num .cse6)) (<= 0 (+ Num .cse7)) (<= 0 (+ Num .cse8)) (<= 0 |main::i|) (<= 0 (+ |main::i| .cse8)) (not (<= 0 (+ |main::i| .cse7))) (not (<= 0 (+ |main::i| .cse6))) (not (<= 0 (+ |main::i| .cse5))) (not (<= 0 (+ |main::i| .cse4))) (not (<= 0 (+ |main::i| .cse3))) (not (<= 0 (+ |main::i| .cse2))) (not (<= 0 (+ |main::i| .cse1))) (not (<= 0 (+ |main::i| .cse0))) (not (<= 0 (+ |main::i| (- 10)))))))
+
+213 (215,214) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (<= 0 (+ |main::i| .cse25))) (.cse16 (<= 0 (+ |main::i| .cse24))) (.cse17 (<= 0 (+ |main::i| .cse23))) (.cse18 (<= 0 (+ |main::i| .cse22))) (.cse19 (<= 0 (+ |main::i| .cse21))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse4 (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse6 (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse7 (and .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20)))))))))))))
+
+214 () @121:
+(assert false)
+
+200 () @121:
+(assert false)
+
+221 () @115:
+(assert false)
+
+195 (196,197) @115:
+(assert (let ((.cse9 (- 1)) (.cse8 (- 2)) (.cse7 (- 3)) (.cse6 (- 4)) (.cse5 (- 5)) (.cse4 (- 6)) (.cse3 (- 7)) (.cse2 (- 8)) (.cse1 (- 9)) (.cse0 (- 10))) (and (>= Num 0) (<= 0 (+ Num .cse0)) (<= 0 (+ Num .cse1)) (<= 0 (+ Num .cse2)) (<= 0 (+ Num .cse3)) (<= 0 (+ Num .cse4)) (<= 0 (+ Num .cse5)) (<= 0 (+ Num .cse6)) (<= 0 (+ Num .cse7)) (<= 0 (+ Num .cse8)) (<= 0 (+ Num .cse9)) (<= 0 |main::i|) (not (<= 0 (+ |main::i| .cse9))) (not (<= 0 (+ |main::i| .cse8))) (not (<= 0 (+ |main::i| .cse7))) (not (<= 0 (+ |main::i| .cse6))) (not (<= 0 (+ |main::i| .cse5))) (not (<= 0 (+ |main::i| .cse4))) (not (<= 0 (+ |main::i| .cse3))) (not (<= 0 (+ |main::i| .cse2))) (not (<= 0 (+ |main::i| .cse1))) (not (<= 0 (+ |main::i| .cse0))))))
+
+215 (216,221) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (<= 0 (+ |main::i| .cse25))) (.cse16 (<= 0 (+ |main::i| .cse24))) (.cse17 (<= 0 (+ |main::i| .cse23))) (.cse18 (<= 0 (+ |main::i| .cse22))) (.cse19 (<= 0 (+ |main::i| .cse21))) (.cse20 (<= 0 (+ |main::i| .cse0)))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse4 (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse6 (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse7 (and .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse8 (and .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20))))))))))))))
+
+218 () @72:
+(assert (>= Num 0))
+
+212 () @121:
+(assert false)
+
+198 () @121:
+(assert false)
+
+0 (195) @109:
+(assert true)
+
+204 () @121:
+(assert false)
+
+207 (208,209) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (<= 0 (+ |main::i| .cse25))) (.cse16 (<= 0 (+ |main::i| .cse24))) (.cse17 (not (<= 0 (+ |main::i| .cse23)))) (.cse18 (not (<= 0 (+ |main::i| .cse22)))) (.cse19 (not (<= 0 (+ |main::i| .cse21)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse4 (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20))))))))))
+
+209 (210,211) @115:
+(assert (and (>= Num 0) (let ((.cse0 (- 10)) (.cse29 (- 1)) (.cse28 (- 2)) (.cse27 (- 3)) (.cse26 (- 4)) (.cse25 (- 5)) (.cse24 (- 6)) (.cse23 (- 7)) (.cse22 (- 8)) (.cse21 (- 9))) (let ((.cse1 (<= 0 (+ Num .cse21))) (.cse2 (<= 0 (+ Num .cse22))) (.cse3 (<= 0 (+ Num .cse23))) (.cse4 (<= 0 (+ Num .cse24))) (.cse5 (<= 0 (+ Num .cse25))) (.cse6 (<= 0 (+ Num .cse26))) (.cse7 (<= 0 (+ Num .cse27))) (.cse8 (<= 0 (+ Num .cse28))) (.cse9 (<= 0 (+ Num .cse29))) (.cse10 (<= 0 |main::i|)) (.cse11 (<= 0 (+ |main::i| .cse29))) (.cse12 (<= 0 (+ |main::i| .cse28))) (.cse13 (<= 0 (+ |main::i| .cse27))) (.cse14 (<= 0 (+ |main::i| .cse26))) (.cse15 (<= 0 (+ |main::i| .cse25))) (.cse16 (<= 0 (+ |main::i| .cse24))) (.cse17 (<= 0 (+ |main::i| .cse23))) (.cse18 (not (<= 0 (+ |main::i| .cse22)))) (.cse19 (not (<= 0 (+ |main::i| .cse21)))) (.cse20 (not (<= 0 (+ |main::i| .cse0))))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse1 (and .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse2 (and .cse3 .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse4 (and .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12 .cse13 .cse14 .cse15 .cse16 .cse17 .cse18 .cse19 .cse20)))))))))))
+
+216 (220,217) @121:
+(assert (>= Num 0))
+

@@ -3,10 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define true 1
-#define false 0
-
-int Num = 4;
+int Num = 1;
 
 struct Person {
     char *name;
@@ -60,9 +57,6 @@ void Person_print(struct Person *who)
 
 int main(int argc, char *argv[])
 {
-  while (true)
-    {
-
     // make two people structures
     struct Person *joe = Person_create(
             "Joe Alex", 32, 64, 140);
@@ -91,8 +85,5 @@ int main(int argc, char *argv[])
     Person_destroy(joe);
     Person_destroy(frank);
 
-    }
-
-   
     return 0;
 }
