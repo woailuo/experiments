@@ -115,8 +115,6 @@ strcmp [shape="box", color=grey];
 main -> strcmp;
 fopen [shape="box", color=grey];
 main -> fopen;
-fgets [shape="box", color=grey];
-main -> fgets;
 strlen [shape="box", color=grey];
 main -> strlen;
 strtok [shape="box", color=grey];

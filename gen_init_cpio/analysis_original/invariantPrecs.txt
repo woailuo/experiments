@@ -1,60 +1,62 @@
 (set-info :source |printed by MathSAT|)
-(declare-fun __ADDRESS_OF_file_handler_table () Real)
+(declare-fun |main::type_idx| () Real)
+(declare-fun |*(struct_file_handler)*| (Real) Real)
 (declare-fun Num () Real)
 (declare-fun |cpio_mkfile_line::dname_len| () Real)
-(declare-fun |main::type_idx| () Real)
 (declare-fun |*(char)*| (Real) Real)
-(declare-fun |cpio_mkfile::filebuf| () Real)
 (declare-fun |cpio_mkfile::file| () Real)
-(define-fun .def_21155 () Bool (= |cpio_mkfile::filebuf| (to_real 0)))
-(define-fun .def_21212 () Bool (not .def_21155))
-(define-fun .def_21157 () Bool (<= (to_real 0) |cpio_mkfile::file|))
-(define-fun .def_21213 () Bool (and .def_21157 .def_21212))
-(define-fun .def_21143 () Real (* (to_real 8) |main::type_idx|))
-(define-fun .def_21144 () Real (+ __ADDRESS_OF_file_handler_table .def_21143))
-(define-fun .def_21146 () Real (|*(char)*| .def_21144))
-(define-fun .def_21147 () Bool (= .def_21146 (to_real 0)))
-(define-fun .def_21169 () Bool (not .def_21147))
-(define-fun .def_21933 () Bool (and .def_21169 .def_21213))
-(define-fun .def_21141 () Bool (= |cpio_mkfile_line::dname_len| (to_real 0)))
-(define-fun .def_21934 () Bool (and .def_21141 .def_21933))
-(define-fun .def_5920 () Bool (<= (to_real 1) Num))
-(define-fun .def_22497 () Bool (or .def_5920 .def_21934))
-(define-fun .def_4916 () Bool (<= (to_real 0) Num))
-(define-fun .def_22498 () Bool (and .def_4916 .def_22497))
-(define-fun .def_5926 () Bool (and .def_4916 .def_5920))
-(define-fun .def_21935 () Bool (and .def_4916 .def_21934))
+(declare-fun __ADDRESS_OF_file_handler_table () Real)
+(declare-fun |cpio_mkfile::filebuf| () Real)
+(define-fun .def_20807 () Bool (= |cpio_mkfile::filebuf| (to_real 0)))
+(define-fun .def_20867 () Bool (not .def_20807))
+(define-fun .def_20809 () Bool (<= (to_real 0) |cpio_mkfile::file|))
+(define-fun .def_20868 () Bool (and .def_20809 .def_20867))
+(define-fun .def_20795 () Real (* (to_real 8) |main::type_idx|))
+(define-fun .def_20793 () Real (|*(struct_file_handler)*| __ADDRESS_OF_file_handler_table))
+(define-fun .def_20796 () Real (+ .def_20793 .def_20795))
+(define-fun .def_20798 () Real (|*(char)*| .def_20796))
+(define-fun .def_20799 () Bool (= .def_20798 (to_real 0)))
+(define-fun .def_20821 () Bool (not .def_20799))
+(define-fun .def_21594 () Bool (and .def_20821 .def_20868))
+(define-fun .def_20792 () Bool (= |cpio_mkfile_line::dname_len| (to_real 0)))
+(define-fun .def_21595 () Bool (and .def_20792 .def_21594))
+(define-fun .def_5648 () Bool (<= (to_real 1) Num))
+(define-fun .def_22017 () Bool (or .def_5648 .def_21595))
+(define-fun .def_4720 () Bool (<= (to_real 0) Num))
+(define-fun .def_22018 () Bool (and .def_4720 .def_22017))
+(define-fun .def_5654 () Bool (and .def_4720 .def_5648))
+(define-fun .def_21596 () Bool (and .def_4720 .def_21595))
 (declare-fun |cpio_mkfile_line::nlinks| () Real)
-(define-fun .def_21170 () Bool (and .def_21141 .def_21169))
-(define-fun .def_21139 () Bool (<= (to_real 1) |cpio_mkfile_line::nlinks|))
-(define-fun .def_21171 () Bool (and .def_21139 .def_21170))
-(define-fun .def_21172 () Bool (and .def_5920 .def_21171))
-(define-fun .def_21173 () Bool (and .def_4916 .def_21172))
+(define-fun .def_20822 () Bool (and .def_20792 .def_20821))
+(define-fun .def_20790 () Bool (<= (to_real 1) |cpio_mkfile_line::nlinks|))
+(define-fun .def_20823 () Bool (and .def_20790 .def_20822))
+(define-fun .def_20824 () Bool (and .def_5648 .def_20823))
+(define-fun .def_20825 () Bool (and .def_4720 .def_20824))
 
 push_pad N12:
-(assert .def_22498)
+(assert .def_22018)
 
 push_rest N30:
-(assert .def_5926)
+(assert .def_5654)
 
 cpio_trailer N55:
-(assert .def_4916)
+(assert false)
 
 cpio_mkfile N236:
-(assert .def_21935)
+(assert .def_21596)
 
 cpio_replace_env N286:
-(assert .def_21173)
+(assert .def_20825)
 
 cpio_mkfile_line N345:
 (assert false)
 
 main N389:
-(assert .def_5926)
+(assert .def_5654)
 
 main N442:
-(assert .def_5926)
+(assert .def_5654)
 
-main N476:
-(assert .def_5926)
+main N474:
+(assert .def_5654)
 

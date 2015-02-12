@@ -1,13 +1,11 @@
 digraph cpio_mkpipe_line {
-144 [shape="circle" label="N144\n4"]
-145 [shape="circle" label="N145\n3"]
-146 [shape="circle" label="N146\n2"]
-147 [shape="circle" label="N147\n1"]
-143 [shape="circle" label="N143\n0"]
-144 -> 145 [label="Function start dummy edge" fontname="Courier New"]
+144 [shape="circle" label="144\n3"]
+146 [shape="circle" label="146\n2"]
+147 [shape="circle" label="147\n1"]
+143 [shape="circle" label="143\n0"]
+144 -> 146 [label="Function start dummy edge int __CPAchecker_TMP_0;" fontname="Courier New"]
 100014 [shape="component" label="cpio_mkgeneric_line"]
 146 -> 100014 [label="__CPAchecker_TMP_0 = cpio_mkgeneric_line(line, 1);" fontname="Courier New"]
 100014 -> 147 [label="" fontname="Courier New"]
-145 -> 146 [label="int __CPAchecker_TMP_0;" fontname="Courier New"]
 147 -> 143 [label="return __CPAchecker_TMP_0;" fontname="Courier New"]
 }

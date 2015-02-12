@@ -6,6 +6,4 @@ __assert_fail [shape="box", color=grey];
 M -> __assert_fail;
 gen_init_cpio -> M;
 main -> gen_init_cpio;
-printf [shape="box", color=grey];
-main -> printf;
 }

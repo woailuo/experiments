@@ -1,0 +1,18 @@
+digraph file_record {
+279 [shape="circle" label="279\n6"]
+282 [shape="doublecircle" label="282\n5"]
+284 [shape="circle" label="284\n1"]
+285 [shape="diamond" label="285\n4"]
+283 [shape="circle" label="283\n2"]
+286 [shape="diamond" label="286\n3"]
+278 [shape="circle" label="278\n0"]
+279 -> 282 [label="Function start dummy edge struct ihex_binrec **p = &records; while" fontname="Courier New"]
+282 -> 284 [label="[(*p) == 0]" fontname="Courier New"]
+282 -> 285 [label="[!((*p) == 0)]" fontname="Courier New"]
+285 -> 283 [label="[sort_records == 0]" fontname="Courier New"]
+285 -> 286 [label="[!(sort_records == 0)]" fontname="Courier New"]
+286 -> 283 [label="[((*p)->addr) < (record->addr)]" fontname="Courier New"]
+286 -> 284 [label="[!(((*p)->addr) < (record->addr))]" fontname="Courier New"]
+284 -> 278 [label="record->next = *p; *p = record; default return" fontname="Courier New"]
+283 -> 282 [label="p = &((*p)->next); " fontname="Courier New"]
+}

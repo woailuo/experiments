@@ -1,0 +1,42 @@
+loop__main__4406:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_903 () Bool (<= (to_real 1) Num))
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(define-fun .def_909 () Bool (and .def_863 .def_903))
+(assert .def_909)
+
+loop__process_ihex__4471:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_903 () Bool (<= (to_real 1) Num))
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(define-fun .def_909 () Bool (and .def_863 .def_903))
+(assert .def_909)
+
+loop__process_ihex__4471:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_903 () Bool (<= (to_real 1) Num))
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(define-fun .def_909 () Bool (and .def_863 .def_903))
+(assert .def_909)
+
+loop__process_ihex__4514:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(assert .def_863)
+
+loop__file_record__4605:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(assert .def_863)
+
+loop__output_records__4617:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(assert .def_863)
+

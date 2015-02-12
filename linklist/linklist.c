@@ -55,21 +55,6 @@ Status ListEmpty(LinkList L)
             return TRUE;
 }
 
-/* 初始条件：顺序线性表L已存在。操作结果：将L重置为空表 */
-Status ClearList(LinkList *L)
-{
-        LinkList p,q;
-        p=(*L)->next;           /*  p指向第一个结点 */
-        while(p)                /*  没到表尾 */
-        {
-                q=p->next;
-                free(p);
-                Num = Num + 1;
-                p=q;
-        }
-        (*L)->next=NULL;        /* 头结点指针域为空 */
-        return OK;
-}
 
 /* 初始条件：顺序线性表L已存在。操作结果：返回L中数据元素个数 */
 int ListLength(LinkList L)
@@ -185,78 +170,47 @@ Status ListTraverse(LinkList L)
     return OK;
 }
 
-/*  随机产生n个元素的值，建立带表头结点的单链线性表L（头插法） */
-void CreateListHead(LinkList *L, int n)
-{
-        LinkList p;
-        int i;
-        srand(time(0));                         /* 初始化随机数种子 */
-        *L = (LinkList)malloc(sizeof(Node));
-        /*  assert */
-        Num = Num -1 ;
-        assert(Num >= 0);
-
-        (*L)->next = NULL;                      /*  先建立一个带头结点的单链表 */
-        for (i=0; i<n; i++)
-        {
-                p = (LinkList)malloc(sizeof(Node)); /*  生成新结点 */
-                /*  assert */
-                Num = Num -1 ;
-                assert(Num >= 0);
-
-                p->data = rand()%100+1;             /*  随机生成100以内的数字 */
-                p->next = (*L)->next;
-                (*L)->next = p;						/*  插入到表头 */
-        }
-}
-
-/*  随机产生n个元素的值，建立带表头结点的单链线性表L（尾插法） */
-void CreateListTail(LinkList *L, int n)
-{
-        LinkList p,r;
-        int i;
-        srand(time(0));                      /* 初始化随机数种子 */
-        *L = (LinkList)malloc(sizeof(Node)); /* L为整个线性表 */
-        /*  assert */
-        Num = Num -1 ;
-        assert(Num >= 0);
-
-        r=*L;                                /* r为指向尾部的结点 */
-        for (i=0; i<n; i++)
-        {
-                p = (Node *)malloc(sizeof(Node)); /*  生成新结点 */
-                /*  assert */
-                Num = Num -1 ;
-                assert(Num >= 0);
-
-                p->data = rand()%100+1;           /*  随机生成100以内的数字 */
-                r->next=p;                        /* 将表尾终端结点的指针指向新结点 */
-                r = p;                            /* 将当前的新结点定义为表尾终端结点 */
-        }
-        r->next = NULL;                       /* 表示当前链表结束 */
-}
 
 int main()
 {
     LinkList L;
-    ElemType e;
+    ElemType e = 0;
     Status i;
     int j,k;
+    printf("the num is %d\n", Num);
     i=InitList(&L);
+l1:
     printf("初始化L后：ListLength(L)=%d\n",ListLength(L));
-    for(j=1;j<=5;j++)
-            i=ListInsert(&L,1,j);
+    
+    i=ListInsert(&L,1,1);
+    i=ListInsert(&L,1,2);
+    i=ListInsert(&L,1,3);
+    i=ListInsert(&L,1,4);
+    i=ListInsert(&L,1,5);
     printf("在L的表头依次插入1～5后：L.data=");
     ListTraverse(L);
-
+    printf("the num is %d\n", Num);
     printf("ListLength(L)=%d \n",ListLength(L));
     i=ListEmpty(L);
     printf("L是否空：i=%d(1:是 0:否)\n",i);
 
-    i=ClearList(&L);
+   
+    ListDelete(&L,1,&e);
+    ListDelete(&L,1,&e);
+    ListDelete(&L,1,&e);
+    ListDelete(&L,1,&e);
+    ListDelete(&L,1,&e);
+
+        printf("the num is %d\n", Num);
     printf("清空L后：ListLength(L)=%d\n",ListLength(L));
     i=ListEmpty(L);
     printf("L是否空：i=%d(1:是 0:否)\n",i);
+    printf("the num is %d\n", Num);
 
+   goto l1;
+
+    free(L);
+    Num = Num + 1;
+        printf("the num is %d\n", Num);
     return 0;
 }

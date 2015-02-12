@@ -263,12 +263,12 @@ void gen_init_cpio_1() {
 void M_2() {
   Num = Num - 1;
   __CPROVER_assume(Num >= 0);
-  (void)0;
+  0;
 }
 
 void M_3() {
   Num = Num - 1;
   __CPROVER_assume(!(Num >= 0));
   assert(0); // target state 
-  __assert_fail("Num >= 0", "tf/behavior.c", 9, "__PRETTY_FUNCTION__");
+  __assert_fail("Num >= 0", "tf/behavior.c", 7, "__PRETTY_FUNCTION__");
 }

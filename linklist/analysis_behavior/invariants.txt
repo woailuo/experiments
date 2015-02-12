@@ -1,3 +1,0 @@
-loop__linklist__873:
-(declare-fun Num () Int)
-(assert (and (>= Num 0) (let ((.cse0 (<= 0 (+ Num (- 4)))) (.cse1 (<= 0 (+ Num (- 3)))) (.cse2 (<= 0 (+ Num (- 2)))) (.cse3 (<= 0 (+ Num (- 1))))) (ite (<= 0 (+ Num (- 5))) (and .cse0 .cse1 .cse2 .cse3) (ite .cse0 (and .cse1 .cse2 .cse3) (ite .cse1 (and .cse2 .cse3) (or (not .cse2) .cse3)))))))

@@ -241,8 +241,8 @@ int main()
     LinkList L;
     Status i;
 
-    CreateListHead(&L,20);
-    printf("整体创建L的元素(头插法)：");
+    CreateListTail(&L,20);
+    printf("整体创建L的元素(尾插法)：");
     ListTraverse(L);
 
     i=ClearList(&L);

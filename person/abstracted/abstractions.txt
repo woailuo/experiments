@@ -1,8 +1,0 @@
-(set-info :source |printed by MathSAT|)
-
-1 () @6:
-(assert true)
-
-0 (1) @23:
-(assert true)
-

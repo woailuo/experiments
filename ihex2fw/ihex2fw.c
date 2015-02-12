@@ -22,9 +22,9 @@
 #include <stdlib.h>
 #define _GNU_SOURCE
 #include <getopt.h>
-
 #include <assert.h>
-int Num = 0;
+
+int Num = 1;
 
 struct ihex_binrec {
 	struct ihex_binrec *next; /* not part of the real data structure */
@@ -88,7 +88,7 @@ int main(int argc, char **argv)
 		case 'j':
 			include_jump = 1;
 			break;
-			return usage();
+			/* return usage();*/
 		}
 	}
 
@@ -159,12 +159,14 @@ next_record:
 		len += hex(data + i, &crc); i += 2;
 	}
 	record = malloc((sizeof (*record) + len + 3) & ~3);
-	/* assert */
-	Num = Num - 1;
-        assert(Num >= 0);
-
+        /* assert  */
+        Num = Num - 1 ;
+        assert (Num >= 0);
+        
 	if (!record) {
 		fprintf(stderr, "out of memory for records\n");
+                free(record);
+                Num = Num + 1;
 		return -ENOMEM;
 	}
 	memset(record, 0, (sizeof(*record) + len + 3) & ~3);
@@ -174,6 +176,8 @@ next_record:
 	if (i + 8 + (record->len * 2) > size) {
 		fprintf(stderr, "Not enough data to read complete record at line %d\n",
 			line);
+                free(record);
+                Num = Num + 1;
 		return -EINVAL;
 	}
 
@@ -189,6 +193,8 @@ next_record:
 	if (crc != 0) {
 		fprintf(stderr, "CRC failure at line %d: got 0x%X, expected 0x%X\n",
 			line, crcbyte, (unsigned char)(crcbyte-crc));
+                free(record);
+                Num = Num + 1;
 		return -EINVAL;
 	}
 
@@ -201,12 +207,16 @@ next_record:
 
 		record->addr += offset;
 		file_record(record);
-		goto next_record;
+                free(record);
+                Num = Num + 1;
+                goto next_record;
 
 	case 1: /* End-Of-File Record */
 		if (record->addr || record->len) {
 			fprintf(stderr, "Bad EOF record (type 01) format at line %d",
 				line);
+                        free(record) ;
+                        Num = Num + 1;
 			return -EINVAL;
 		}
 		break;
@@ -216,6 +226,8 @@ next_record:
 		if (record->addr || record->len != 2) {
 			fprintf(stderr, "Bad HEX86/HEX386 record (type %02X) at line %d\n",
 				type, line);
+                        free(record);
+                        Num = Num +1;
 			return -EINVAL;
 		}
 
@@ -223,6 +235,8 @@ next_record:
 		 * the wraparound case is specified quite differently. */
 		offset = record->data[0] << 8 | record->data[1];
 		offset <<= (type == 2 ? 4 : 16);
+                free(record);
+                Num = Num + 1;
 		goto next_record;
 
 	case 3: /* Start Segment Address Record */
@@ -230,6 +244,8 @@ next_record:
 		if (record->addr || record->len != 4) {
 			fprintf(stderr, "Bad Start Address record (type %02X) at line %d\n",
 				type, line);
+                        free(record);
+                        Num = Num + 1;
 			return -EINVAL;
 		}
 
@@ -241,16 +257,19 @@ next_record:
 		 * starts. If requested output this as a record. */
 		if (include_jump)
 			file_record(record);
+                free(record);
+                Num = Num + 1;
 		goto next_record;
 
 	default:
 		fprintf(stderr, "Unknown record (type %02X)\n", type);
+                free(record);
+                Num = Num + 1;
 		return -EINVAL;
 	}
 
 	return 0;
 }
-
 static struct ihex_binrec *records;
 
 static void file_record(struct ihex_binrec *record)

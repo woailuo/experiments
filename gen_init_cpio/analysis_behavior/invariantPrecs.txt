@@ -1,1 +1,7 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_43 () Bool (<= (to_real 0) Num))
+
+gen_init_cpio N14:
+(assert .def_43)
 

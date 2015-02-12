@@ -9,7 +9,6 @@
 #include <errno.h>
 #include <ctype.h>
 #include <limits.h>
-
 #include <assert.h>
 
 int Num = 1;
@@ -233,7 +232,6 @@ static int cpio_mkpipe_line(const char *line)
 {
 	return cpio_mkgeneric_line(line, GT_PIPE);
 }
-
 static int cpio_mksock_line(const char *line)
 {
 	return cpio_mkgeneric_line(line, GT_SOCK);
@@ -311,6 +309,10 @@ static int cpio_mkfile(const char *name, const char *location,
 	mode |= S_IFREG;
 
 	file = open (location, O_RDONLY);
+        /* /\* assert *\/ */
+        /* Num = Num -1; */
+        /* assert (Num >= 0) ; */
+
 	if (file < 0) {
 		fprintf (stderr, "File %s could not be opened for reading\n", location);
 		goto l1; //error
@@ -326,7 +328,7 @@ static int cpio_mkfile(const char *name, const char *location,
 	/* assert */
 	Num = Num - 1;
         assert(Num >= 0);
-        
+
 	if (!filebuf) {
 		fprintf (stderr, "out of memory\n");
 		goto l1;
@@ -379,7 +381,7 @@ static int cpio_mkfile(const char *name, const char *location,
 	}
 	ino++;
 	rc = 0;
-	
+
 l1:
 	/* if (filebuf) free(filebuf); */
         if (filebuf)
@@ -388,7 +390,7 @@ l1:
 	    /* assert  */
 	    Num = Num + 1 ;
 	  }
-	if (file >= 0) close(file);
+	if (file >= 0) { close(file);}
 	return rc;
 }
 
@@ -560,7 +562,7 @@ int main (int argc, char *argv[])
 		case 't':
 			default_mtime = strtol(optarg, &invalid, 10);
 			if (!*optarg || *invalid) {
-				fprintf(stderr, "Invalid timestamp: %s\n",
+                          fprintf(stderr, "Invalid timestamp: %s\n",
 						optarg);
 				usage(argv[0]);
 				exit(1);
@@ -587,7 +589,7 @@ int main (int argc, char *argv[])
 		exit(1);
 	}
 
-	while (fgets(line, LINE_SIZE, cpio_list)) {
+	while (1) { /* fgets(line, LINE_SIZE, cpio_list) */ 
 		int type_idx;
 		size_t slen = strlen(line);
 

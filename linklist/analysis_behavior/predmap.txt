@@ -1,17 +1,2 @@
-(declare-fun Num () Int)
 
-*:
-(assert (>= Num 0))
-
-M N6:
-(assert (>= Num 0))
-(assert false)
-
-linklist N15:
-(assert (>= Num 0))
-(assert (<= 0 (+ Num (- 5))))
-(assert (<= 0 (+ Num (- 4))))
-(assert (<= 0 (+ Num (- 3))))
-(assert (<= 0 (+ Num (- 2))))
-(assert (<= 0 (+ Num (- 1))))
 

@@ -1,0 +1,131 @@
+Done:
+* The reviewer believes this concept (total memory-leak freedom) can be motivated more directly.
+   (Re: give several examples like the reviewer listed: computer controls car, airplanes or "Internet of things" appliances)
+* The reviewer wonders if the language is Turing-complete.
+   (Re: yes, the language is Turing-complete (if without considering the arithmetic))
+* The rule (SEM-FREE) in Figure 2 should have R(x) not= null and R(x) \in Dom(H) in the premise.
+   (Re: ok).
+* Section 3. The syntax of behavioural types. The construction P + P' seems redundant.
+  (Re:  The P + P' is for behavior choice; it is not redundant)
+* Variable type environments, Gamma, seem redundant, as they are never consulted in the typing rules.
+   (Re: although the variable in Gamma has no type, the Gamma may be changed by Let-Expression )
+* Lemma 3.2, the statements s and s' are typed under the same variable type environment.
+   (Re: the Gamma here is Gamma')
+* The reviewer would like to know a technical advantage of the approach based on the behavioural types.
+   (Re:  the idea based on the behavioral type system which abstracts the behavior of a programs ignores the relationship between variable and its types and focus on the abstraction of behavior of malloc and free operation; whereas the traditional type system focus on the types of variables. )
+* p.2, carrying out an experiment is a good idea.
+* p.2 footnote: It might be a good idea to note here that this assumption loses generality.
+   (Re: ok)
+* p.5 (Sem-FreeExn), free(null) raise an error in this semantic, whereas it does not in C.
+   (Re: yes, the operation free(null) does nothing in C and is a valid operation in [10]. In our paper, we ignore the relation between variable and its type to count whether the number of malloc and free is balanced; if we consider that the free(null) is a valid operation, for example, let p = malloc in let q = malloc in free(p); let p = null in free(p), the number of malloc and free is balanced, in fact it is memory-leak. It is important to let free(null) be an exception)
+* Definition 3, the font of malloc and free differs from other occurrences.
+   (Re: the font should be the same)
+* p.8 footnote, to write *here* why the produce is incomplete would be helpful.
+   (Re:  ok. Because if a safe program has a type like (malloc + 0);(free + 0), our type system may see this type as malloc;0 which is memory-leak )
+* Why is the traditional property that the authors call "partial memory-leak freedom" unsatisfactory.
+   (Re: the Example 1.1 in our paper explains the reason )
+* It would be better to describe in more detail why you think that the proposed property is important.
+  (Re: the Example 1.1 in our paper explains the reason )
+* Isn't it too strong?
+   (Re: if a program consumes unbounded memory cells, it may crash the OS which has limited cells or any other applications on the same OS. Hence, it should be "strong")
+* Whether the type system is decidable or not.
+  (Re: the type system with a subtyping rule is un-decidable; after reconstructing the typing rules by merging subtyping rule s and the other rules for this type system, I think this type system is decidable. )
+* The paper does not demonstrate how easier the problem gets with the type system.
+  (Re: by using behavioral type system which abstracts the behavior of a program, we can count the number of malloc and free operations. Our idea simply rejects a program in which the number of malloc exceeds the number of free before recursive call)
+* p.8, it would be worth discussing the accuracy and inaccuracy of the type system.
+  (Re: ok, I will list several examples which is memory-leak freedom but our type system see them as memory-leak.)
+
+
+
+void f() /* (M+0); (F+0) */
+{
+  if (p) {
+    x =malloc();
+  }
+  /* stmt: The value of p does not change here */
+  if (p) {
+    free(x);
+  }
+
+}
+
+void frewrite() /* (M;F) + 0 */
+{
+  if (p) {
+    x = malloc();
+    /* stmt */
+    free(x);
+  } else {
+    /* stmt */
+  }
+}
+
+
+/* 初始条件：顺序线性表L已存在。操作结果：将L重置为空表 */
+Status ClearList(LinkList *L)
+{
+        LinkList p,q;
+        p=(*L)->next;           /*  p指向第一个结点 */
+        while(p)                /*  没到表尾 */
+        {
+                q=p->next;
+                free(p);
+                Num = Num + 1;
+                p=q;
+        }
+        (*L)->next=NULL;        /* 头结点指针域为空 */
+        return OK;
+}
+
+
+/*  随机产生n个元素的值，建立带表头结点的单链线性表L（头插法） */
+void CreateListHead(LinkList *L, int n)
+{
+        LinkList p;
+        int i;
+        srand(time(0));                         /* 初始化随机数种子 */
+        *L = (LinkList)malloc(sizeof(Node));
+        /*  assert */
+        Num = Num -1 ;
+        assert(Num >= 0);
+
+        (*L)->next = NULL;                      /*  先建立一个带头结点的单链表 */
+        for (i=0; i<n; i++)
+        {
+                p = (LinkList)malloc(sizeof(Node)); /*  生成新结点 */
+                /*  assert */
+                Num = Num -1 ;
+                assert(Num >= 0);
+
+                p->data = rand()%100+1;             /*  随机生成100以内的数字 */
+                p->next = (*L)->next;
+                (*L)->next = p;						/*  插入到表头 */
+        }
+}
+
+/*  随机产生n个元素的值，建立带表头结点的单链线性表L（尾插法） */
+void CreateListTail(LinkList *L, int n)
+{
+        LinkList p,r;
+        int i;
+        srand(time(0));                      /* 初始化随机数种子 */
+        *L = (LinkList)malloc(sizeof(Node)); /* L为整个线性表 */
+        /*  assert */
+        Num = Num -1 ;
+        assert(Num >= 0);
+
+        r=*L;                                /* r为指向尾部的结点 */
+        for (i=0; i<n; i++)
+        {
+                p = (Node *)malloc(sizeof(Node)); /*  生成新结点 */
+                /*  assert */
+                Num = Num -1 ;
+                assert(Num >= 0);
+
+                p->data = rand()%100+1;           /*  随机生成100以内的数字 */
+                r->next=p;                        /* 将表尾终端结点的指针指向新结点 */
+                r = p;                            /* 将当前的新结点定义为表尾终端结点 */
+        }
+        r->next = NULL;                       /* 表示当前链表结束 */
+}
+

@@ -5,5 +5,6 @@ main [shape="box", color=blue];
 __assert_fail [shape="box", color=grey];
 M -> __assert_fail;
 linklist -> M;
+linklist -> F;
 main -> linklist;
 }

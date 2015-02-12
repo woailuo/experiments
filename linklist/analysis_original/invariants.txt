@@ -1,36 +1,77 @@
-loop__ClearList__3416:
-(declare-fun Num () Int)
-(assert (>= Num 0))
-loop__ListLength__3432:
-(declare-fun |*(struct_Node)*| (Int ) Int)
-(declare-fun |__ADDRESS_OF_main::L| () Int)
-(declare-fun Num () Int)
-(assert (and (>= Num 0) (let ((.cse0 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (distinct .cse0 0))) (ite (= 0 .cse0) (not .cse1) .cse1)))))
-loop__GetElem__3448:
+loop__ListLength__3417:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_261 () Bool (<= (to_real 0) Num))
+(assert .def_261)
+
+loop__GetElem__3433:
+(set-info :source |printed by MathSAT|)
 (assert false)
-loop__LocateElem__3466:
+
+loop__LocateElem__3451:
+(set-info :source |printed by MathSAT|)
 (assert false)
-loop__ListInsert__3486:
-(declare-fun |main::j| () Int)
-(declare-fun Num () Int)
-(declare-fun |ListInsert::p| () Int)
-(declare-fun |*(struct_Node)*| (Int ) Int)
-(declare-fun |__ADDRESS_OF_main::L| () Int)
-(declare-fun |ListInsert::i| () Int)
-(declare-fun |ListInsert::j| () Int)
-(assert (and (>= Num 0) (let ((.cse0 (- 5))) (let ((.cse25 (<= 0 (+ |main::j| .cse0))) (.cse30 (- 4))) (let ((.cse24 (<= 0 (+ |main::j| .cse30))) (.cse19 (not .cse25)) (.cse28 (- 3))) (let ((.cse26 (- 1)) (.cse27 (- 2)) (.cse8 (distinct |ListInsert::p| 0)) (.cse17 (<= 0 (+ |main::j| .cse28))) (.cse23 (or .cse24 .cse19)) (.cse18 (not .cse24)) (.cse13 (= |ListInsert::p| 0)) (.cse29 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse29))) (.cse2 (<= 1 1)) (.cse3 (= |ListInsert::p| .cse29)) (.cse6 (not .cse13)) (.cse4 (<= |ListInsert::j| |ListInsert::i|)) (.cse5 (<= 0 (+ Num .cse30))) (.cse20 (ite .cse17 .cse23 (and .cse18 .cse19))) (.cse14 (not .cse8)) (.cse7 (distinct .cse29 0)) (.cse9 (<= 0 (+ Num .cse28))) (.cse10 (<= 0 (+ Num .cse27))) (.cse11 (<= 0 (+ Num .cse26))) (.cse16 (<= 0 (+ |main::j| .cse27))) (.cse15 (= (+ |main::j| .cse26) 0))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 (let ((.cse12 (ite .cse15 (and (not .cse16) (not .cse17) .cse18 .cse19) (and .cse16 .cse20)))) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse12) (and .cse4 .cse5 (ite .cse13 (and .cse7 .cse14 .cse9 .cse10 .cse11 .cse12) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse12)))))) (and .cse1 .cse2 (let ((.cse21 (not .cse15))) (let ((.cse22 (ite .cse9 (and .cse10 .cse11 .cse21 .cse16 .cse17 .cse23) (ite .cse10 (and .cse11 .cse21 .cse16 .cse17 .cse24) (and .cse11 .cse21 .cse16 .cse17 .cse24 .cse25))))) (ite .cse3 (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse8 .cse9 .cse10 .cse11 .cse21 .cse16 .cse20) (and .cse6 .cse7 .cse8 .cse22))) (and .cse4 (ite .cse5 (ite .cse13 (and .cse7 .cse14 .cse9 .cse10 .cse11 .cse21 .cse16 .cse20) (and .cse7 .cse8 .cse9 .cse10 .cse11 .cse21 .cse16 .cse20)) (ite .cse13 (and .cse7 .cse14 .cse22) (and .cse7 .cse8 .cse22))))))))))))))))
-loop__ListDelete__3512:
-(assert false)
-loop__ListTraverse__3532:
-(declare-fun Num () Int)
-(assert (>= Num 0))
-loop__CreateListHead__3553:
-(assert false)
-loop__CreateListTail__3578:
-(assert false)
-loop__main__3600:
-(declare-fun |main::j| () Int)
-(declare-fun Num () Int)
-(declare-fun |*(struct_Node)*| (Int ) Int)
-(declare-fun |__ADDRESS_OF_main::L| () Int)
-(assert (and (>= Num 0) (let ((.cse20 (<= 0 (+ |main::j| (- 6)))) (.cse0 (- 5))) (let ((.cse19 (<= 0 (+ |main::j| .cse0))) (.cse13 (not .cse20)) (.cse25 (- 4))) (let ((.cse17 (<= 0 (+ |main::j| .cse25))) (.cse18 (or .cse19 .cse13)) (.cse12 (not .cse19)) (.cse23 (- 3))) (let ((.cse21 (- 1)) (.cse22 (- 2)) (.cse10 (<= 0 (+ |main::j| .cse23))) (.cse16 (ite .cse17 .cse18 (and .cse12 .cse13))) (.cse11 (not .cse17)) (.cse24 (|*(struct_Node)*| |__ADDRESS_OF_main::L|))) (let ((.cse1 (not (= 0 .cse24))) (.cse2 (<= 1 1)) (.cse3 (<= 0 (+ Num .cse25))) (.cse14 (ite .cse10 .cse16 (and .cse11 .cse12 .cse13))) (.cse4 (distinct .cse24 0)) (.cse5 (<= 0 (+ Num .cse23))) (.cse6 (<= 0 (+ Num .cse22))) (.cse7 (<= 0 (+ Num .cse21))) (.cse9 (<= 0 (+ |main::j| .cse22))) (.cse8 (= (+ |main::j| .cse21) 0))) (ite (<= 0 (+ Num .cse0)) (and .cse1 .cse2 .cse3 .cse4 .cse5 .cse6 .cse7 (ite .cse8 (and (not .cse9) (not .cse10) .cse11 .cse12 .cse13) (and .cse9 .cse14))) (and .cse1 .cse2 (let ((.cse15 (not .cse8))) (ite .cse3 (and .cse4 .cse5 .cse6 .cse7 .cse15 .cse9 .cse14) (and .cse4 (ite .cse5 (and .cse6 .cse7 .cse15 .cse9 .cse10 .cse16) (ite .cse6 (and .cse7 .cse15 .cse9 .cse10 .cse17 .cse18) (ite .cse7 (and .cse15 .cse9 .cse10 .cse17 .cse19) (and .cse15 .cse9 .cse10 .cse17 .cse19 .cse20))))))))))))))))
+
+loop__ListInsert__3471:
+(set-info :source |printed by MathSAT|)
+(declare-fun |ListInsert::p| () Real)
+(declare-fun |*(struct_Node)*| (Real) Real)
+(declare-fun |__ADDRESS_OF_main::L| () Real)
+(declare-fun Num () Real)
+(define-fun .def_8162 () Bool (<= (to_real 1) Num))
+(define-fun .def_2305 () Bool (<= (to_real 3) Num))
+(define-fun .def_8771 () Bool (or .def_2305 .def_8162))
+(define-fun .def_4096 () Bool (<= (to_real 2) Num))
+(define-fun .def_8167 () Bool (and .def_4096 .def_8162))
+(define-fun .def_7954 () Bool (not .def_2305))
+(define-fun .def_8770 () Bool (or .def_7954 .def_8167))
+(define-fun .def_8772 () Bool (and .def_8770 .def_8771))
+(define-fun .def_522 () Real (|*(struct_Node)*| |__ADDRESS_OF_main::L|))
+(define-fun .def_2303 () Bool (= .def_522 (to_real 0)))
+(define-fun .def_2310 () Bool (not .def_2303))
+(define-fun .def_8773 () Bool (and .def_2310 .def_8772))
+(define-fun .def_529 () Bool (<= (to_real 4) Num))
+(define-fun .def_8807 () Bool (or .def_529 .def_8773))
+(define-fun .def_8168 () Bool (and .def_2305 .def_8167))
+(define-fun .def_8169 () Bool (and .def_2310 .def_8168))
+(define-fun .def_3893 () Bool (not .def_529))
+(define-fun .def_8511 () Bool (or .def_3893 .def_8169))
+(define-fun .def_8808 () Bool (and .def_8511 .def_8807))
+(define-fun .def_523 () Bool (= |ListInsert::p| .def_522))
+(define-fun .def_8810 () Bool (or .def_523 .def_8808))
+(define-fun .def_530 () Bool (= |ListInsert::p| (to_real 0)))
+(define-fun .def_591 () Bool (not .def_530))
+(define-fun .def_8774 () Bool (and .def_591 .def_8773))
+(define-fun .def_8775 () Bool (or .def_529 .def_8774))
+(define-fun .def_8170 () Bool (and .def_591 .def_8169))
+(define-fun .def_8481 () Bool (or .def_3893 .def_8170))
+(define-fun .def_8776 () Bool (and .def_8481 .def_8775))
+(define-fun .def_593 () Bool (not .def_523))
+(define-fun .def_8809 () Bool (or .def_593 .def_8776))
+(define-fun .def_8811 () Bool (and .def_8809 .def_8810))
+(define-fun .def_297 () Bool (<= (to_real 5) Num))
+(define-fun .def_8812 () Bool (or .def_297 .def_8811))
+(define-fun .def_8194 () Bool (and .def_529 .def_8169))
+(define-fun .def_8196 () Bool (or .def_523 .def_8194))
+(define-fun .def_8171 () Bool (and .def_529 .def_8170))
+(define-fun .def_8195 () Bool (or .def_593 .def_8171))
+(define-fun .def_8197 () Bool (and .def_8195 .def_8196))
+(define-fun .def_895 () Bool (not .def_297))
+(define-fun .def_8341 () Bool (or .def_895 .def_8197))
+(define-fun .def_8813 () Bool (and .def_8341 .def_8812))
+(define-fun .def_261 () Bool (<= (to_real 0) Num))
+(define-fun .def_8814 () Bool (and .def_261 .def_8813))
+(assert .def_8814)
+
+loop__ListDelete__3497:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_261 () Bool (<= (to_real 0) Num))
+(assert .def_261)
+
+loop__ListTraverse__3517:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_261 () Bool (<= (to_real 0) Num))
+(assert .def_261)
+

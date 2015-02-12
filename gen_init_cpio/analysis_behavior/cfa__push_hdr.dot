@@ -1,7 +1,0 @@
-digraph push_hdr {
-41 [shape="circle" label="N41\n3"]
-42 [shape="circle" label="N42\n2"]
-42 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">42</td><td align="left">fputs(s, stdout);</td></tr><tr><td align="right">43</td><td align="left">offset = offset + 110; default return</td></tr></table>>]
-42 -> 40[label=""]
-41 -> 42 [label="Function start dummy edge" fontname="Courier New"]
-}

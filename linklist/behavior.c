@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-int Num = 6 ;
+int Num = 6;
 void M()
 {
   Num = Num - 1;
@@ -13,12 +13,17 @@ void F()
 void linklist()
 {
   M();
-  l1:
   M();
-  goto l1;
- l2:
+  M();
+  M();
+  M();
+  M();
   F();
-  goto l2;
+  F();
+  F();
+  F();
+  F();
+  F();
 }
 int main()
 {

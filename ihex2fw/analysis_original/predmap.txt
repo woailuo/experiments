@@ -1,0 +1,24 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_863 () Bool (<= (to_real 0) Num))
+(define-fun .def_903 () Bool (<= (to_real 1) Num))
+
+*:
+(assert .def_863)
+
+main N45:
+(assert .def_863)
+(assert .def_903)
+
+process_ihex N136:
+(assert .def_863)
+(assert .def_903)
+
+process_ihex N137:
+(assert .def_863)
+(assert .def_903)
+
+process_ihex N167:
+(assert .def_863)
+(assert false)
+

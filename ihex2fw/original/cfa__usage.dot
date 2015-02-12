@@ -1,7 +1,0 @@
-digraph usage {
-29 [shape="circle" label="N29\n7"]
-30 [shape="circle" label="N30\n6"]
-30 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">30</td><td align="left">fprintf(stderr, \"ihex2fw: Convert ihex files into binary representation for use by Linux kernel\n\");</td></tr><tr><td align="right">31</td><td align="left">fprintf(stderr, \"usage: ihex2fw [&lt;options&gt;] &lt;src.HEX&gt; &lt;dst.fw&gt;\n\");</td></tr><tr><td align="right">32</td><td align="left">fprintf(stderr, \" -w: wide records (16-bit length)\n\");</td></tr><tr><td align="right">33</td><td align="left">fprintf(stderr, \" -s: sort records by address\n\");</td></tr><tr><td align="right">34</td><td align="left">fprintf(stderr, \" -j: include records for CS:IP/EIP address\n\");</td></tr><tr><td align="right">35</td><td align="left">return 1;</td></tr></table>>]
-30 -> 28[label=""]
-29 -> 30 [label="Function start dummy edge" fontname="Courier New"]
-}

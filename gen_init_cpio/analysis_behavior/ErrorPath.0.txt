@@ -1,4 +1,4 @@
-none:	N17 -{INIT GLOBAL VARS}-> N21
+none:	N18 -{INIT GLOBAL VARS}-> N21
 /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h, line 211:	N21 -{typedef unsigned long int size_t;}-> N22
 /usr/include/bits/types.h, line 31:	N22 -{typedef unsigned char __u_char;}-> N23
 /usr/include/bits/types.h, line 32:	N23 -{typedef unsigned short int __u_short;}-> N24
@@ -190,29 +190,28 @@ none:	N17 -{INIT GLOBAL VARS}-> N21
 /usr/include/assert.h, lines 71-73:	N209 -{void __assert_fail(const char *__assertion, const char *__file, unsigned int __line, const char *__function);}-> N210
 /usr/include/assert.h, lines 76-79:	N210 -{void __assert_perror_fail(int __errnum, const char *__file, unsigned int __line, const char *__function);}-> N211
 /usr/include/assert.h, lines 84-85:	N211 -{void __assert(const char *__assertion, const char *__file, int __line);}-> N212
-line 4:	N212 -{int Num = 1;}-> N213
-	Num = 1;
-	&Num = 2
-lines 6-10:	N213 -{void M();}-> N214
-lines 12-15:	N214 -{void F();}-> N215
-lines 17-21:	N215 -{void gen_init_cpio();}-> N216
-lines 23-27:	N216 -{int main();}-> N217
-none:	N217 -{Function start dummy edge}-> N18
-line 25:	N18 -{gen_init_cpio()}-> N12
+/usr/include/assert.h, line 90:	N212 -{int Num = 1;}-> N213
+lines 4-8:	N213 -{void M();}-> N214
+lines 9-12:	N214 -{void F();}-> N215
+lines 13-18:	N215 -{void gen_init_cpio();}-> N216
+lines 19-22:	N216 -{int main();}-> N217
+none:	N217 -{Function start dummy edge}-> N19
+	sys_nerr = 1; Num = 1;
+line 21:	N19 -{gen_init_cpio()}-> N12
 none:	N12 -{Function start dummy edge}-> N13
-line 19:	N13 -{M()}-> N1
+lines 15-16:	N13 -{Label: l1}-> N14
+line 16:	N14 -{M()}-> N1
 none:	N1 -{Function start dummy edge}-> N2
-line 8:	N2 -{Num = Num - 1;}-> N3
+line 6:	N2 -{Num = Num - 1;}-> N3
 	Num = 0;
-line 9:	N3 -{[Num >= 0]}-> N4
-	Num = 0;
-line 9:	N4 -{(void)0;}-> N6
+line 7:	N3 -{[Num >= 0]}-> N4
+line 7:	N4 -{0;}-> N6
 none:	N6 -{default return}-> N0
-line 19:	N0 -{Return edge from M to gen_init_cpio}-> N14
-line 20:	N14 -{M()}-> N1
+line 16:	N0 -{Return edge from M to gen_init_cpio}-> N15
+line 17:	N15 -{Goto: l1}-> N14
+line 16:	N14 -{M()}-> N1
 none:	N1 -{Function start dummy edge}-> N2
-line 8:	N2 -{Num = Num - 1;}-> N3
+line 6:	N2 -{Num = Num - 1;}-> N3
 	Num = -1;
-line 9:	N3 -{[!(Num >= 0)]}-> N5
-	Num = -1;
-line 9:	N5 -{__assert_fail("Num >= 0", "tf/behavior.c", 9, "__PRETTY_FUNCTION__");}-> N6
+line 7:	N3 -{[!(Num >= 0)]}-> N5
+line 7:	N5 -{__assert_fail("Num >= 0", "tf/behavior.c", 7, "__PRETTY_FUNCTION__");}-> N6

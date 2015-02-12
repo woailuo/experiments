@@ -6,7 +6,7 @@
 #define true 1
 #define false 0
 
-int Num = 2;
+int Num = 4;
 
 struct Person {
     char *name;
@@ -60,7 +60,11 @@ void Person_print(struct Person *who)
 
 int main(int argc, char *argv[])
 {
-    // make two people structures
+
+  int i = 3;
+  while(i)
+    {
+  // make two people structures
     struct Person *joe = Person_create(
             "Joe Alex", 32, 64, 140);
 
@@ -87,6 +91,8 @@ int main(int argc, char *argv[])
     // destroy them both so we clean up
     Person_destroy(joe);
     Person_destroy(frank);
+    i = i - 1;
+    }
 
     return 0;
 }

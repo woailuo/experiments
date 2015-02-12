@@ -1,0 +1,9 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_49 () Bool (<= (to_real 1) Num))
+(define-fun .def_43 () Bool (<= (to_real 0) Num))
+(define-fun .def_55 () Bool (and .def_43 .def_49))
+
+ihex2fw N14:
+(assert .def_55)
+
