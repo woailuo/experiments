@@ -1,0 +1,44 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun |Database_create::i| () Real)
+(define-fun .def_19370 () Bool (<= |Database_create::i| (to_real 0)))
+(declare-fun Num () Real)
+(define-fun .def_121 () Bool (<= (to_real 0) Num))
+(define-fun .def_131 () Bool (<= (to_real 2) Num))
+(declare-fun |Database_list::i| () Real)
+(define-fun .def_13940 () Bool (<= |Database_list::i| (to_real 0)))
+(declare-fun |*(struct_Database)*| (Real) Real)
+(declare-fun |main::conn| () Real)
+(define-fun .def_13943 () Real (+ |main::conn| (to_real 4)))
+(define-fun .def_13945 () Real (|*(struct_Database)*| .def_13943))
+(define-fun .def_13946 () Bool (= .def_13945 (to_real 0)))
+(define-fun .def_13947 () Bool (= |main::conn| (to_real 0)))
+(declare-fun |*(struct__IO_FILE)*| (Real) Real)
+(define-fun .def_13949 () Real (|*(struct__IO_FILE)*| |main::conn|))
+(define-fun .def_13950 () Bool (= .def_13949 (to_real 0)))
+
+*:
+(assert .def_121)
+
+Database_create N41:
+(assert .def_19370)
+(assert .def_121)
+(assert .def_13946)
+(assert .def_13947)
+(assert .def_13950)
+
+Database_list N84:
+(assert .def_121)
+(assert .def_13940)
+(assert .def_13946)
+(assert .def_13947)
+(assert .def_13950)
+
+main N101:
+(assert .def_121)
+(assert .def_131)
+(assert false)
+
+main N109:
+(assert .def_121)
+(assert false)
+

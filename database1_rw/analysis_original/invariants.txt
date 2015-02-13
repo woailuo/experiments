@@ -1,0 +1,20 @@
+loop__Database_create__2147:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_114 () Bool (<= (to_real 0) Num))
+(assert .def_114)
+
+loop__Database_list__2192:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_114 () Bool (<= (to_real 0) Num))
+(assert .def_114)
+
+loop__main__2212:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_123 () Bool (<= (to_real 2) Num))
+(define-fun .def_114 () Bool (<= (to_real 0) Num))
+(define-fun .def_129 () Bool (and .def_114 .def_123))
+(assert .def_129)
+

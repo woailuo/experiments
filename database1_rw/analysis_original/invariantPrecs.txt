@@ -1,0 +1,15 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_114 () Bool (<= (to_real 0) Num))
+(define-fun .def_123 () Bool (<= (to_real 2) Num))
+(define-fun .def_129 () Bool (and .def_114 .def_123))
+
+Database_create N41:
+(assert .def_114)
+
+Database_list N84:
+(assert .def_114)
+
+main N101:
+(assert .def_129)
+

@@ -1,0 +1,12 @@
+digraph ListLength {
+42 [shape="circle" label="42\n4"]
+46 [shape="doublecircle" label="46\n3"]
+48 [shape="circle" label="48\n1"]
+47 [shape="circle" label="47\n2"]
+41 [shape="circle" label="41\n0"]
+42 -> 46 [label="Function start dummy edge int i = 0; LinkList p = L->next; while" fontname="Courier New"]
+46 -> 48 [label="[p == 0]" fontname="Courier New"]
+46 -> 47 [label="[!(p == 0)]" fontname="Courier New"]
+48 -> 41 [label="return i;" fontname="Courier New"]
+47 -> 46 [label="int __CPAchecker_TMP_0 = i; i = i + 1; __CPAchecker_TMP_0; p = p->next; " fontname="Courier New"]
+}

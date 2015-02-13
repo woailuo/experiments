@@ -1,0 +1,5 @@
+digraph Database_delete {
+74 [shape="circle" label="74\n1"]
+73 [shape="circle" label="73\n0"]
+74 -> 73 [label="Function start dummy edge struct Address addr = { .id = id, .set = 0 }; (conn->db->rows)[id] = addr; default return" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph Person_print {
+24 [shape="circle" label="24\n6"]
+25 [shape="circle" label="25\n5"]
+25 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">25</td><td align="left">printf(\"Name: %s\n\", who-&gt;name);</td></tr><tr><td align="right">26</td><td align="left">printf(\"\tAge: %d\n\", who-&gt;age);</td></tr><tr><td align="right">27</td><td align="left">printf(\"\tHeight: %d\n\", who-&gt;height);</td></tr><tr><td align="right">28</td><td align="left">printf(\"\tWeight: %d\n\", who-&gt;weight);</td></tr><tr><td align="right">29</td><td align="left">default return</td></tr></table>>]
+25 -> 23[label=""]
+24 -> 25 [label="Function start dummy edge" fontname="Courier New"]
+}

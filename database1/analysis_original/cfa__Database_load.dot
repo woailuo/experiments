@@ -1,0 +1,16 @@
+digraph Database_load {
+19 [shape="diamond" label="19\n4"]
+21 [shape="circle" label="21\n3"]
+20 [shape="circle" label="20\n1"]
+15 [shape="circle" label="15\n0"]
+22 [shape="circle" label="22\n2"]
+16 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">16</td><td align="left">Function start dummy edge int rc;</td></tr><tr><td align="right">18</td><td align="left">rc = fread(conn-&gt;db, 103200, 1, conn-&gt;file);</td></tr></table>>]
+16 -> 19[label=""]
+19 -> 21 [label="[rc != 1]" fontname="Courier New"]
+19 -> 20 [label="[!(rc != 1)]" fontname="Courier New"]
+20 -> 15 [label="default return" fontname="Courier New"]
+100004 [shape="component" label="die"]
+21 -> 100004 [label="die(\"Failed to load database.\");" fontname="Courier New"]
+100004 -> 22 [label="" fontname="Courier New"]
+22 -> 20 [label="" fontname="Courier New"]
+}

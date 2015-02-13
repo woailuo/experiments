@@ -1,0 +1,33 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_123 () Bool (<= (to_real 2) Num))
+(define-fun .def_114 () Bool (<= (to_real 0) Num))
+(define-fun .def_129 () Bool (and .def_114 .def_123))
+
+8 (12,9) @41:
+(assert .def_114)
+
+6 (7,10) @84:
+(assert .def_114)
+
+9 () @41:
+(assert .def_114)
+
+11 () @101:
+(assert .def_129)
+
+0 (5) @93:
+(assert true)
+
+5 (11,8,6) @101:
+(assert .def_129)
+
+7 () @84:
+(assert .def_114)
+
+12 () @101:
+(assert .def_129)
+
+10 () @101:
+(assert .def_129)
+

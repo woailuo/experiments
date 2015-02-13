@@ -1,0 +1,70 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_131 () Bool (<= (to_real 2) Num))
+(define-fun .def_121 () Bool (<= (to_real 0) Num))
+(define-fun .def_137 () Bool (and .def_121 .def_131))
+(declare-fun |*(struct_Database)*| (Real) Real)
+(declare-fun |*(struct__IO_FILE)*| (Real) Real)
+(declare-fun |main::conn| () Real)
+(declare-fun |Database_create::i| () Real)
+(define-fun .def_19370 () Bool (<= |Database_create::i| (to_real 0)))
+(define-fun .def_13949 () Real (|*(struct__IO_FILE)*| |main::conn|))
+(define-fun .def_13950 () Bool (= .def_13949 (to_real 0)))
+(define-fun .def_13975 () Bool (not .def_13950))
+(define-fun .def_19384 () Bool (and .def_13975 .def_19370))
+(define-fun .def_13947 () Bool (= |main::conn| (to_real 0)))
+(define-fun .def_13976 () Bool (not .def_13947))
+(define-fun .def_19385 () Bool (and .def_13976 .def_19384))
+(define-fun .def_13943 () Real (+ |main::conn| (to_real 4)))
+(define-fun .def_13945 () Real (|*(struct_Database)*| .def_13943))
+(define-fun .def_13946 () Bool (= .def_13945 (to_real 0)))
+(define-fun .def_13978 () Bool (not .def_13946))
+(define-fun .def_19386 () Bool (and .def_13978 .def_19385))
+(define-fun .def_19387 () Bool (and .def_121 .def_19386))
+(declare-fun |Database_list::i| () Real)
+(define-fun .def_13977 () Bool (and .def_13975 .def_13976))
+(define-fun .def_13979 () Bool (and .def_13977 .def_13978))
+(define-fun .def_13940 () Bool (<= |Database_list::i| (to_real 0)))
+(define-fun .def_13980 () Bool (and .def_13940 .def_13979))
+(define-fun .def_13981 () Bool (and .def_121 .def_13980))
+(define-fun .def_14001 () Bool (and .def_121 .def_13979))
+
+23 () @101:
+(assert false)
+
+13 (22,14) @84:
+(assert .def_14001)
+
+19 (24,20) @41:
+(assert .def_14001)
+
+14 () @84:
+(assert .def_14001)
+
+24 () @101:
+(assert .def_137)
+
+21 () @101:
+(assert false)
+
+15 () @101:
+(assert .def_137)
+
+22 () @101:
+(assert .def_137)
+
+20 () @41:
+(assert .def_14001)
+
+12 (13,21) @84:
+(assert .def_13981)
+
+0 (5) @93:
+(assert true)
+
+5 (15,18,12) @101:
+(assert .def_137)
+
+18 (23,19) @41:
+(assert .def_19387)
+

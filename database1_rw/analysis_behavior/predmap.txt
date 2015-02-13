@@ -1,0 +1,16 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_43 () Bool (<= (to_real 0) Num))
+(define-fun .def_50 () Bool (<= (to_real 2) Num))
+
+*:
+(assert .def_43)
+
+M N6:
+(assert .def_43)
+(assert false)
+
+database1_rw N14:
+(assert .def_43)
+(assert .def_50)
+

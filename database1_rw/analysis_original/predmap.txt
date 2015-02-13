@@ -1,0 +1,16 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_114 () Bool (<= (to_real 0) Num))
+(define-fun .def_123 () Bool (<= (to_real 2) Num))
+
+*:
+(assert .def_114)
+
+main N101:
+(assert .def_114)
+(assert .def_123)
+
+main N109:
+(assert .def_114)
+(assert false)
+
