@@ -11,7 +11,7 @@
 #include <limits.h>
 #include <assert.h>
 
-int Num = 1;
+int Num = 2;
 /*
  * Original work by Jeff Garzik
  *
@@ -309,10 +309,7 @@ static int cpio_mkfile(const char *name, const char *location,
 	mode |= S_IFREG;
 
 	file = open (location, O_RDONLY);
-        /* /\* assert *\/ */
-        /* Num = Num -1; */
-        /* assert (Num >= 0) ; */
-
+        
 	if (file < 0) {
 		fprintf (stderr, "File %s could not be opened for reading\n", location);
 		goto l1; //error
@@ -325,14 +322,14 @@ static int cpio_mkfile(const char *name, const char *location,
 	}
 
 	filebuf = malloc(buf.st_size);
-	/* assert */
-	Num = Num - 1;
-        assert(Num >= 0);
 
 	if (!filebuf) {
 		fprintf (stderr, "out of memory\n");
 		goto l1;
 	}
+	/* assert */
+	Num = Num - 1;
+        assert(Num >= 0);
 
 	retval = read (file, filebuf, buf.st_size);
 	if (retval < 0) {
@@ -460,6 +457,7 @@ static int cpio_mkfile_line(const char *line)
 	} else {
 		dname = name;
 	}
+
 	rc = cpio_mkfile(dname, cpio_replace_env(location),
 	                 mode, uid, gid, nlinks);
  fail:

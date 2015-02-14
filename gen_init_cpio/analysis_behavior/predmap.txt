@@ -1,7 +1,7 @@
 (set-info :source |printed by MathSAT|)
 (declare-fun Num () Real)
 (define-fun .def_43 () Bool (<= (to_real 0) Num))
-(define-fun .def_49 () Bool (<= (to_real 1) Num))
+(define-fun .def_50 () Bool (<= (to_real 2) Num))
 
 *:
 (assert .def_43)
@@ -12,5 +12,5 @@ M N6:
 
 gen_init_cpio N14:
 (assert .def_43)
-(assert .def_49)
+(assert .def_50)
 

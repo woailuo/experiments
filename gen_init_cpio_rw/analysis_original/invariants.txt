@@ -1,0 +1,46 @@
+loop__push_pad__3831:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+(assert .def_4504)
+
+loop__push_rest__3847:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+(assert .def_4504)
+
+loop__cpio_trailer__3884:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
+loop__cpio_mkfile__4123:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
+loop__cpio_replace_env__4183:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
+loop__cpio_mkfile_line__4227:
+(set-info :source |printed by MathSAT|)
+(assert false)
+
+loop__main__4340:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+(assert .def_4504)
+
+loop__main__4377:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+(assert .def_4504)
+
+loop__main__4413:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+(assert .def_4504)
+

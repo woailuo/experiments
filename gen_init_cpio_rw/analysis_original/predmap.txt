@@ -1,0 +1,7 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+
+*:
+(assert .def_4504)
+

@@ -653,7 +653,7 @@ int execvp(const char *__file, const char *__argv[]);
 int execlp(const char *__file, const char *__arg, ...);
 int nice(int __inc);
 void _exit(int __status);
-enum __anon_type_21 {
+enum  {
   _PC_LINK_MAX = 0,
   _PC_MAX_CANON = 1,
   _PC_MAX_INPUT = 2,
@@ -676,7 +676,7 @@ enum __anon_type_21 {
   _PC_SYMLINK_MAX = 19,
   _PC_2_SYMLINKS = 20
 } ;
-enum __anon_type_22 {
+enum  {
   _SC_ARG_MAX = 0,
   _SC_CHILD_MAX = 1,
   _SC_CLK_TCK = 2,
@@ -893,7 +893,7 @@ enum __anon_type_22 {
   _SC_THREAD_ROBUST_PRIO_INHERIT = 247,
   _SC_THREAD_ROBUST_PRIO_PROTECT = 248
 } ;
-enum __anon_type_23 {
+enum  {
   _CS_PATH = 0,
   _CS_V6_WIDTH_RESTRICTED_ENVS = 1,
   _CS_GNU_LIBC_VERSION = 2,
@@ -1101,7 +1101,7 @@ int creat(const char *__file, __mode_t __mode);
 int posix_fadvise(int __fd, __off_t __offset, __off_t __len, int __advise);
 int posix_fallocate(int __fd, __off_t __offset, __off_t __len);
 int * __errno_location();
-enum __anon_type_24 {
+enum  {
   _ISupper = 256,
   _ISlower = 512,
   _ISalpha = 1024,
@@ -1158,7 +1158,7 @@ void __assert(const char *__assertion, const char *__file, int __line);
 int Num = 0;
 unsigned int offset = 0U;
 unsigned int ino = 721;
-long int default_mtime = 0L;
+time_t default_mtime = 0L;
 struct file_handler {
   const char *type;
   int (*handler)(const char *line);
@@ -1180,7 +1180,7 @@ struct generic_type {
   const char *type;
   mode_t mode;
 } ;
-struct generic_type generic_type_table[3] = { [0] = { .type = "dir", .mode = 16384 }, [1] = { .type = "pipe", .mode = 4096 }, [2] = { .type = "sock", .mode = 49152 } };
+struct generic_type generic_type_table[] = { [0] = { .type = "dir", .mode = 16384 }, [1] = { .type = "pipe", .mode = 4096 }, [2] = { .type = "sock", .mode = 49152 } };
 int cpio_mkgeneric_line(const char *line, enum generic_types gt);
 int cpio_mkdir_line(const char *line);
 int cpio_mkpipe_line(const char *line);
@@ -1191,7 +1191,7 @@ int cpio_mkfile(const char *name, const char *location, unsigned int mode, uid_t
 char * cpio_replace_env(char *new_location);
 int cpio_mkfile_line(const char *line);
 void usage(const char *prog);
-struct file_handler file_handler_table[7] = { { .type = "file", .handler = &cpio_mkfile_line }, { .type = "nod", .handler = &cpio_mknod_line }, { .type = "dir", .handler = &cpio_mkdir_line }, { .type = "slink", .handler = &cpio_mkslink_line }, { .type = "pipe", .handler = &cpio_mkpipe_line }, { .type = "sock", .handler = &cpio_mksock_line }, { .type = (void *)0, .handler = (void *)0 } };
+struct file_handler file_handler_table[] = { { .type = "file", .handler = &cpio_mkfile_line }, { .type = "nod", .handler = &cpio_mknod_line }, { .type = "dir", .handler = &cpio_mkdir_line }, { .type = "slink", .handler = &cpio_mkslink_line }, { .type = "pipe", .handler = &cpio_mkpipe_line }, { .type = "sock", .handler = &cpio_mksock_line }, { .type = (void *)0, .handler = (void *)0 } };
 int main(int argc, char *argv[]);
 int main_0(int argc, char *argv[]);
 int cpio_mkfile_line_1(const char *line);
@@ -1210,28 +1210,25 @@ int main_0(int argc, char *argv[]) {
   __CPROVER_assume(!(__CPAchecker_TMP_1 == 0));
   cpio_list = fopen(filename, "r");
   __CPROVER_assume(!(cpio_list == 0));
-  char *__CPAchecker_TMP_4;
-  __CPAchecker_TMP_4 = fgets(line, 8242, cpio_list);
-  __CPROVER_assume(!(__CPAchecker_TMP_4 == 0));
-  int type_idx;unsigned long int slen;
+  int type_idx;size_t slen;
   slen = strlen(line);
-  int __CPAchecker_TMP_5 = line_nr;line_nr = line_nr + 1;__CPAchecker_TMP_5;
+  int __CPAchecker_TMP_4 = line_nr;line_nr = line_nr + 1;__CPAchecker_TMP_4;
   __CPROVER_assume(!('#' == (*line)));
   type = strtok(line, " \t");
   __CPROVER_assume(!(type == 0));
   __CPROVER_assume(!('\xa' == (*type)));
-  size_t __CPAchecker_TMP_6;
-  __CPAchecker_TMP_6 = strlen(type);
-  __CPROVER_assume(!(slen == __CPAchecker_TMP_6));
+  size_t __CPAchecker_TMP_5;
+  __CPAchecker_TMP_5 = strlen(type);
+  __CPROVER_assume(!(slen == __CPAchecker_TMP_5));
   args = strtok((void *)0, "\n");
   __CPROVER_assume(args == 0);
   fprintf(stderr, "ERROR: incorrect format, newline required line %d: '%s'\n", line_nr, line);
   ec = -1;
   type_idx = 0;
   __CPROVER_assume(!(((file_handler_table[type_idx]).type) == 0));
-  int rc;int __CPAchecker_TMP_7;
-  __CPAchecker_TMP_7 = strcmp(line, (file_handler_table[type_idx]).type);
-  __CPROVER_assume(__CPAchecker_TMP_7 == 0);
+  int rc;int __CPAchecker_TMP_6;
+  __CPAchecker_TMP_6 = strcmp(line, (file_handler_table[type_idx]).type);
+  __CPROVER_assume(__CPAchecker_TMP_6 == 0);
   __CPROVER_assume(!(((file_handler_table[type_idx]).handler) == (&cpio_mknod_line)));
   __CPROVER_assume(!(((file_handler_table[type_idx]).handler) == (&cpio_mkpipe_line)));
   __CPROVER_assume(((file_handler_table[type_idx]).handler) == (&cpio_mkfile_line));
@@ -1268,5 +1265,5 @@ int cpio_mkfile_3(const char *name, const char *location, unsigned int mode, uid
   Num = Num - 1;
   __CPROVER_assume(!(Num >= 0));
   assert(0); // target state 
-  __assert_fail("Num >= 0", "tf/gen_init_cpio.c", 328, "__PRETTY_FUNCTION__");
+  __assert_fail("Num >= 0", "tf/gen_init_cpio.c", 330, "__PRETTY_FUNCTION__");
 }

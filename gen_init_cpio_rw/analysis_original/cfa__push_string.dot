@@ -1,0 +1,7 @@
+digraph push_string {
+1 [shape="circle" label="1\n6"]
+3 [shape="circle" label="3\n5"]
+3 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3</td><td align="left">__CPAchecker_TMP_0 = strlen(name);</td></tr><tr><td align="right">4</td><td align="left">unsigned int name_len = __CPAchecker_TMP_0 + 1;</td></tr><tr><td align="right">5</td><td align="left">fputs(name, stdout);</td></tr><tr><td align="right">6</td><td align="left">putchar(0);</td></tr><tr><td align="right">7</td><td align="left">offset = offset + name_len; default return</td></tr></table>>]
+3 -> 0[label=""]
+1 -> 3 [label="Function start dummy edge size_t __CPAchecker_TMP_0;" fontname="Courier New"]
+}

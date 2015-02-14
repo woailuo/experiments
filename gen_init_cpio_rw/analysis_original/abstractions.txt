@@ -1,0 +1,91 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+
+42 () @441:
+(assert .def_4504)
+
+32 () @344:
+(assert false)
+
+21 (22,43,45,46,44) @441:
+(assert .def_4504)
+
+25 () @30:
+(assert .def_4504)
+
+26 (27,38) @30:
+(assert .def_4504)
+
+28 (29,30) @12:
+(assert .def_4504)
+
+31 () @12:
+(assert .def_4504)
+
+0 (19) @378:
+(assert true)
+
+40 () @441:
+(assert .def_4504)
+
+34 () @30:
+(assert .def_4504)
+
+39 () @441:
+(assert .def_4504)
+
+27 () @30:
+(assert .def_4504)
+
+38 () @441:
+(assert .def_4504)
+
+37 () @441:
+(assert .def_4504)
+
+33 (40,34) @30:
+(assert .def_4504)
+
+29 () @12:
+(assert .def_4504)
+
+30 (39,31) @12:
+(assert .def_4504)
+
+20 () @388:
+(assert .def_4504)
+
+41 () @441:
+(assert .def_4504)
+
+24 (25,37) @30:
+(assert .def_4504)
+
+46 () @441:
+(assert .def_4504)
+
+44 () @441:
+(assert .def_4504)
+
+43 () @441:
+(assert .def_4504)
+
+23 () @473:
+(assert .def_4504)
+
+36 () @30:
+(assert .def_4504)
+
+35 (41,36) @30:
+(assert .def_4504)
+
+45 () @30:
+(assert false)
+
+19 (20,21) @388:
+(assert .def_4504)
+
+22 (26,28,33,23,35,42,24,32) @473:
+(assert .def_4504)
+

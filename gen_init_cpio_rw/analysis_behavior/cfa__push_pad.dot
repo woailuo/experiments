@@ -1,0 +1,13 @@
+digraph push_pad {
+10 [shape="circle" label="10\n5"]
+12 [shape="doublecircle" label="12\n4"]
+14 [shape="circle" label="14\n1"]
+13 [shape="circle" label="13\n3"]
+9 [shape="circle" label="9\n0"]
+13 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">13</td><td align="left">putchar(0);</td></tr><tr><td align="right">15</td><td align="left">unsigned int __CPAchecker_TMP_0 = offset; offset = offset + 1; __CPAchecker_TMP_0; </td></tr></table>>]
+13 -> 12[label=""]
+10 -> 12 [label="Function start dummy edge while" fontname="Courier New"]
+12 -> 14 [label="[(offset & 3) == 0]" fontname="Courier New"]
+12 -> 13 [label="[!((offset & 3) == 0)]" fontname="Courier New"]
+14 -> 9 [label="default return" fontname="Courier New"]
+}

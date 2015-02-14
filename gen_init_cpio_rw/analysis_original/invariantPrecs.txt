@@ -1,0 +1,31 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_4504 () Bool (<= (to_real 0) Num))
+
+push_pad N12:
+(assert .def_4504)
+
+push_rest N30:
+(assert .def_4504)
+
+cpio_trailer N55:
+(assert false)
+
+cpio_mkfile N235:
+(assert false)
+
+cpio_replace_env N286:
+(assert false)
+
+cpio_mkfile_line N344:
+(assert false)
+
+main N388:
+(assert .def_4504)
+
+main N441:
+(assert .def_4504)
+
+main N473:
+(assert .def_4504)
+
