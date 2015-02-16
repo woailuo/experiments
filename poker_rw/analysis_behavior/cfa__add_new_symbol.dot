@@ -1,0 +1,7 @@
+digraph add_new_symbol {
+56 [shape="circle" label="56\n5"]
+57 [shape="circle" label="57\n4"]
+57 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">57</td><td align="left">sym-&gt;symbollist = realloc(sym-&gt;symbollist, ((sym-&gt;symbolcnt) + 1) * 4);</td></tr><tr><td align="right">58</td><td align="left">int __CPAchecker_TMP_0 = sym-&gt;symbolcnt; sym-&gt;symbolcnt = (sym-&gt;symbolcnt) + 1;</td></tr><tr><td align="right">60</td><td align="left">((sym-&gt;symbollist)[__CPAchecker_TMP_0]).name = strdup(symname);</td></tr><tr><td align="right">61</td><td align="left">default return</td></tr></table>>]
+57 -> 55[label=""]
+56 -> 57 [label="Function start dummy edge" fontname="Courier New"]
+}

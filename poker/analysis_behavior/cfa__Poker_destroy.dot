@@ -1,0 +1,16 @@
+digraph Poker_destroy {
+20 [shape="circle" label="20\n8"]
+21 [shape="diamond" label="21\n7"]
+22 [shape="circle" label="22\n5"]
+23 [shape="circle" label="23\n6"]
+24 [shape="circle" label="24\n4"]
+25 [shape="circle" label="25\n3"]
+25 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">25</td><td align="left">Num = Num + 1;</td></tr><tr><td align="right">26</td><td align="left">free(pn);</td></tr><tr><td align="right">27</td><td align="left">Num = Num + 1; default return</td></tr></table>>]
+25 -> 19[label=""]
+20 -> 21 [label="Function start dummy edge" fontname="Courier New"]
+21 -> 22 [label="[pn != ((void *)0)]" fontname="Courier New"]
+21 -> 23 [label="[!(pn != ((void *)0))]" fontname="Courier New"]
+24 -> 25 [label="free(pn->name);" fontname="Courier New"]
+22 -> 24 [label="0;" fontname="Courier New"]
+23 -> 24 [label="__assert_fail(\"pn != ((void *)0)\", \"tf/poker.c\", 38, \"__PRETTY_FUNCTION__\");" fontname="Courier New"]
+}

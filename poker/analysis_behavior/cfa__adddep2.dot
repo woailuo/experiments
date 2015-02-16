@@ -1,0 +1,12 @@
+digraph adddep2 {
+89 [shape="circle" label="89\n3"]
+91 [shape="circle" label="91\n2"]
+92 [shape="circle" label="92\n1"]
+88 [shape="circle" label="88\n0"]
+89 -> 91 [label="Function start dummy edge line = line;" fontname="Courier New"]
+100001 [shape="component" label="adddep"]
+91 -> 100001 [label="adddep(file);" fontname="Courier New"]
+100001 -> 92 [label="" fontname="Courier New"]
+91 -> 92 [label="adddep(file);" fontname="Courier New"]
+92 -> 88 [label="default return" fontname="Courier New"]
+}

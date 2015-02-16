@@ -1,0 +1,344 @@
+(set-info :source |printed by MathSAT|)
+
+74 () @1063:
+(assert true)
+
+9 () @85:
+(assert true)
+
+33 () @370:
+(assert true)
+
+102 () @1063:
+(assert true)
+
+106 (107,110) @1303:
+(assert true)
+
+64 () @1063:
+(assert true)
+
+100 () @1063:
+(assert true)
+
+81 () @1303:
+(assert true)
+
+85 (93,88,92,86) @1063:
+(assert true)
+
+79 () @1021:
+(assert true)
+
+107 () @1303:
+(assert true)
+
+17 (19,18) @145:
+(assert true)
+
+25 () @85:
+(assert true)
+
+112 () @1063:
+(assert true)
+
+16 () @108:
+(assert true)
+
+55 () @1048:
+(assert true)
+
+72 () @1063:
+(assert true)
+
+91 () @1063:
+(assert true)
+
+29 () @41:
+(assert true)
+
+39 () @992:
+(assert true)
+
+75 () @1048:
+(assert true)
+
+80 (84,81) @1303:
+(assert true)
+
+36 (38,37) @981:
+(assert true)
+
+54 () @1063:
+(assert true)
+
+13 () @85:
+(assert true)
+
+103 () @1048:
+(assert true)
+
+70 (71,73) @1250:
+(assert true)
+
+37 () @981:
+(assert true)
+
+108 (109,111) @1250:
+(assert true)
+
+0 (1) @242:
+(assert true)
+
+78 () @1021:
+(assert true)
+
+23 () @85:
+(assert true)
+
+22 () @85:
+(assert true)
+
+47 (50,55,54,48) @1063:
+(assert true)
+
+105 (108,106,113,112) @1063:
+(assert true)
+
+69 () @1303:
+(assert true)
+
+67 (68,70,74,75) @1063:
+(assert true)
+
+32 () @399:
+(assert true)
+
+24 () @85:
+(assert true)
+
+92 () @1063:
+(assert true)
+
+20 () @85:
+(assert true)
+
+41 () @1002:
+(assert true)
+
+88 (89,91) @1250:
+(assert true)
+
+21 () @85:
+(assert true)
+
+56 (57,77) @1048:
+(assert true)
+
+86 (87,90) @1303:
+(assert true)
+
+104 (105) @1048:
+(assert true)
+
+113 () @1048:
+(assert true)
+
+45 () @1250:
+(assert true)
+
+18 () @145:
+(assert true)
+
+73 () @1063:
+(assert true)
+
+35 () @422:
+(assert true)
+
+53 () @1063:
+(assert true)
+
+96 (97,100) @1303:
+(assert true)
+
+83 () @1250:
+(assert true)
+
+14 () @85:
+(assert true)
+
+95 (103,98,102,96) @1063:
+(assert true)
+
+61 () @1250:
+(assert true)
+
+94 (95) @1048:
+(assert true)
+
+40 (41,44,66,42) @1002:
+(assert true)
+
+71 () @1250:
+(assert true)
+
+82 (83,94) @1250:
+(assert true)
+
+84 (85) @1048:
+(assert true)
+
+28 () @41:
+(assert true)
+
+68 (69,72) @1303:
+(assert true)
+
+43 () @1303:
+(assert true)
+
+93 () @1048:
+(assert true)
+
+27 () @85:
+(assert true)
+
+77 () @1021:
+(assert true)
+
+99 () @1250:
+(assert true)
+
+3 (4,5,8) @58:
+(assert true)
+
+26 () @85:
+(assert true)
+
+7 () @57:
+(assert true)
+
+10 (11,22,27,12,17,24,26,20,25,29,21,23) @88:
+(assert true)
+
+58 (59,62) @1303:
+(assert true)
+
+12 (15,16,13,14) @108:
+(assert true)
+
+49 () @1303:
+(assert true)
+
+34 (36,35) @422:
+(assert true)
+
+62 () @1063:
+(assert true)
+
+87 () @1303:
+(assert true)
+
+46 (76,47) @1048:
+(assert true)
+
+52 () @1063:
+(assert true)
+
+51 () @1250:
+(assert true)
+
+110 () @1063:
+(assert true)
+
+44 (45,56) @1250:
+(assert true)
+
+66 (78,67) @1048:
+(assert true)
+
+42 (46,43) @1303:
+(assert true)
+
+48 (52,49) @1303:
+(assert true)
+
+11 () @88:
+(assert true)
+
+57 (58,60,65,64) @1063:
+(assert true)
+
+60 (61,63) @1250:
+(assert true)
+
+6 () @66:
+(assert true)
+
+59 () @1303:
+(assert true)
+
+63 () @1063:
+(assert true)
+
+31 (34,32) @399:
+(assert true)
+
+19 () @85:
+(assert true)
+
+90 () @1063:
+(assert true)
+
+89 () @1250:
+(assert true)
+
+1 (2,30) @41:
+(assert true)
+
+101 () @1063:
+(assert true)
+
+8 (28,10) @85:
+(assert true)
+
+38 (39,40) @992:
+(assert true)
+
+109 () @1250:
+(assert true)
+
+111 () @1063:
+(assert true)
+
+97 () @1303:
+(assert true)
+
+5 (9,6,7) @66:
+(assert true)
+
+30 (33,31) @370:
+(assert true)
+
+76 (79,82,104,80) @1021:
+(assert true)
+
+15 () @85:
+(assert true)
+
+98 (99,101) @1250:
+(assert true)
+
+2 (3) @57:
+(assert true)
+
+65 () @1048:
+(assert true)
+
+50 (51,53) @1250:
+(assert true)
+
+4 () @58:
+(assert true)
+

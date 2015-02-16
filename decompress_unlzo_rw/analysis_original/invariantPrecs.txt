@@ -1,0 +1,5 @@
+(set-info :source |printed by MathSAT|)
+
+parse_header N12:
+(assert false)
+

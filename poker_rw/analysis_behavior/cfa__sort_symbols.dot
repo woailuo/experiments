@@ -1,0 +1,7 @@
+digraph sort_symbols {
+644 [shape="circle" label="644\n3"]
+645 [shape="circle" label="645\n2"]
+645 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">645</td><td align="left">qsort(table, table_cnt, 20, &amp;compare_symbols);</td></tr><tr><td align="right">646</td><td align="left">default return</td></tr></table>>]
+645 -> 643[label=""]
+644 -> 645 [label="Function start dummy edge" fontname="Courier New"]
+}

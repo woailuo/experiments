@@ -1,0 +1,12 @@
+digraph extfunc {
+253 [shape="circle" label="253\n3"]
+254 [shape="circle" label="254\n2"]
+255 [shape="circle" label="255\n1"]
+252 [shape="circle" label="252\n0"]
+253 -> 254 [label="Function start dummy edge" fontname="Courier New"]
+100006 [shape="component" label="docfunctions"]
+254 -> 100006 [label="docfunctions(filename, \"-function\");" fontname="Courier New"]
+100006 -> 255 [label="" fontname="Courier New"]
+254 -> 255 [label="docfunctions(filename, \"-function\");" fontname="Courier New"]
+255 -> 252 [label="default return" fontname="Courier New"]
+}

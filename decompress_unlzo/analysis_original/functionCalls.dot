@@ -1,0 +1,24 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+free [shape="box", color=grey];
+main -> free;
+main -> parse_header;
+memcpy [shape="box", color=grey];
+main -> memcpy;
+get_unaligned_be32 [shape="box", color=grey];
+main -> get_unaligned_be32;
+unlikely [shape="box", color=grey];
+main -> unlikely;
+lzo1x_decompress_safe [shape="box", color=grey];
+main -> lzo1x_decompress_safe;
+malloc [shape="box", color=grey];
+main -> malloc;
+__assert_fail [shape="box", color=grey];
+main -> __assert_fail;
+get_unaligned_be16 [shape="box", color=grey];
+parse_header -> get_unaligned_be16;
+get_unaligned_be32 [shape="box", color=grey];
+parse_header -> get_unaligned_be32;
+}

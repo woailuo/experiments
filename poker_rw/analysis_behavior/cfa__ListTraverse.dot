@@ -1,0 +1,18 @@
+digraph ListTraverse {
+149 [shape="doublecircle" label="149\n5"]
+151 [shape="circle" label="151\n2"]
+150 [shape="circle" label="150\n4"]
+152 [shape="circle" label="152\n3"]
+154 [shape="circle" label="154\n1"]
+146 [shape="circle" label="146\n6"]
+145 [shape="circle" label="145\n0"]
+149 -> 151 [label="[p == 0]" fontname="Courier New"]
+149 -> 150 [label="[!(p == 0)]" fontname="Courier New"]
+100001 [shape="component" label="visit"]
+150 -> 100001 [label="visit(p->data);" fontname="Courier New"]
+100001 -> 152 [label="" fontname="Courier New"]
+151 -> 154 [label="printf(\"\n\");" fontname="Courier New"]
+146 -> 149 [label="Function start dummy edge LinkList p = L->next; while" fontname="Courier New"]
+152 -> 149 [label="p = p->next; " fontname="Courier New"]
+154 -> 145 [label="return 1;" fontname="Courier New"]
+}

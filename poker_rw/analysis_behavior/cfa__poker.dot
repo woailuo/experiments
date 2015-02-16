@@ -1,0 +1,14 @@
+digraph poker {
+14 [shape="doublecircle" label="14\n2"]
+15 [shape="circle" label="15\n1"]
+16 [shape="circle" label="16\n0"]
+12 [shape="circle" label="12\n3"]
+100002 [shape="component" label="M"]
+14 -> 100002 [label="M();" fontname="Courier New"]
+100002 -> 15 [label="" fontname="Courier New"]
+100003 [shape="component" label="M"]
+15 -> 100003 [label="M();" fontname="Courier New"]
+100003 -> 16 [label="" fontname="Courier New"]
+12 -> 14 [label="Function start dummy edge Label: l1" fontname="Courier New"]
+16 -> 14 [label="Goto: l1" fontname="Courier New"]
+}

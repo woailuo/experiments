@@ -1,0 +1,5 @@
+digraph w8nat {
+117 [shape="circle" label="117\n1"]
+116 [shape="circle" label="116\n0"]
+117 -> 116 [label="Function start dummy edge return x;" fontname="Courier New"]
+}

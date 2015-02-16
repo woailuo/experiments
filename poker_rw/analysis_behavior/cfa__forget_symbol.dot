@@ -1,0 +1,12 @@
+digraph forget_symbol {
+393 [shape="circle" label="393\n4"]
+397 [shape="doublecircle" label="397\n3"]
+399 [shape="circle" label="399\n0"]
+400 [shape="circle" label="400\n2"]
+392 [shape="circle" label="392\n1"]
+393 -> 397 [label="Function start dummy edge int i; for i = 0;" fontname="Courier New"]
+397 -> 399 [label="[i < (len - 1)]" fontname="Courier New"]
+397 -> 400 [label="[!(i < (len - 1))]" fontname="Courier New"]
+399 -> 397 [label="int __CPAchecker_TMP_0 = token_profit[(symbol[i]) + ((symbol[i + 1]) << 8)]; token_profit[(symbol[i]) + ((symbol[i + 1]) << 8)] = (token_profit[(symbol[i]) + ((symbol[i + 1]) << 8)]) - 1; __CPAchecker_TMP_0; i = i + 1;" fontname="Courier New"]
+400 -> 392 [label="default return" fontname="Courier New"]
+}

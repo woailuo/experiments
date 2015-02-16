@@ -1,0 +1,592 @@
+none:	N75 -{INIT GLOBAL VARS}-> N110
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h, line 211:	N110 -{typedef unsigned long int size_t;}-> N111
+/usr/include/bits/types.h, line 31:	N111 -{typedef unsigned char __u_char;}-> N112
+/usr/include/bits/types.h, line 32:	N112 -{typedef unsigned short int __u_short;}-> N113
+/usr/include/bits/types.h, line 33:	N113 -{typedef unsigned int __u_int;}-> N114
+/usr/include/bits/types.h, line 34:	N114 -{typedef unsigned long int __u_long;}-> N115
+/usr/include/bits/types.h, line 37:	N115 -{typedef signed char __int8_t;}-> N116
+/usr/include/bits/types.h, line 38:	N116 -{typedef unsigned char __uint8_t;}-> N117
+/usr/include/bits/types.h, line 39:	N117 -{typedef signed short int __int16_t;}-> N118
+/usr/include/bits/types.h, line 40:	N118 -{typedef unsigned short int __uint16_t;}-> N119
+/usr/include/bits/types.h, line 41:	N119 -{typedef signed int __int32_t;}-> N120
+/usr/include/bits/types.h, line 42:	N120 -{typedef unsigned int __uint32_t;}-> N121
+/usr/include/bits/types.h, line 44:	N121 -{typedef signed long int __int64_t;}-> N122
+/usr/include/bits/types.h, line 45:	N122 -{typedef unsigned long int __uint64_t;}-> N123
+/usr/include/bits/types.h, line 53:	N123 -{typedef long int __quad_t;}-> N124
+/usr/include/bits/types.h, line 54:	N124 -{typedef unsigned long int __u_quad_t;}-> N125
+/usr/include/bits/types.h, line 134:	N125 -{typedef unsigned long int __dev_t;}-> N126
+/usr/include/bits/types.h, line 135:	N126 -{typedef unsigned int __uid_t;}-> N127
+/usr/include/bits/types.h, line 136:	N127 -{typedef unsigned int __gid_t;}-> N128
+/usr/include/bits/types.h, line 137:	N128 -{typedef unsigned long int __ino_t;}-> N129
+/usr/include/bits/types.h, line 138:	N129 -{typedef unsigned long int __ino64_t;}-> N130
+/usr/include/bits/types.h, line 139:	N130 -{typedef unsigned int __mode_t;}-> N131
+/usr/include/bits/types.h, line 140:	N131 -{typedef unsigned long int __nlink_t;}-> N132
+/usr/include/bits/types.h, line 141:	N132 -{typedef long int __off_t;}-> N133
+/usr/include/bits/types.h, line 142:	N133 -{typedef long int __off64_t;}-> N134
+/usr/include/bits/types.h, line 143:	N134 -{typedef int __pid_t;}-> N135
+/usr/include/bits/types.h, line 144:	N135 -{struct __anon_type_0 {   int __val[2]; } ;}-> N136
+/usr/include/bits/types.h, line 144:	N136 -{typedef struct __anon_type_0 __fsid_t;}-> N137
+/usr/include/bits/types.h, line 145:	N137 -{typedef long int __clock_t;}-> N138
+/usr/include/bits/types.h, line 146:	N138 -{typedef unsigned long int __rlim_t;}-> N139
+/usr/include/bits/types.h, line 147:	N139 -{typedef unsigned long int __rlim64_t;}-> N140
+/usr/include/bits/types.h, line 148:	N140 -{typedef unsigned int __id_t;}-> N141
+/usr/include/bits/types.h, line 149:	N141 -{typedef long int __time_t;}-> N142
+/usr/include/bits/types.h, line 150:	N142 -{typedef unsigned int __useconds_t;}-> N143
+/usr/include/bits/types.h, line 151:	N143 -{typedef long int __suseconds_t;}-> N144
+/usr/include/bits/types.h, line 153:	N144 -{typedef int __daddr_t;}-> N145
+/usr/include/bits/types.h, line 154:	N145 -{typedef long int __swblk_t;}-> N146
+/usr/include/bits/types.h, line 155:	N146 -{typedef int __key_t;}-> N147
+/usr/include/bits/types.h, line 158:	N147 -{typedef int __clockid_t;}-> N148
+/usr/include/bits/types.h, line 161:	N148 -{typedef void *__timer_t;}-> N149
+/usr/include/bits/types.h, line 164:	N149 -{typedef long int __blksize_t;}-> N150
+/usr/include/bits/types.h, line 169:	N150 -{typedef long int __blkcnt_t;}-> N151
+/usr/include/bits/types.h, line 170:	N151 -{typedef long int __blkcnt64_t;}-> N152
+/usr/include/bits/types.h, line 173:	N152 -{typedef unsigned long int __fsblkcnt_t;}-> N153
+/usr/include/bits/types.h, line 174:	N153 -{typedef unsigned long int __fsblkcnt64_t;}-> N154
+/usr/include/bits/types.h, line 177:	N154 -{typedef unsigned long int __fsfilcnt_t;}-> N155
+/usr/include/bits/types.h, line 178:	N155 -{typedef unsigned long int __fsfilcnt64_t;}-> N156
+/usr/include/bits/types.h, line 180:	N156 -{typedef long int __ssize_t;}-> N157
+/usr/include/bits/types.h, line 184:	N157 -{typedef __off64_t __loff_t;}-> N158
+/usr/include/bits/types.h, line 185:	N158 -{typedef __quad_t *__qaddr_t;}-> N159
+/usr/include/bits/types.h, line 186:	N159 -{typedef char *__caddr_t;}-> N160
+/usr/include/bits/types.h, line 189:	N160 -{typedef long int __intptr_t;}-> N161
+/usr/include/bits/types.h, line 192:	N161 -{typedef unsigned int __socklen_t;}-> N162
+/usr/include/stdio.h, line 45:	N162 -{struct _IO_FILE ;}-> N163
+/usr/include/stdio.h, line 49:	N163 -{typedef struct _IO_FILE FILE;}-> N164
+/usr/include/stdio.h, line 65:	N164 -{typedef struct _IO_FILE __FILE;}-> N165
+/usr/include/wchar.h, lines 86-94:	N165 -{union __anon_type_1 {   unsigned int __wch;   char __wchb[4]; } ;}-> N166
+/usr/include/wchar.h, lines 83-95:	N166 -{struct __anon_type_2 {   int __count;   union __anon_type_1 __value; } ;}-> N167
+/usr/include/wchar.h, lines 83-95:	N167 -{typedef struct __anon_type_2 __mbstate_t;}-> N168
+/usr/include/_G_config.h, lines 22-26:	N168 -{struct __anon_type_3 {   __off_t __pos;   __mbstate_t __state; } ;}-> N169
+/usr/include/_G_config.h, lines 22-26:	N169 -{typedef struct __anon_type_3 _G_fpos_t;}-> N170
+/usr/include/_G_config.h, lines 27-31:	N170 -{struct __anon_type_4 {   __off64_t __pos;   __mbstate_t __state; } ;}-> N171
+/usr/include/_G_config.h, lines 27-31:	N171 -{typedef struct __anon_type_4 _G_fpos64_t;}-> N172
+/usr/include/_G_config.h, line 53:	N172 -{typedef int _G_int16_t;}-> N173
+/usr/include/_G_config.h, line 54:	N173 -{typedef int _G_int32_t;}-> N174
+/usr/include/_G_config.h, line 55:	N174 -{typedef unsigned int _G_uint16_t;}-> N175
+/usr/include/_G_config.h, line 56:	N175 -{typedef unsigned int _G_uint32_t;}-> N176
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stdarg.h, line 40:	N176 -{typedef __builtin_va_list __gnuc_va_list;}-> N177
+/usr/include/libio.h, line 170:	N177 -{struct _IO_jump_t ;}-> N178
+/usr/include/libio.h, line 180:	N178 -{typedef void _IO_lock_t;}-> N179
+/usr/include/libio.h, lines 186-194:	N179 -{struct _IO_marker {   struct _IO_marker *_next;   struct _IO_FILE *_sbuf;   int _pos; } ;}-> N180
+/usr/include/libio.h, lines 206-212:	N180 -{enum __codecvt_result {   __codecvt_ok = 0,   __codecvt_partial = 1,   __codecvt_error = 2,   __codecvt_noconv = 3 } ;}-> N181
+/usr/include/libio.h, lines 271-324:	N181 -{struct _IO_FILE {   int _flags;   char *_IO_read_ptr;   char *_IO_read_end;   char *_IO_read_base;   char *_IO_write_base;   char *_IO_write_ptr;   char *_IO_write_end;   char *_IO_buf_base;   char *_IO_buf_end;   char *_IO_save_base;   char *_IO_backup_base;   char *_IO_save_end;   struct _IO_marker *_markers;   struct _IO_FILE *_chain;   int _fileno;   int _flags2;   __off_t _old_offset;   unsigned short _cur_column;   signed char _vtable_offset;   char _shortbuf[1];   _IO_lock_t *_lock;   __off64_t _offset;   void *__pad1;   void *__pad2;   void *__pad3;   void *__pad4;   size_t __pad5;   int _mode;   char _unused2[40UL]; } ;}-> N182
+/usr/include/libio.h, line 341:	N182 -{typedef struct _IO_FILE _IO_FILE;}-> N183
+/usr/include/libio.h, line 344:	N183 -{struct _IO_FILE_plus ;}-> N184
+/usr/include/libio.h, line 346:	N184 -{extern struct _IO_FILE_plus _IO_2_1_stdin_;}-> N185
+/usr/include/libio.h, line 347:	N185 -{extern struct _IO_FILE_plus _IO_2_1_stdout_;}-> N186
+/usr/include/libio.h, line 348:	N186 -{extern struct _IO_FILE_plus _IO_2_1_stderr_;}-> N187
+/usr/include/libio.h, line 364:	N187 -{typedef __ssize_t  __io_read_fn(void *__cookie, char *__buf, size_t __nbytes);}-> N188
+/usr/include/libio.h, lines 372-373:	N188 -{typedef __ssize_t  __io_write_fn(void *__cookie, const char *__buf, size_t __n);}-> N189
+/usr/include/libio.h, line 381:	N189 -{typedef int __io_seek_fn(void *__cookie, __off64_t *__pos, int __w);}-> N190
+/usr/include/libio.h, line 384:	N190 -{typedef int __io_close_fn(void *__cookie);}-> N191
+/usr/include/libio.h, line 416:	N191 -{int __underflow(_IO_FILE *);}-> N192
+/usr/include/libio.h, line 417:	N192 -{int __uflow(_IO_FILE *);}-> N193
+/usr/include/libio.h, line 418:	N193 -{int __overflow(_IO_FILE *, int);}-> N194
+/usr/include/libio.h, line 460:	N194 -{int _IO_getc(_IO_FILE *__fp);}-> N195
+/usr/include/libio.h, line 461:	N195 -{int _IO_putc(int __c, _IO_FILE *__fp);}-> N196
+/usr/include/libio.h, line 462:	N196 -{int _IO_feof(_IO_FILE *__fp);}-> N197
+/usr/include/libio.h, line 463:	N197 -{int _IO_ferror(_IO_FILE *__fp);}-> N198
+/usr/include/libio.h, line 465:	N198 -{int _IO_peekc_locked(_IO_FILE *__fp);}-> N199
+/usr/include/libio.h, line 471:	N199 -{void _IO_flockfile(_IO_FILE *);}-> N200
+/usr/include/libio.h, line 472:	N200 -{void _IO_funlockfile(_IO_FILE *);}-> N201
+/usr/include/libio.h, line 473:	N201 -{int _IO_ftrylockfile(_IO_FILE *);}-> N202
+/usr/include/libio.h, lines 490-491:	N202 -{int _IO_vfscanf(_IO_FILE *, const char *, __gnuc_va_list , int *);}-> N203
+/usr/include/libio.h, lines 492-493:	N203 -{int _IO_vfprintf(_IO_FILE *, const char *, __gnuc_va_list );}-> N204
+/usr/include/libio.h, line 494:	N204 -{__ssize_t  _IO_padn(_IO_FILE *, int, __ssize_t );}-> N205
+/usr/include/libio.h, line 495:	N205 -{size_t  _IO_sgetn(_IO_FILE *, void *, size_t );}-> N206
+/usr/include/libio.h, line 497:	N206 -{__off64_t  _IO_seekoff(_IO_FILE *, __off64_t , int, int);}-> N207
+/usr/include/libio.h, line 498:	N207 -{__off64_t  _IO_seekpos(_IO_FILE *, __off64_t , int);}-> N208
+/usr/include/libio.h, line 500:	N208 -{void _IO_free_backup_area(_IO_FILE *);}-> N209
+/usr/include/stdio.h, line 91:	N209 -{typedef _G_fpos_t fpos_t;}-> N210
+/usr/include/stdio.h, line 145:	N210 -{extern struct _IO_FILE *stdin;}-> N211
+/usr/include/stdio.h, line 146:	N211 -{extern struct _IO_FILE *stdout;}-> N212
+/usr/include/stdio.h, line 147:	N212 -{extern struct _IO_FILE *stderr;}-> N213
+/usr/include/stdio.h, line 155:	N213 -{int remove(const char *__filename);}-> N214
+/usr/include/stdio.h, line 157:	N214 -{int rename(const char *__old, const char *__new);}-> N215
+/usr/include/stdio.h, lines 162-163:	N215 -{int renameat(int __oldfd, const char *__old, int __newfd, const char *__new);}-> N216
+/usr/include/stdio.h, line 172:	N216 -{FILE * tmpfile();}-> N217
+/usr/include/stdio.h, line 186:	N217 -{char * tmpnam(char *__s);}-> N218
+/usr/include/stdio.h, line 192:	N218 -{char * tmpnam_r(char *__s);}-> N219
+/usr/include/stdio.h, lines 204-205:	N219 -{char * tempnam(const char *__dir, const char *__pfx);}-> N220
+/usr/include/stdio.h, line 214:	N220 -{int fclose(FILE *__stream);}-> N221
+/usr/include/stdio.h, line 219:	N221 -{int fflush(FILE *__stream);}-> N222
+/usr/include/stdio.h, line 229:	N222 -{int fflush_unlocked(FILE *__stream);}-> N223
+/usr/include/stdio.h, lines 249-250:	N223 -{FILE * fopen(const char *__filename, const char *__modes);}-> N224
+/usr/include/stdio.h, lines 255-257:	N224 -{FILE * freopen(const char *__filename, const char *__modes, FILE *__stream);}-> N225
+/usr/include/stdio.h, line 283:	N225 -{FILE * fdopen(int __fd, const char *__modes);}-> N226
+/usr/include/stdio.h, lines 296-297:	N226 -{FILE * fmemopen(void *__s, size_t __len, const char *__modes);}-> N227
+/usr/include/stdio.h, line 302:	N227 -{FILE * open_memstream(char **__bufloc, size_t *__sizeloc);}-> N228
+/usr/include/stdio.h, line 309:	N228 -{void setbuf(FILE *__stream, char *__buf);}-> N229
+/usr/include/stdio.h, lines 313-314:	N229 -{int setvbuf(FILE *__stream, char *__buf, int __modes, size_t __n);}-> N230
+/usr/include/stdio.h, lines 320-321:	N230 -{void setbuffer(FILE *__stream, char *__buf, size_t __size);}-> N231
+/usr/include/stdio.h, line 324:	N231 -{void setlinebuf(FILE *__stream);}-> N232
+/usr/include/stdio.h, lines 333-334:	N232 -{int fprintf(FILE *__stream, const char *__format, ...);}-> N233
+/usr/include/stdio.h, line 339:	N233 -{int printf(const char *__format, ...);}-> N234
+/usr/include/stdio.h, lines 341-342:	N234 -{int sprintf(char *__s, const char *__format, ...);}-> N235
+/usr/include/stdio.h, lines 348-349:	N235 -{int vfprintf(FILE *__s, const char *__format, __gnuc_va_list __arg);}-> N236
+/usr/include/stdio.h, line 354:	N236 -{int vprintf(const char *__format, __gnuc_va_list __arg);}-> N237
+/usr/include/stdio.h, lines 356-357:	N237 -{int vsprintf(char *__s, const char *__format, __gnuc_va_list __arg);}-> N238
+/usr/include/stdio.h, lines 363-365:	N238 -{int snprintf(char *__s, size_t __maxlen, const char *__format, ...);}-> N239
+/usr/include/stdio.h, lines 367-369:	N239 -{int vsnprintf(char *__s, size_t __maxlen, const char *__format, __gnuc_va_list __arg);}-> N240
+/usr/include/stdio.h, lines 394-396:	N240 -{int vdprintf(int __fd, const char *__fmt, __gnuc_va_list __arg);}-> N241
+/usr/include/stdio.h, lines 397-398:	N241 -{int dprintf(int __fd, const char *__fmt, ...);}-> N242
+/usr/include/stdio.h, lines 407-408:	N242 -{int fscanf(FILE *__stream, const char *__format, ...);}-> N243
+/usr/include/stdio.h, line 413:	N243 -{int scanf(const char *__format, ...);}-> N244
+/usr/include/stdio.h, lines 415-416:	N244 -{int sscanf(const char *__s, const char *__format, ...);}-> N245
+/usr/include/stdio.h, lines 453-455:	N245 -{int vfscanf(FILE *__s, const char *__format, __gnuc_va_list __arg);}-> N246
+/usr/include/stdio.h, lines 461-462:	N246 -{int vscanf(const char *__format, __gnuc_va_list __arg);}-> N247
+/usr/include/stdio.h, lines 465-467:	N247 -{int vsscanf(const char *__s, const char *__format, __gnuc_va_list __arg);}-> N248
+/usr/include/stdio.h, line 513:	N248 -{int fgetc(FILE *__stream);}-> N249
+/usr/include/stdio.h, line 514:	N249 -{int getc(FILE *__stream);}-> N250
+/usr/include/stdio.h, line 520:	N250 -{int getchar();}-> N251
+/usr/include/stdio.h, line 532:	N251 -{int getc_unlocked(FILE *__stream);}-> N252
+/usr/include/stdio.h, line 533:	N252 -{int getchar_unlocked();}-> N253
+/usr/include/stdio.h, line 543:	N253 -{int fgetc_unlocked(FILE *__stream);}-> N254
+/usr/include/stdio.h, line 555:	N254 -{int fputc(int __c, FILE *__stream);}-> N255
+/usr/include/stdio.h, line 556:	N255 -{int putc(int __c, FILE *__stream);}-> N256
+/usr/include/stdio.h, line 562:	N256 -{int putchar(int __c);}-> N257
+/usr/include/stdio.h, line 576:	N257 -{int fputc_unlocked(int __c, FILE *__stream);}-> N258
+/usr/include/stdio.h, line 584:	N258 -{int putc_unlocked(int __c, FILE *__stream);}-> N259
+/usr/include/stdio.h, line 585:	N259 -{int putchar_unlocked(int __c);}-> N260
+/usr/include/stdio.h, line 592:	N260 -{int getw(FILE *__stream);}-> N261
+/usr/include/stdio.h, line 595:	N261 -{int putw(int __w, FILE *__stream);}-> N262
+/usr/include/stdio.h, lines 604-605:	N262 -{char * fgets(char *__s, int __n, FILE *__stream);}-> N263
+/usr/include/stdio.h, line 612:	N263 -{char * gets(char *__s);}-> N264
+/usr/include/stdio.h, lines 638-640:	N264 -{__ssize_t  __getdelim(char **__lineptr, size_t *__n, int __delimiter, FILE *__stream);}-> N265
+/usr/include/stdio.h, lines 641-643:	N265 -{__ssize_t  getdelim(char **__lineptr, size_t *__n, int __delimiter, FILE *__stream);}-> N266
+/usr/include/stdio.h, lines 651-653:	N266 -{__ssize_t  getline(char **__lineptr, size_t *__n, FILE *__stream);}-> N267
+/usr/include/stdio.h, line 662:	N267 -{int fputs(const char *__s, FILE *__stream);}-> N268
+/usr/include/stdio.h, line 668:	N268 -{int puts(const char *__s);}-> N269
+/usr/include/stdio.h, line 675:	N269 -{int ungetc(int __c, FILE *__stream);}-> N270
+/usr/include/stdio.h, lines 682-683:	N270 -{size_t  fread(void *__ptr, size_t __size, size_t __n, FILE *__stream);}-> N271
+/usr/include/stdio.h, lines 688-689:	N271 -{size_t  fwrite(const void *__ptr, size_t __size, size_t __n, FILE *__s);}-> N272
+/usr/include/stdio.h, lines 710-711:	N272 -{size_t  fread_unlocked(void *__ptr, size_t __size, size_t __n, FILE *__stream);}-> N273
+/usr/include/stdio.h, lines 712-713:	N273 -{size_t  fwrite_unlocked(const void *__ptr, size_t __size, size_t __n, FILE *__stream);}-> N274
+/usr/include/stdio.h, line 722:	N274 -{int fseek(FILE *__stream, long int __off, int __whence);}-> N275
+/usr/include/stdio.h, line 727:	N275 -{long int ftell(FILE *__stream);}-> N276
+/usr/include/stdio.h, line 732:	N276 -{void rewind(FILE *__stream);}-> N277
+/usr/include/stdio.h, line 746:	N277 -{int fseeko(FILE *__stream, __off_t __off, int __whence);}-> N278
+/usr/include/stdio.h, line 751:	N278 -{__off_t  ftello(FILE *__stream);}-> N279
+/usr/include/stdio.h, line 771:	N279 -{int fgetpos(FILE *__stream, fpos_t *__pos);}-> N280
+/usr/include/stdio.h, line 776:	N280 -{int fsetpos(FILE *__stream, const fpos_t *__pos);}-> N281
+/usr/include/stdio.h, line 799:	N281 -{void clearerr(FILE *__stream);}-> N282
+/usr/include/stdio.h, line 801:	N282 -{int feof(FILE *__stream);}-> N283
+/usr/include/stdio.h, line 803:	N283 -{int ferror(FILE *__stream);}-> N284
+/usr/include/stdio.h, line 808:	N284 -{void clearerr_unlocked(FILE *__stream);}-> N285
+/usr/include/stdio.h, line 809:	N285 -{int feof_unlocked(FILE *__stream);}-> N286
+/usr/include/stdio.h, line 810:	N286 -{int ferror_unlocked(FILE *__stream);}-> N287
+/usr/include/stdio.h, line 819:	N287 -{void perror(const char *__s);}-> N288
+/usr/include/bits/sys_errlist.h, line 27:	N288 -{extern int sys_nerr;}-> N289
+/usr/include/bits/sys_errlist.h, line 28:	N289 -{extern const const char *sys_errlist[];}-> N290
+/usr/include/stdio.h, line 831:	N290 -{int fileno(FILE *__stream);}-> N291
+/usr/include/stdio.h, line 836:	N291 -{int fileno_unlocked(FILE *__stream);}-> N292
+/usr/include/stdio.h, line 846:	N292 -{FILE * popen(const char *__command, const char *__modes);}-> N293
+/usr/include/stdio.h, line 852:	N293 -{int pclose(FILE *__stream);}-> N294
+/usr/include/stdio.h, line 858:	N294 -{char * ctermid(char *__s);}-> N295
+/usr/include/stdio.h, line 886:	N295 -{void flockfile(FILE *__stream);}-> N296
+/usr/include/stdio.h, line 890:	N296 -{int ftrylockfile(FILE *__stream);}-> N297
+/usr/include/stdio.h, line 893:	N297 -{void funlockfile(FILE *__stream);}-> N298
+/usr/include/assert.h, lines 71-73:	N298 -{void __assert_fail(const char *__assertion, const char *__file, unsigned int __line, const char *__function);}-> N299
+/usr/include/assert.h, lines 76-79:	N299 -{void __assert_perror_fail(int __errnum, const char *__file, unsigned int __line, const char *__function);}-> N300
+/usr/include/assert.h, lines 84-85:	N300 -{void __assert(const char *__assertion, const char *__file, int __line);}-> N301
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h, line 323:	N301 -{typedef int wchar_t;}-> N302
+/usr/include/stdlib.h, lines 98-102:	N302 -{struct __anon_type_5 {   int quot;   int rem; } ;}-> N303
+/usr/include/stdlib.h, lines 98-102:	N303 -{typedef struct __anon_type_5 div_t;}-> N304
+/usr/include/stdlib.h, lines 106-110:	N304 -{struct __anon_type_6 {   long int quot;   long int rem; } ;}-> N305
+/usr/include/stdlib.h, lines 106-110:	N305 -{typedef struct __anon_type_6 ldiv_t;}-> N306
+/usr/include/stdlib.h, lines 118-122:	N306 -{struct __anon_type_7 {   long long int quot;   long long int rem; } ;}-> N307
+/usr/include/stdlib.h, lines 118-122:	N307 -{typedef struct __anon_type_7 lldiv_t;}-> N308
+/usr/include/stdlib.h, line 140:	N308 -{size_t  __ctype_get_mb_cur_max();}-> N309
+/usr/include/stdlib.h, lines 145-146:	N309 -{double atof(const char *__nptr);}-> N310
+/usr/include/stdlib.h, lines 148-149:	N310 -{int atoi(const char *__nptr);}-> N311
+/usr/include/stdlib.h, lines 151-152:	N311 -{long int atol(const char *__nptr);}-> N312
+/usr/include/stdlib.h, lines 158-159:	N312 -{long long int atoll(const char *__nptr);}-> N313
+/usr/include/stdlib.h, lines 165-167:	N313 -{double strtod(const char *__nptr, char **__endptr);}-> N314
+/usr/include/stdlib.h, lines 173-174:	N314 -{float strtof(const char *__nptr, char **__endptr);}-> N315
+/usr/include/stdlib.h, lines 176-178:	N315 -{long double strtold(const char *__nptr, char **__endptr);}-> N316
+/usr/include/stdlib.h, lines 184-186:	N316 -{long int strtol(const char *__nptr, char **__endptr, int __base);}-> N317
+/usr/include/stdlib.h, lines 188-190:	N317 -{unsigned long int strtoul(const char *__nptr, char **__endptr, int __base);}-> N318
+/usr/include/stdlib.h, lines 196-198:	N318 -{long long int strtoq(const char *__nptr, char **__endptr, int __base);}-> N319
+/usr/include/stdlib.h, lines 201-203:	N319 -{unsigned long long int strtouq(const char *__nptr, char **__endptr, int __base);}-> N320
+/usr/include/stdlib.h, lines 210-212:	N320 -{long long int strtoll(const char *__nptr, char **__endptr, int __base);}-> N321
+/usr/include/stdlib.h, lines 215-217:	N321 -{unsigned long long int strtoull(const char *__nptr, char **__endptr, int __base);}-> N322
+/usr/include/stdlib.h, line 311:	N322 -{char * l64a(long int __n);}-> N323
+/usr/include/stdlib.h, lines 314-315:	N323 -{long int a64l(const char *__s);}-> N324
+/usr/include/sys/types.h, line 35:	N324 -{typedef __u_char u_char;}-> N325
+/usr/include/sys/types.h, line 36:	N325 -{typedef __u_short u_short;}-> N326
+/usr/include/sys/types.h, line 37:	N326 -{typedef __u_int u_int;}-> N327
+/usr/include/sys/types.h, line 38:	N327 -{typedef __u_long u_long;}-> N328
+/usr/include/sys/types.h, line 39:	N328 -{typedef __quad_t quad_t;}-> N329
+/usr/include/sys/types.h, line 40:	N329 -{typedef __u_quad_t u_quad_t;}-> N330
+/usr/include/sys/types.h, line 41:	N330 -{typedef __fsid_t fsid_t;}-> N331
+/usr/include/sys/types.h, line 46:	N331 -{typedef __loff_t loff_t;}-> N332
+/usr/include/sys/types.h, line 50:	N332 -{typedef __ino_t ino_t;}-> N333
+/usr/include/sys/types.h, line 62:	N333 -{typedef __dev_t dev_t;}-> N334
+/usr/include/sys/types.h, line 67:	N334 -{typedef __gid_t gid_t;}-> N335
+/usr/include/sys/types.h, line 72:	N335 -{typedef __mode_t mode_t;}-> N336
+/usr/include/sys/types.h, line 77:	N336 -{typedef __nlink_t nlink_t;}-> N337
+/usr/include/sys/types.h, line 82:	N337 -{typedef __uid_t uid_t;}-> N338
+/usr/include/sys/types.h, line 88:	N338 -{typedef __off_t off_t;}-> N339
+/usr/include/sys/types.h, line 100:	N339 -{typedef __pid_t pid_t;}-> N340
+/usr/include/sys/types.h, line 105:	N340 -{typedef __id_t id_t;}-> N341
+/usr/include/sys/types.h, line 110:	N341 -{typedef __ssize_t ssize_t;}-> N342
+/usr/include/sys/types.h, line 116:	N342 -{typedef __daddr_t daddr_t;}-> N343
+/usr/include/sys/types.h, line 117:	N343 -{typedef __caddr_t caddr_t;}-> N344
+/usr/include/sys/types.h, line 123:	N344 -{typedef __key_t key_t;}-> N345
+/usr/include/time.h, line 76:	N345 -{typedef __time_t time_t;}-> N346
+/usr/include/time.h, line 92:	N346 -{typedef __clockid_t clockid_t;}-> N347
+/usr/include/time.h, line 104:	N347 -{typedef __timer_t timer_t;}-> N348
+/usr/include/sys/types.h, line 151:	N348 -{typedef unsigned long int ulong;}-> N349
+/usr/include/sys/types.h, line 152:	N349 -{typedef unsigned short int ushort;}-> N350
+/usr/include/sys/types.h, line 153:	N350 -{typedef unsigned int uint;}-> N351
+/usr/include/sys/types.h, line 195:	N351 -{typedef int int8_t;}-> N352
+/usr/include/sys/types.h, line 196:	N352 -{typedef int int16_t;}-> N353
+/usr/include/sys/types.h, line 197:	N353 -{typedef int int32_t;}-> N354
+/usr/include/sys/types.h, line 198:	N354 -{typedef int int64_t;}-> N355
+/usr/include/sys/types.h, line 201:	N355 -{typedef unsigned int u_int8_t;}-> N356
+/usr/include/sys/types.h, line 202:	N356 -{typedef unsigned int u_int16_t;}-> N357
+/usr/include/sys/types.h, line 203:	N357 -{typedef unsigned int u_int32_t;}-> N358
+/usr/include/sys/types.h, line 204:	N358 -{typedef unsigned int u_int64_t;}-> N359
+/usr/include/sys/types.h, line 206:	N359 -{typedef int register_t;}-> N360
+/usr/include/bits/sigset.h, line 24:	N360 -{typedef int __sig_atomic_t;}-> N361
+/usr/include/bits/sigset.h, lines 29-32:	N361 -{struct __anon_type_8 {   unsigned long int __val[32UL]; } ;}-> N362
+/usr/include/bits/sigset.h, lines 29-32:	N362 -{typedef struct __anon_type_8 __sigset_t;}-> N363
+/usr/include/sys/select.h, line 38:	N363 -{typedef __sigset_t sigset_t;}-> N364
+/usr/include/time.h, lines 120-124:	N364 -{struct timespec {   __time_t tv_sec;   long int tv_nsec; } ;}-> N365
+/usr/include/bits/time.h, lines 69-73:	N365 -{struct timeval {   __time_t tv_sec;   __suseconds_t tv_usec; } ;}-> N366
+/usr/include/sys/select.h, line 49:	N366 -{typedef __suseconds_t suseconds_t;}-> N367
+/usr/include/sys/select.h, line 55:	N367 -{typedef long int __fd_mask;}-> N368
+/usr/include/sys/select.h, lines 67-78:	N368 -{struct __anon_type_9 {   __fd_mask __fds_bits[32]; } ;}-> N369
+/usr/include/sys/select.h, lines 67-78:	N369 -{typedef struct __anon_type_9 fd_set;}-> N370
+/usr/include/sys/select.h, line 85:	N370 -{typedef __fd_mask fd_mask;}-> N371
+/usr/include/sys/select.h, lines 109-112:	N371 -{int select(int __nfds, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, struct timeval *__timeout);}-> N372
+/usr/include/sys/select.h, lines 121-125:	N372 -{int pselect(int __nfds, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, const struct timespec *__timeout, const __sigset_t *__sigmask);}-> N373
+/usr/include/sys/sysmacros.h, lines 31-32:	N373 -{unsigned int gnu_dev_major(unsigned long long int __dev);}-> N374
+/usr/include/sys/sysmacros.h, lines 34-35:	N374 -{unsigned int gnu_dev_minor(unsigned long long int __dev);}-> N375
+/usr/include/sys/sysmacros.h, lines 37-39:	N375 -{unsigned long long int gnu_dev_makedev(unsigned int __major, unsigned int __minor);}-> N376
+/usr/include/sys/types.h, line 235:	N376 -{typedef __blkcnt_t blkcnt_t;}-> N377
+/usr/include/sys/types.h, line 239:	N377 -{typedef __fsblkcnt_t fsblkcnt_t;}-> N378
+/usr/include/sys/types.h, line 243:	N378 -{typedef __fsfilcnt_t fsfilcnt_t;}-> N379
+/usr/include/bits/pthreadtypes.h, line 50:	N379 -{typedef unsigned long int pthread_t;}-> N380
+/usr/include/bits/pthreadtypes.h, lines 53-57:	N380 -{union __anon_type_10 {   char __size[56];   long int __align; } ;}-> N381
+/usr/include/bits/pthreadtypes.h, lines 53-57:	N381 -{typedef union __anon_type_10 pthread_attr_t;}-> N382
+/usr/include/bits/pthreadtypes.h, lines 61-65:	N382 -{struct __pthread_internal_list {   struct __pthread_internal_list *__prev;   struct __pthread_internal_list *__next; } ;}-> N383
+/usr/include/bits/pthreadtypes.h, lines 61-65:	N383 -{typedef struct __pthread_internal_list __pthread_list_t;}-> N384
+/usr/include/bits/pthreadtypes.h, lines 78-93:	N384 -{struct __pthread_mutex_s {   int __lock;   unsigned int __count;   int __owner;   unsigned int __nusers;   int __kind;   int __spins;   __pthread_list_t __list; } ;}-> N385
+/usr/include/bits/pthreadtypes.h, lines 76-96:	N385 -{union __anon_type_11 {   struct __pthread_mutex_s __data;   char __size[40];   long int __align; } ;}-> N386
+/usr/include/bits/pthreadtypes.h, lines 76-96:	N386 -{typedef union __anon_type_11 pthread_mutex_t;}-> N387
+/usr/include/bits/pthreadtypes.h, lines 106-110:	N387 -{union __anon_type_12 {   char __size[4];   int __align; } ;}-> N388
+/usr/include/bits/pthreadtypes.h, lines 106-110:	N388 -{typedef union __anon_type_12 pthread_mutexattr_t;}-> N389
+/usr/include/bits/pthreadtypes.h, lines 117-127:	N389 -{struct __anon_type_13 {   int __lock;   unsigned int __futex;   unsigned long long int __total_seq;   unsigned long long int __wakeup_seq;   unsigned long long int __woken_seq;   void *__mutex;   unsigned int __nwaiters;   unsigned int __broadcast_seq; } ;}-> N390
+/usr/include/bits/pthreadtypes.h, lines 115-130:	N390 -{union __anon_type_14 {   struct __anon_type_13 __data;   char __size[48];   long long int __align; } ;}-> N391
+/usr/include/bits/pthreadtypes.h, lines 115-130:	N391 -{typedef union __anon_type_14 pthread_cond_t;}-> N392
+/usr/include/bits/pthreadtypes.h, lines 132-136:	N392 -{union __anon_type_15 {   char __size[4];   int __align; } ;}-> N393
+/usr/include/bits/pthreadtypes.h, lines 132-136:	N393 -{typedef union __anon_type_15 pthread_condattr_t;}-> N394
+/usr/include/bits/pthreadtypes.h, line 140:	N394 -{typedef unsigned int pthread_key_t;}-> N395
+/usr/include/bits/pthreadtypes.h, line 144:	N395 -{typedef int pthread_once_t;}-> N396
+/usr/include/bits/pthreadtypes.h, lines 153-168:	N396 -{struct __anon_type_16 {   int __lock;   unsigned int __nr_readers;   unsigned int __readers_wakeup;   unsigned int __writer_wakeup;   unsigned int __nr_readers_queued;   unsigned int __nr_writers_queued;   int __writer;   int __shared;   unsigned long int __pad1;   unsigned long int __pad2;   unsigned int __flags; } ;}-> N397
+/usr/include/bits/pthreadtypes.h, lines 150-172:	N397 -{union __anon_type_17 {   struct __anon_type_16 __data;   char __size[56];   long int __align; } ;}-> N398
+/usr/include/bits/pthreadtypes.h, lines 150-172:	N398 -{typedef union __anon_type_17 pthread_rwlock_t;}-> N399
+/usr/include/bits/pthreadtypes.h, lines 191-195:	N399 -{union __anon_type_18 {   char __size[8];   long int __align; } ;}-> N400
+/usr/include/bits/pthreadtypes.h, lines 191-195:	N400 -{typedef union __anon_type_18 pthread_rwlockattr_t;}-> N401
+/usr/include/bits/pthreadtypes.h, line 201:	N401 -{typedef volatile int pthread_spinlock_t;}-> N402
+/usr/include/bits/pthreadtypes.h, lines 206-210:	N402 -{union __anon_type_19 {   char __size[32];   long int __align; } ;}-> N403
+/usr/include/bits/pthreadtypes.h, lines 206-210:	N403 -{typedef union __anon_type_19 pthread_barrier_t;}-> N404
+/usr/include/bits/pthreadtypes.h, lines 212-216:	N404 -{union __anon_type_20 {   char __size[4];   int __align; } ;}-> N405
+/usr/include/bits/pthreadtypes.h, lines 212-216:	N405 -{typedef union __anon_type_20 pthread_barrierattr_t;}-> N406
+/usr/include/stdlib.h, line 327:	N406 -{long int random();}-> N407
+/usr/include/stdlib.h, line 330:	N407 -{void srandom(unsigned int __seed);}-> N408
+/usr/include/stdlib.h, lines 336-337:	N408 -{char * initstate(unsigned int __seed, char *__statebuf, size_t __statelen);}-> N409
+/usr/include/stdlib.h, line 341:	N409 -{char * setstate(char *__statebuf);}-> N410
+/usr/include/stdlib.h, lines 349-358:	N410 -{struct random_data {   int32_t *fptr;   int32_t *rptr;   int32_t *state;   int rand_type;   int rand_deg;   int rand_sep;   int32_t *end_ptr; } ;}-> N411
+/usr/include/stdlib.h, lines 360-361:	N411 -{int random_r(struct random_data *__buf, int32_t *__result);}-> N412
+/usr/include/stdlib.h, lines 363-364:	N412 -{int srandom_r(unsigned int __seed, struct random_data *__buf);}-> N413
+/usr/include/stdlib.h, lines 366-369:	N413 -{int initstate_r(unsigned int __seed, char *__statebuf, size_t __statelen, struct random_data *__buf);}-> N414
+/usr/include/stdlib.h, lines 371-373:	N414 -{int setstate_r(char *__statebuf, struct random_data *__buf);}-> N415
+/usr/include/stdlib.h, line 380:	N415 -{int rand();}-> N416
+/usr/include/stdlib.h, line 382:	N416 -{void srand(unsigned int __seed);}-> N417
+/usr/include/stdlib.h, line 387:	N417 -{int rand_r(unsigned int *__seed);}-> N418
+/usr/include/stdlib.h, line 395:	N418 -{double drand48();}-> N419
+/usr/include/stdlib.h, line 396:	N419 -{double erand48(unsigned short int __xsubi[3]);}-> N420
+/usr/include/stdlib.h, line 399:	N420 -{long int lrand48();}-> N421
+/usr/include/stdlib.h, lines 400-401:	N421 -{long int nrand48(unsigned short int __xsubi[3]);}-> N422
+/usr/include/stdlib.h, line 404:	N422 -{long int mrand48();}-> N423
+/usr/include/stdlib.h, lines 405-406:	N423 -{long int jrand48(unsigned short int __xsubi[3]);}-> N424
+/usr/include/stdlib.h, line 409:	N424 -{void srand48(long int __seedval);}-> N425
+/usr/include/stdlib.h, lines 410-411:	N425 -{unsigned short int * seed48(unsigned short int __seed16v[3]);}-> N426
+/usr/include/stdlib.h, line 412:	N426 -{void lcong48(unsigned short int __param[7]);}-> N427
+/usr/include/stdlib.h, lines 418-425:	N427 -{struct drand48_data {   unsigned short int __x[3];   unsigned short int __old_x[3];   unsigned short int __c;   unsigned short int __init;   unsigned long long int __a; } ;}-> N428
+/usr/include/stdlib.h, lines 428-429:	N428 -{int drand48_r(struct drand48_data *__buffer, double *__result);}-> N429
+/usr/include/stdlib.h, lines 430-432:	N429 -{int erand48_r(unsigned short int __xsubi[3], struct drand48_data *__buffer, double *__result);}-> N430
+/usr/include/stdlib.h, lines 435-437:	N430 -{int lrand48_r(struct drand48_data *__buffer, long int *__result);}-> N431
+/usr/include/stdlib.h, lines 438-441:	N431 -{int nrand48_r(unsigned short int __xsubi[3], struct drand48_data *__buffer, long int *__result);}-> N432
+/usr/include/stdlib.h, lines 444-446:	N432 -{int mrand48_r(struct drand48_data *__buffer, long int *__result);}-> N433
+/usr/include/stdlib.h, lines 447-450:	N433 -{int jrand48_r(unsigned short int __xsubi[3], struct drand48_data *__buffer, long int *__result);}-> N434
+/usr/include/stdlib.h, lines 453-454:	N434 -{int srand48_r(long int __seedval, struct drand48_data *__buffer);}-> N435
+/usr/include/stdlib.h, lines 456-457:	N435 -{int seed48_r(unsigned short int __seed16v[3], struct drand48_data *__buffer);}-> N436
+/usr/include/stdlib.h, lines 459-461:	N436 -{int lcong48_r(unsigned short int __param[7], struct drand48_data *__buffer);}-> N437
+/usr/include/stdlib.h, line 471:	N437 -{void * malloc(size_t __size);}-> N438
+/usr/include/stdlib.h, lines 473-474:	N438 -{void * calloc(size_t __nmemb, size_t __size);}-> N439
+/usr/include/stdlib.h, lines 485-486:	N439 -{void * realloc(void *__ptr, size_t __size);}-> N440
+/usr/include/stdlib.h, line 488:	N440 -{void free(void *__ptr);}-> N441
+/usr/include/stdlib.h, line 493:	N441 -{void cfree(void *__ptr);}-> N442
+/usr/include/alloca.h, line 33:	N442 -{void * alloca(size_t __size);}-> N443
+/usr/include/stdlib.h, line 502:	N443 -{void * valloc(size_t __size);}-> N444
+/usr/include/stdlib.h, lines 507-508:	N444 -{int posix_memalign(void **__memptr, size_t __alignment, size_t __size);}-> N445
+/usr/include/stdlib.h, line 513:	N445 -{void abort();}-> N446
+/usr/include/stdlib.h, line 517:	N446 -{int atexit(void (*__func)());}-> N447
+/usr/include/stdlib.h, lines 535-536:	N447 -{int on_exit(void (*__func)(int __status, void *__arg), void *__arg);}-> N448
+/usr/include/stdlib.h, line 543:	N448 -{void exit(int __status);}-> N449
+/usr/include/stdlib.h, line 559:	N449 -{void _Exit(int __status);}-> N450
+/usr/include/stdlib.h, line 566:	N450 -{char * getenv(const char *__name);}-> N451
+/usr/include/stdlib.h, lines 571-572:	N451 -{char * __secure_getenv(const char *__name);}-> N452
+/usr/include/stdlib.h, line 578:	N452 -{int putenv(char *__string);}-> N453
+/usr/include/stdlib.h, lines 584-585:	N453 -{int setenv(const char *__name, const char *__value, int __replace);}-> N454
+/usr/include/stdlib.h, line 588:	N454 -{int unsetenv(const char *__name);}-> N455
+/usr/include/stdlib.h, line 595:	N455 -{int clearenv();}-> N456
+/usr/include/stdlib.h, line 604:	N456 -{char * mktemp(char *__template);}-> N457
+/usr/include/stdlib.h, line 615:	N457 -{int mkstemp(char *__template);}-> N458
+/usr/include/stdlib.h, line 637:	N458 -{int mkstemps(char *__template, int __suffixlen);}-> N459
+/usr/include/stdlib.h, line 658:	N459 -{char * mkdtemp(char *__template);}-> N460
+/usr/include/stdlib.h, line 712:	N460 -{int system(const char *__command);}-> N461
+/usr/include/stdlib.h, lines 729-730:	N461 -{char * realpath(const char *__name, char *__resolved);}-> N462
+/usr/include/stdlib.h, line 737:	N462 -{typedef int (*__compar_fn_t)(const void *, const void *);}-> N463
+/usr/include/stdlib.h, lines 750-752:	N463 -{void * bsearch(const void *__key, const void *__base, size_t __nmemb, size_t __size, __compar_fn_t __compar);}-> N464
+/usr/include/stdlib.h, lines 756-757:	N464 -{void qsort(void *__base, size_t __nmemb, size_t __size, __compar_fn_t __compar);}-> N465
+/usr/include/stdlib.h, line 766:	N465 -{int abs(int __x);}-> N466
+/usr/include/stdlib.h, line 767:	N466 -{long int labs(long int __x);}-> N467
+/usr/include/stdlib.h, lines 771-772:	N467 -{long long int llabs(long long int __x);}-> N468
+/usr/include/stdlib.h, lines 780-781:	N468 -{div_t  div(int __numer, int __denom);}-> N469
+/usr/include/stdlib.h, lines 782-783:	N469 -{ldiv_t  ldiv(long int __numer, long int __denom);}-> N470
+/usr/include/stdlib.h, lines 788-790:	N470 -{lldiv_t  lldiv(long long int __numer, long long int __denom);}-> N471
+/usr/include/stdlib.h, lines 802-803:	N471 -{char * ecvt(double __value, int __ndigit, int *__decpt, int *__sign);}-> N472
+/usr/include/stdlib.h, lines 808-809:	N472 -{char * fcvt(double __value, int __ndigit, int *__decpt, int *__sign);}-> N473
+/usr/include/stdlib.h, lines 814-815:	N473 -{char * gcvt(double __value, int __ndigit, char *__buf);}-> N474
+/usr/include/stdlib.h, lines 820-822:	N474 -{char * qecvt(long double __value, int __ndigit, int *__decpt, int *__sign);}-> N475
+/usr/include/stdlib.h, lines 823-825:	N475 -{char * qfcvt(long double __value, int __ndigit, int *__decpt, int *__sign);}-> N476
+/usr/include/stdlib.h, lines 826-827:	N476 -{char * qgcvt(long double __value, int __ndigit, char *__buf);}-> N477
+/usr/include/stdlib.h, lines 832-834:	N477 -{int ecvt_r(double __value, int __ndigit, int *__decpt, int *__sign, char *__buf, size_t __len);}-> N478
+/usr/include/stdlib.h, lines 835-837:	N478 -{int fcvt_r(double __value, int __ndigit, int *__decpt, int *__sign, char *__buf, size_t __len);}-> N479
+/usr/include/stdlib.h, lines 839-842:	N479 -{int qecvt_r(long double __value, int __ndigit, int *__decpt, int *__sign, char *__buf, size_t __len);}-> N480
+/usr/include/stdlib.h, lines 843-846:	N480 -{int qfcvt_r(long double __value, int __ndigit, int *__decpt, int *__sign, char *__buf, size_t __len);}-> N481
+/usr/include/stdlib.h, line 854:	N481 -{int mblen(const char *__s, size_t __n);}-> N482
+/usr/include/stdlib.h, lines 857-858:	N482 -{int mbtowc(wchar_t *__pwc, const char *__s, size_t __n);}-> N483
+/usr/include/stdlib.h, line 861:	N483 -{int wctomb(char *__s, wchar_t __wchar);}-> N484
+/usr/include/stdlib.h, lines 865-866:	N484 -{size_t  mbstowcs(wchar_t *__pwcs, const char *__s, size_t __n);}-> N485
+/usr/include/stdlib.h, lines 868-870:	N485 -{size_t  wcstombs(char *__s, const wchar_t *__pwcs, size_t __n);}-> N486
+/usr/include/stdlib.h, line 879:	N486 -{int rpmatch(const char *__response);}-> N487
+/usr/include/stdlib.h, line 907:	N487 -{int posix_openpt(int __oflag);}-> N488
+/usr/include/stdlib.h, lines 942-943:	N488 -{int getloadavg(double __loadavg[], int __nelem);}-> N489
+/usr/include/string.h, lines 43-45:	N489 -{void * memcpy(void *__dest, const void *__src, size_t __n);}-> N490
+/usr/include/string.h, lines 48-49:	N490 -{void * memmove(void *__dest, const void *__src, size_t __n);}-> N491
+/usr/include/string.h, lines 56-58:	N491 -{void * memccpy(void *__dest, const void *__src, int __c, size_t __n);}-> N492
+/usr/include/string.h, line 64:	N492 -{void * memset(void *__s, int __c, size_t __n);}-> N493
+/usr/include/string.h, lines 67-68:	N493 -{int memcmp(const void *__s1, const void *__s2, size_t __n);}-> N494
+/usr/include/string.h, lines 94-95:	N494 -{void * memchr(const void *__s, int __c, size_t __n);}-> N495
+/usr/include/string.h, lines 127-128:	N495 -{char * strcpy(char *__dest, const char *__src);}-> N496
+/usr/include/string.h, lines 130-132:	N496 -{char * strncpy(char *__dest, const char *__src, size_t __n);}-> N497
+/usr/include/string.h, lines 135-136:	N497 -{char * strcat(char *__dest, const char *__src);}-> N498
+/usr/include/string.h, lines 138-139:	N498 -{char * strncat(char *__dest, const char *__src, size_t __n);}-> N499
+/usr/include/string.h, lines 142-143:	N499 -{int strcmp(const char *__s1, const char *__s2);}-> N500
+/usr/include/string.h, lines 145-146:	N500 -{int strncmp(const char *__s1, const char *__s2, size_t __n);}-> N501
+/usr/include/string.h, lines 149-150:	N501 -{int strcoll(const char *__s1, const char *__s2);}-> N502
+/usr/include/string.h, lines 152-154:	N502 -{size_t  strxfrm(char *__dest, const char *__src, size_t __n);}-> N503
+/usr/include/xlocale.h, lines 28-40:	N503 -{struct __locale_struct {   struct locale_data *__locales[13];   const unsigned short int *__ctype_b;   const int *__ctype_tolower;   const int *__ctype_toupper;   const char *__names[13]; } ;}-> N504
+/usr/include/xlocale.h, lines 28-40:	N504 -{typedef struct __locale_struct *__locale_t;}-> N505
+/usr/include/xlocale.h, line 43:	N505 -{typedef __locale_t locale_t;}-> N506
+/usr/include/string.h, lines 164-165:	N506 -{int strcoll_l(const char *__s1, const char *__s2, __locale_t __l);}-> N507
+/usr/include/string.h, lines 167-168:	N507 -{size_t  strxfrm_l(char *__dest, const char *__src, size_t __n, __locale_t __l);}-> N508
+/usr/include/string.h, lines 173-174:	N508 -{char * strdup(const char *__s);}-> N509
+/usr/include/string.h, lines 181-182:	N509 -{char * strndup(const char *__string, size_t __n);}-> N510
+/usr/include/string.h, lines 233-234:	N510 -{char * strchr(const char *__s, int __c);}-> N511
+/usr/include/string.h, lines 260-261:	N511 -{char * strrchr(const char *__s, int __c);}-> N512
+/usr/include/string.h, lines 282-283:	N512 -{size_t  strcspn(const char *__s, const char *__reject);}-> N513
+/usr/include/string.h, lines 286-287:	N513 -{size_t  strspn(const char *__s, const char *__accept);}-> N514
+/usr/include/string.h, lines 312-313:	N514 -{char * strpbrk(const char *__s, const char *__accept);}-> N515
+/usr/include/string.h, lines 340-341:	N515 -{char * strstr(const char *__haystack, const char *__needle);}-> N516
+/usr/include/string.h, lines 346-347:	N516 -{char * strtok(char *__s, const char *__delim);}-> N517
+/usr/include/string.h, lines 352-355:	N517 -{char * __strtok_r(char *__s, const char *__delim, char **__save_ptr);}-> N518
+/usr/include/string.h, lines 357-359:	N518 -{char * strtok_r(char *__s, const char *__delim, char **__save_ptr);}-> N519
+/usr/include/string.h, lines 397-398:	N519 -{size_t  strlen(const char *__s);}-> N520
+/usr/include/string.h, lines 404-405:	N520 -{size_t  strnlen(const char *__string, size_t __maxlen);}-> N521
+/usr/include/string.h, line 411:	N521 -{char * strerror(int __errnum);}-> N522
+/usr/include/string.h, line 425:	N522 -{int strerror_r(int __errnum, char *__buf, size_t __buflen);}-> N523
+/usr/include/string.h, line 443:	N523 -{char * strerror_l(int __errnum, __locale_t __l);}-> N524
+/usr/include/string.h, line 449:	N524 -{void __bzero(void *__s, size_t __n);}-> N525
+/usr/include/string.h, lines 453-454:	N525 -{void bcopy(const void *__src, void *__dest, size_t __n);}-> N526
+/usr/include/string.h, line 457:	N526 -{void bzero(void *__s, size_t __n);}-> N527
+/usr/include/string.h, lines 460-461:	N527 -{int bcmp(const void *__s1, const void *__s2, size_t __n);}-> N528
+/usr/include/string.h, lines 487-488:	N528 -{char * index(const char *__s, int __c);}-> N529
+/usr/include/string.h, lines 515-516:	N529 -{char * rindex(const char *__s, int __c);}-> N530
+/usr/include/string.h, line 521:	N530 -{int ffs(int __i);}-> N531
+/usr/include/string.h, lines 534-535:	N531 -{int strcasecmp(const char *__s1, const char *__s2);}-> N532
+/usr/include/string.h, lines 538-539:	N532 -{int strncasecmp(const char *__s1, const char *__s2, size_t __n);}-> N533
+/usr/include/string.h, lines 557-559:	N533 -{char * strsep(char **__stringp, const char *__delim);}-> N534
+/usr/include/string.h, line 564:	N534 -{char * strsignal(int __sig);}-> N535
+/usr/include/string.h, lines 567-568:	N535 -{char * __stpcpy(char *__dest, const char *__src);}-> N536
+/usr/include/string.h, lines 569-570:	N536 -{char * stpcpy(char *__dest, const char *__src);}-> N537
+/usr/include/string.h, lines 574-576:	N537 -{char * __stpncpy(char *__dest, const char *__src, size_t __n);}-> N538
+/usr/include/string.h, lines 577-579:	N538 -{char * stpncpy(char *__dest, const char *__src, size_t __n);}-> N539
+/usr/include/time.h, line 60:	N539 -{typedef __clock_t clock_t;}-> N540
+/usr/include/time.h, lines 133-152:	N540 -{struct tm {   int tm_sec;   int tm_min;   int tm_hour;   int tm_mday;   int tm_mon;   int tm_year;   int tm_wday;   int tm_yday;   int tm_isdst;   long int tm_gmtoff;   const char *tm_zone; } ;}-> N541
+/usr/include/time.h, lines 161-165:	N541 -{struct itimerspec {   struct timespec it_interval;   struct timespec it_value; } ;}-> N542
+/usr/include/time.h, line 168:	N542 -{struct sigevent ;}-> N543
+/usr/include/time.h, line 183:	N543 -{clock_t  clock();}-> N544
+/usr/include/time.h, line 186:	N544 -{time_t  time(time_t *__timer);}-> N545
+/usr/include/time.h, lines 189-190:	N545 -{double difftime(time_t __time1, time_t __time0);}-> N546
+/usr/include/time.h, line 193:	N546 -{time_t  mktime(struct tm *__tp);}-> N547
+/usr/include/time.h, lines 199-201:	N547 -{size_t  strftime(char *__s, size_t __maxsize, const char *__format, const struct tm *__tp);}-> N548
+/usr/include/time.h, lines 217-220:	N548 -{size_t  strftime_l(char *__s, size_t __maxsize, const char *__format, const struct tm *__tp, __locale_t __loc);}-> N549
+/usr/include/time.h, line 233:	N549 -{struct tm * gmtime(const time_t *__timer);}-> N550
+/usr/include/time.h, line 237:	N550 -{struct tm * localtime(const time_t *__timer);}-> N551
+/usr/include/time.h, lines 243-244:	N551 -{struct tm * gmtime_r(const time_t *__timer, struct tm *__tp);}-> N552
+/usr/include/time.h, lines 248-249:	N552 -{struct tm * localtime_r(const time_t *__timer, struct tm *__tp);}-> N553
+/usr/include/time.h, line 255:	N553 -{char * asctime(const struct tm *__tp);}-> N554
+/usr/include/time.h, line 258:	N554 -{char * ctime(const time_t *__timer);}-> N555
+/usr/include/time.h, lines 266-267:	N555 -{char * asctime_r(const struct tm *__tp, char *__buf);}-> N556
+/usr/include/time.h, lines 270-271:	N556 -{char * ctime_r(const time_t *__timer, char *__buf);}-> N557
+/usr/include/time.h, line 276:	N557 -{extern char *__tzname[2];}-> N558
+/usr/include/time.h, line 277:	N558 -{extern int __daylight;}-> N559
+/usr/include/time.h, line 278:	N559 -{extern long int __timezone;}-> N560
+/usr/include/time.h, line 283:	N560 -{extern char *tzname[2];}-> N561
+/usr/include/time.h, line 287:	N561 -{void tzset();}-> N562
+/usr/include/time.h, line 291:	N562 -{extern int daylight;}-> N563
+/usr/include/time.h, line 292:	N563 -{extern long int timezone;}-> N564
+/usr/include/time.h, line 298:	N564 -{int stime(const time_t *__when);}-> N565
+/usr/include/time.h, line 313:	N565 -{time_t  timegm(struct tm *__tp);}-> N566
+/usr/include/time.h, line 316:	N566 -{time_t  timelocal(struct tm *__tp);}-> N567
+/usr/include/time.h, line 319:	N567 -{int dysize(int __year);}-> N568
+/usr/include/time.h, lines 328-329:	N568 -{int nanosleep(const struct timespec *__requested_time, struct timespec *__remaining);}-> N569
+/usr/include/time.h, line 333:	N569 -{int clock_getres(clockid_t __clock_id, struct timespec *__res);}-> N570
+/usr/include/time.h, line 336:	N570 -{int clock_gettime(clockid_t __clock_id, struct timespec *__tp);}-> N571
+/usr/include/time.h, lines 339-340:	N571 -{int clock_settime(clockid_t __clock_id, const struct timespec *__tp);}-> N572
+/usr/include/time.h, lines 347-349:	N572 -{int clock_nanosleep(clockid_t __clock_id, int __flags, const struct timespec *__req, struct timespec *__rem);}-> N573
+/usr/include/time.h, line 352:	N573 -{int clock_getcpuclockid(pid_t __pid, clockid_t *__clock_id);}-> N574
+/usr/include/time.h, lines 357-359:	N574 -{int timer_create(clockid_t __clock_id, struct sigevent *__evp, timer_t *__timerid);}-> N575
+/usr/include/time.h, line 362:	N575 -{int timer_delete(timer_t __timerid);}-> N576
+/usr/include/time.h, lines 365-367:	N576 -{int timer_settime(timer_t __timerid, int __flags, const struct itimerspec *__value, struct itimerspec *__ovalue);}-> N577
+/usr/include/time.h, lines 370-371:	N577 -{int timer_gettime(timer_t __timerid, struct itimerspec *__value);}-> N578
+/usr/include/time.h, line 374:	N578 -{int timer_getoverrun(timer_t __timerid);}-> N579
+line 10:	N579 -{int Num = 4;}-> N580
+lines 12-15:	N580 -{struct Poker {   char *name;   int num; } ;}-> N581
+lines 17-34:	N581 -{struct Poker * Poker_create(char *name, int num);}-> N582
+lines 36-48:	N582 -{void Poker_destroy(struct Poker *pn);}-> N583
+lines 50-64:	N583 -{void Poker_print(struct Poker *pn);}-> N584
+lines 66-98:	N584 -{int main(int argc, char *argv[]);}-> N585
+none:	N585 -{Function start dummy edge}-> N76
+line 68:	N76 -{struct Poker *fst;}-> N77
+line 69:	N77 -{struct Poker *sec;}-> N78
+line 70:	N78 -{char *pname[] = { "Diamond", "Spade", "Heart", "Club" };}-> N79
+	Num = 4;
+line 71:	N79 -{printf("Do you have time to play poker? 1 is Yes, to start\n");}-> N80
+line 72:	N80 -{int play;}-> N81
+	play = 15;
+line 73:	N81 -{scanf("%d", &play);}-> N82
+line 75:	N82 -{[play > 0]}-> N84
+lines 77-90:	N84 -{int __CPAchecker_TMP_0;}-> N88
+lines 77-90:	N88 -{int __CPAchecker_TMP_1;}-> N89
+lines 77-90:	N89 -{__CPAchecker_TMP_1 = rand();}-> N90
+	__CPAchecker_TMP_1 = 0;
+lines 77-90:	N90 -{int __CPAchecker_TMP_2;}-> N91
+lines 77-90:	N91 -{__CPAchecker_TMP_2 = rand();}-> N92
+	__CPAchecker_TMP_2 = 0;
+lines 77-90:	N92 -{Poker_create(pname[__CPAchecker_TMP_1 % 4], (__CPAchecker_TMP_2 % 13) + 1)}-> N1
+none:	N1 -{Function start dummy edge}-> N2
+line 19:	N2 -{struct Poker *pn;}-> N3
+line 19:	N3 -{pn = malloc(8);}-> N4
+line 21:	N4 -{[pn != ((void *)0)]}-> N5
+line 21:	N5 -{0;}-> N7
+line 24:	N7 -{Num = Num - 1;}-> N8
+	Num = 3;
+line 25:	N8 -{[Num >= 0]}-> N9
+line 25:	N9 -{0;}-> N11
+line 27:	N11 -{pn->name = strdup(name);}-> N12
+line 29:	N12 -{Num = Num - 1;}-> N13
+	Num = 2;
+line 30:	N13 -{[Num >= 0]}-> N14
+line 30:	N14 -{0;}-> N16
+line 32:	N16 -{pn->num = num;}-> N17
+line 33:	N17 -{return pn;}-> N0
+lines 77-90:	N0 -{Return edge from Poker_create to main}-> N93
+lines 77-90:	N93 -{fst = __CPAchecker_TMP_0;}-> N94
+line 77:	N94 -{int __CPAchecker_TMP_3;}-> N98
+	__CPAchecker_TMP_3 = 50;
+line 77:	N98 -{__CPAchecker_TMP_3 = rand();}-> N99
+	__CPAchecker_TMP_3 = 0;
+line 77:	N99 -{int __CPAchecker_TMP_4;}-> N100
+line 77:	N100 -{__CPAchecker_TMP_4 = rand();}-> N101
+	__CPAchecker_TMP_4 = 0;
+line 77:	N101 -{struct Poker *__CPAchecker_TMP_5;}-> N102
+line 77:	N102 -{Poker_create(pname[__CPAchecker_TMP_3 % 4], (__CPAchecker_TMP_4 % 13) + 1)}-> N1
+none:	N1 -{Function start dummy edge}-> N2
+line 19:	N2 -{struct Poker *pn;}-> N3
+line 19:	N3 -{pn = malloc(8);}-> N4
+line 21:	N4 -{[pn != ((void *)0)]}-> N5
+line 21:	N5 -{0;}-> N7
+line 24:	N7 -{Num = Num - 1;}-> N8
+	Num = 1;
+line 25:	N8 -{[Num >= 0]}-> N9
+line 25:	N9 -{0;}-> N11
+line 27:	N11 -{pn->name = strdup(name);}-> N12
+line 29:	N12 -{Num = Num - 1;}-> N13
+	Num = 0;
+line 30:	N13 -{[Num >= 0]}-> N14
+line 30:	N14 -{0;}-> N16
+line 32:	N16 -{pn->num = num;}-> N17
+line 33:	N17 -{return pn;}-> N0
+line 77:	N0 -{Return edge from Poker_create to main}-> N103
+line 77:	N103 -{[!(__CPAchecker_TMP_5 == 0)]}-> N95
+line 77:	N95 -{[sec == 0]}-> N97
+line 77:	N97 -{__CPAchecker_TMP_0 = 0;}-> N104
+	__CPAchecker_TMP_0 = 0;
+line 77:	N104 -{[!(fst == 0)]}-> N87
+line 82:	N87 -{Poker_print(fst)}-> N30
+none:	N30 -{Function start dummy edge}-> N31
+lines 52-63:	N31 -{switch (pn->num)}-> N32
+line 54:	N32 -{[(pn->num) == 2]}-> N35
+line 54:	N35 -{fall through}-> N37
+line 54:	N37 -{fall through}-> N39
+line 54:	N39 -{fall through}-> N41
+line 55:	N41 -{fall through}-> N43
+line 55:	N43 -{fall through}-> N45
+line 55:	N45 -{fall through}-> N47
+line 56:	N47 -{fall through}-> N49
+line 56:	N49 -{fall through}-> N51
+line 56:	N51 -{printf("%s, %d\n", pn->name, pn->num);}-> N53
+line 56:	N53 -{break}-> N33
+none:	N33 -{default return}-> N29
+line 82:	N29 -{Return edge from Poker_print to main}-> N105
+line 83:	N105 -{Poker_print(sec)}-> N30
+none:	N30 -{Function start dummy edge}-> N31
+lines 52-63:	N31 -{switch (pn->num)}-> N32
+line 54:	N32 -{[(pn->num) == 2]}-> N35
+line 54:	N35 -{fall through}-> N37
+line 54:	N37 -{fall through}-> N39
+line 54:	N39 -{fall through}-> N41
+line 55:	N41 -{fall through}-> N43
+line 55:	N43 -{fall through}-> N45
+line 55:	N45 -{fall through}-> N47
+line 56:	N47 -{fall through}-> N49
+line 56:	N49 -{fall through}-> N51
+line 56:	N51 -{printf("%s, %d\n", pn->name, pn->num);}-> N53
+line 56:	N53 -{break}-> N33
+none:	N33 -{default return}-> N29
+line 83:	N29 -{Return edge from Poker_print to main}-> N106
+line 87:	N106 -{Poker_destroy(fst)}-> N20
+none:	N20 -{Function start dummy edge}-> N21
+line 38:	N21 -{[pn != ((void *)0)]}-> N22
+line 38:	N22 -{0;}-> N24
+line 40:	N24 -{free(pn->name);}-> N25
+line 42:	N25 -{Num = Num + 1;}-> N26
+	Num = 1;
+line 44:	N26 -{free(pn);}-> N27
+line 46:	N27 -{Num = Num + 1;}-> N28
+none:	N28 -{default return}-> N19
+	Num = 2;
+line 87:	N19 -{Return edge from Poker_destroy to main}-> N107
+line 88:	N107 -{Poker_destroy(sec)}-> N20
+none:	N20 -{Function start dummy edge}-> N21
+line 38:	N21 -{[!(pn != ((void *)0))]}-> N23
+line 38:	N23 -{__assert_fail("pn != ((void *)0)", "tf/poker_rw.c", 38, "__PRETTY_FUNCTION__");}-> N24
+line 40:	N24 -{free(pn->name);}-> N25

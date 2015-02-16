@@ -1,0 +1,5 @@
+digraph fn_is_fake_mcount32 {
+157 [shape="circle" label="157\n1"]
+156 [shape="circle" label="156\n0"]
+157 -> 156 [label="Function start dummy edge return 0;" fontname="Courier New"]
+}

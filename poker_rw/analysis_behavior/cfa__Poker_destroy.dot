@@ -1,0 +1,7 @@
+digraph Poker_destroy {
+20 [shape="circle" label="20\n5"]
+21 [shape="circle" label="21\n4"]
+21 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">21</td><td align="left">free(pn-&gt;name);</td></tr><tr><td align="right">22</td><td align="left">Num = Num + 1;</td></tr><tr><td align="right">23</td><td align="left">free(pn);</td></tr><tr><td align="right">24</td><td align="left">Num = Num + 1; default return</td></tr></table>>]
+21 -> 19[label=""]
+20 -> 21 [label="Function start dummy edge" fontname="Courier New"]
+}

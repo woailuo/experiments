@@ -1,0 +1,5 @@
+digraph fn_is_fake_mcount64 {
+576 [shape="circle" label="576\n1"]
+575 [shape="circle" label="575\n0"]
+576 -> 575 [label="Function start dummy edge return 0;" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph alloc_elem {
+449 [shape="circle" label="449\n7"]
+451 [shape="circle" label="451\n6"]
+452 [shape="diamond" label="452\n5"]
+454 [shape="circle" label="454\n4"]
+453 [shape="circle" label="453\n1"]
+448 [shape="circle" label="448\n0"]
+454 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">454</td><td align="left">perror((void *)0);</td></tr><tr><td align="right">455</td><td align="left">exit(1);</td></tr><tr><td align="right">456</td><td align="left"></td></tr></table>>]
+454 -> 453[label=""]
+449 -> 451 [label="Function start dummy edge struct element *e;" fontname="Courier New"]
+452 -> 454 [label="[e == 0]" fontname="Courier New"]
+452 -> 453 [label="[!(e == 0)]" fontname="Courier New"]
+453 -> 448 [label="e->list_next = element_list; element_list = e; return e;" fontname="Courier New"]
+451 -> 452 [label="e = calloc(1, 54);" fontname="Courier New"]
+}

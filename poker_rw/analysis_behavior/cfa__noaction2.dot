@@ -1,0 +1,5 @@
+digraph noaction2 {
+98 [shape="circle" label="98\n1"]
+97 [shape="circle" label="97\n0"]
+98 -> 97 [label="Function start dummy edge file = file; line = line; default return" fontname="Courier New"]
+}

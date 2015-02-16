@@ -1,0 +1,29 @@
+(set-info :source |printed by MathSAT|)
+
+1 (3,2) @12:
+(assert true)
+
+6 () @217:
+(assert true)
+
+0 (1,4) @52:
+(assert true)
+
+5 (8,6) @217:
+(assert true)
+
+3 (7,5) @128:
+(assert true)
+
+7 () @128:
+(assert true)
+
+8 () @128:
+(assert true)
+
+2 () @12:
+(assert true)
+
+4 () @128:
+(assert true)
+

@@ -1,0 +1,12 @@
+digraph intfunc {
+249 [shape="circle" label="249\n3"]
+250 [shape="circle" label="250\n2"]
+251 [shape="circle" label="251\n1"]
+248 [shape="circle" label="248\n0"]
+249 -> 250 [label="Function start dummy edge" fontname="Courier New"]
+100010 [shape="component" label="docfunctions"]
+250 -> 100010 [label="docfunctions(filename, \"-nofunction\");" fontname="Courier New"]
+100010 -> 251 [label="" fontname="Courier New"]
+250 -> 251 [label="docfunctions(filename, \"-nofunction\");" fontname="Courier New"]
+251 -> 248 [label="default return" fontname="Courier New"]
+}

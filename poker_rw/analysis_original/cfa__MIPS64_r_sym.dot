@@ -1,0 +1,5 @@
+digraph MIPS64_r_sym {
+995 [shape="circle" label="995\n1"]
+994 [shape="circle" label="994\n0"]
+995 -> 994 [label="Function start dummy edge return 0;" fontname="Courier New"]
+}

@@ -1,0 +1,13 @@
+digraph render_opcode {
+922 [shape="circle" label="922\n8"]
+924 [shape="diamond" label="924\n7"]
+925 [shape="circle" label="925\n1"]
+926 [shape="circle" label="926\n6"]
+921 [shape="circle" label="921\n0"]
+926 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">926</td><td align="left">fprintf(out, \"\t[%4d] =%*s\", nr_entries, render_depth, \"\");</td></tr><tr><td align="right">927</td><td align="left">__builtin_va_start(va, fmt);</td></tr><tr><td align="right">928</td><td align="left">vfprintf(out, fmt, va);</td></tr><tr><td align="right">929</td><td align="left">__builtin_va_end(va);</td></tr><tr><td align="right">930</td><td align="left"></td></tr></table>>]
+926 -> 925[label=""]
+922 -> 924 [label="Function start dummy edge va_list va;" fontname="Courier New"]
+924 -> 925 [label="[out == 0]" fontname="Courier New"]
+924 -> 926 [label="[!(out == 0)]" fontname="Courier New"]
+925 -> 921 [label="int __CPAchecker_TMP_0 = nr_entries; nr_entries = nr_entries + 1; __CPAchecker_TMP_0; default return" fontname="Courier New"]
+}

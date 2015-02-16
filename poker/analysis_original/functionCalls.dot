@@ -1,0 +1,26 @@
+digraph functioncalls {
+rankdir=LR;
+
+main [shape="box", color=blue];
+malloc [shape="box", color=grey];
+Poker_create -> malloc;
+__assert_fail [shape="box", color=grey];
+Poker_create -> __assert_fail;
+strdup [shape="box", color=grey];
+Poker_create -> strdup;
+__assert_fail [shape="box", color=grey];
+Poker_destroy -> __assert_fail;
+free [shape="box", color=grey];
+Poker_destroy -> free;
+printf [shape="box", color=grey];
+Poker_print -> printf;
+printf [shape="box", color=grey];
+main -> printf;
+scanf [shape="box", color=grey];
+main -> scanf;
+main -> Poker_print;
+main -> Poker_destroy;
+rand [shape="box", color=grey];
+main -> rand;
+main -> Poker_create;
+}

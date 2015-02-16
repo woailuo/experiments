@@ -1,0 +1,13 @@
+digraph type_finder {
+349 [shape="circle" label="349\n6"]
+353 [shape="diamond" label="353\n5"]
+355 [shape="circle" label="355\n1"]
+356 [shape="circle" label="356\n4"]
+348 [shape="circle" label="348\n0"]
+356 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">356</td><td align="left">int __CPAchecker_TMP_0;</td></tr><tr><td align="right">358</td><td align="left">__CPAchecker_TMP_0 = memcmp(token-&gt;value, type-&gt;name-&gt;value, token-&gt;size);</td></tr><tr><td align="right">359</td><td align="left">return __CPAchecker_TMP_0;</td></tr></table>>]
+356 -> 348[label=""]
+349 -> 353 [label="Function start dummy edge const struct token *token = _key; const const struct type **ti = _ti; const struct type *type = *ti;" fontname="Courier New"]
+353 -> 355 [label="[(token->size) != (type->name->size)]" fontname="Courier New"]
+353 -> 356 [label="[!((token->size) != (type->name->size))]" fontname="Courier New"]
+355 -> 348 [label="return (token->size) - (type->name->size);" fontname="Courier New"]
+}

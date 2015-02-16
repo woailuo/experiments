@@ -1,0 +1,65 @@
+(set-info :source |printed by MathSAT|)
+
+tokenise N41:
+(assert true)
+
+tokenise N57:
+(assert true)
+
+tokenise N58:
+(assert true)
+
+tokenise N66:
+(assert true)
+
+tokenise N85:
+(assert true)
+
+tokenise N88:
+(assert true)
+
+tokenise N108:
+(assert true)
+
+tokenise N145:
+(assert true)
+
+build_type_list N370:
+(assert true)
+
+build_type_list N399:
+(assert true)
+
+parse N422:
+(assert true)
+
+parse_type N796:
+(assert false)
+
+parse_compound N874:
+(assert false)
+
+render N981:
+(assert true)
+
+render N992:
+(assert true)
+
+render N1002:
+(assert true)
+
+render N1021:
+(assert true)
+
+render_out_of_line_list N1048:
+(assert true)
+
+render_out_of_line_list N1063:
+(assert true)
+
+render_element N1250:
+(assert true)
+
+render_element N1303:
+(assert true)
+

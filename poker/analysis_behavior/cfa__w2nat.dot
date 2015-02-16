@@ -1,0 +1,5 @@
+digraph w2nat {
+125 [shape="circle" label="125\n1"]
+124 [shape="circle" label="124\n0"]
+125 -> 124 [label="Function start dummy edge return x;" fontname="Courier New"]
+}

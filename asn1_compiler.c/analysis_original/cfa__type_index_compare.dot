@@ -1,0 +1,13 @@
+digraph type_index_compare {
+337 [shape="circle" label="337\n6"]
+340 [shape="diamond" label="340\n5"]
+342 [shape="circle" label="342\n1"]
+343 [shape="circle" label="343\n4"]
+336 [shape="circle" label="336\n0"]
+343 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">343</td><td align="left">int __CPAchecker_TMP_0;</td></tr><tr><td align="right">345</td><td align="left">__CPAchecker_TMP_0 = memcmp((*a)-&gt;name-&gt;value, (*b)-&gt;name-&gt;value, (*a)-&gt;name-&gt;size);</td></tr><tr><td align="right">346</td><td align="left">return __CPAchecker_TMP_0;</td></tr></table>>]
+343 -> 336[label=""]
+337 -> 340 [label="Function start dummy edge const const struct type **a = _a; const const struct type **b = _b;" fontname="Courier New"]
+340 -> 342 [label="[((*a)->name->size) != ((*b)->name->size)]" fontname="Courier New"]
+340 -> 343 [label="[!(((*a)->name->size) != ((*b)->name->size))]" fontname="Courier New"]
+342 -> 336 [label="return ((*a)->name->size) - ((*b)->name->size);" fontname="Courier New"]
+}

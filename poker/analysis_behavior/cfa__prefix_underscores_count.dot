@@ -1,0 +1,12 @@
+digraph prefix_underscores_count {
+590 [shape="circle" label="590\n4"]
+593 [shape="doublecircle" label="593\n3"]
+594 [shape="circle" label="594\n0"]
+595 [shape="circle" label="595\n2"]
+589 [shape="circle" label="589\n1"]
+590 -> 593 [label="Function start dummy edge const char *tail = str; while" fontname="Courier New"]
+593 -> 594 [label="[(*tail) == '_']" fontname="Courier New"]
+593 -> 595 [label="[!((*tail) == '_')]" fontname="Courier New"]
+594 -> 593 [label="const char *__CPAchecker_TMP_0 = tail; tail = tail + 1; __CPAchecker_TMP_0; " fontname="Courier New"]
+595 -> 589 [label="return tail - str;" fontname="Courier New"]
+}

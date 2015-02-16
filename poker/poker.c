@@ -7,7 +7,7 @@
 #define true 1
 #define false 0
 
-int Num = 6;
+int Num = 4;
 
 struct Poker {
     char *name;
@@ -17,11 +17,12 @@ struct Poker {
 struct Poker *Poker_create(char *name, int num)
 {
     struct Poker *pn = malloc(sizeof(struct Poker));
+
+    assert(pn != NULL);
+
     /* assert */
     Num = Num -1 ;
     assert(Num >= 0);
-
-    assert(pn != NULL);
 
     pn->name = strdup(name);
     /* assert */
@@ -66,33 +67,29 @@ int main(int argc, char *argv[])
 {
   struct Poker *fst ;
   struct Poker *sec;
-  struct Poker *thi ;
   char *pname[] = {"Diamond","Spade","Heart","Club"};
   printf("Do you have time to play poker? 1 is Yes, to start\n");
-  int  hastime;
-  scanf("%d", &hastime);
+  int play ;
+  scanf("%d", &play);
 
- l1:
-
-  if(hastime == 1)
+  if(play > 0)
     {
       fst = Poker_create(pname[rand()%4], (rand()%13) + 1);
-      sec = Poker_create(pname[rand()%4],(rand()%13) + 1);
-      thi = Poker_create(pname[rand()%4],(rand()%13) + 1);
+      sec = Poker_create(pname[rand()%4], (rand()%13) + 1);
     }
+
+  /*some statements*/
 
   Poker_print(fst);
   Poker_print(sec);
-  Poker_print(thi);
 
-  if(hastime == 1)
+  /* some statements */
+
+  if(play > 0)
     {
       Poker_destroy(fst);
       Poker_destroy(sec);
-      Poker_destroy(thi);
     }
 
-  goto l1;
-
-  return 0;
+  return 1;
 }

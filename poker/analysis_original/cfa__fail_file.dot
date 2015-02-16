@@ -1,0 +1,11 @@
+digraph fail_file {
+11 [shape="circle" label="11\n4"]
+12 [shape="circle" label="12\n3"]
+13 [shape="circle" label="13\n2"]
+13 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">13</td><td align="left">longjmp(jmpenv, 1);</td></tr><tr><td align="right">14</td><td align="left">default return</td></tr></table>>]
+13 -> 10[label=""]
+11 -> 12 [label="Function start dummy edge" fontname="Courier New"]
+100837 [shape="component" label="cleanup"]
+12 -> 100837 [label="cleanup();" fontname="Courier New"]
+100837 -> 13 [label="" fontname="Courier New"]
+}

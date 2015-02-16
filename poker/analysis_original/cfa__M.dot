@@ -1,0 +1,14 @@
+digraph M {
+1 [shape="circle" label="1\n5"]
+3 [shape="diamond" label="3\n4"]
+4 [shape="circle" label="4\n2"]
+5 [shape="circle" label="5\n3"]
+6 [shape="circle" label="6\n1"]
+0 [shape="circle" label="0\n0"]
+1 -> 3 [label="Function start dummy edge Num = Num - 1;" fontname="Courier New"]
+3 -> 4 [label="[Num >= 0]" fontname="Courier New"]
+3 -> 5 [label="[!(Num >= 0)]" fontname="Courier New"]
+6 -> 0 [label="default return" fontname="Courier New"]
+5 -> 6 [label="__assert_fail(\"Num >= 0\", \"nf/behavior.c\", 7, \"__PRETTY_FUNCTION__\");" fontname="Courier New"]
+4 -> 6 [label="0;" fontname="Courier New"]
+}

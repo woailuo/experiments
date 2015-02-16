@@ -1,0 +1,12 @@
+_IO_2_1_stdout_	0
+_IO_2_1_stderr_	0
+stdin	0
+poker_rw::__retval__	7
+M::__retval__	7
+stdout	0
+F::__retval__	7
+sys_errlist	0
+Num	4
+_IO_2_1_stdin_	0
+stderr	0
+sys_nerr	7

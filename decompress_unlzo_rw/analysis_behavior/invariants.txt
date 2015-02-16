@@ -1,0 +1,8 @@
+loop__decompress_unlzo_rw__872:
+(set-info :source |printed by MathSAT|)
+(declare-fun Num () Real)
+(define-fun .def_50 () Bool (<= (to_real 2) Num))
+(define-fun .def_43 () Bool (<= (to_real 0) Num))
+(define-fun .def_56 () Bool (and .def_43 .def_50))
+(assert .def_56)
+

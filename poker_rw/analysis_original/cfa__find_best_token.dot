@@ -1,0 +1,17 @@
+digraph find_best_token {
+490 [shape="doublecircle" label="490\n5"]
+492 [shape="diamond" label="492\n2"]
+493 [shape="circle" label="493\n4"]
+495 [shape="circle" label="495\n1"]
+494 [shape="circle" label="494\n0"]
+482 [shape="circle" label="482\n6"]
+481 [shape="circle" label="481\n3"]
+490 -> 492 [label="[i < 65536]" fontname="Courier New"]
+490 -> 493 [label="[!(i < 65536)]" fontname="Courier New"]
+492 -> 495 [label="[(token_profit[i]) > bestprofit]" fontname="Courier New"]
+492 -> 494 [label="[!((token_profit[i]) > bestprofit)]" fontname="Courier New"]
+494 -> 490 [label=" i = i + 1;" fontname="Courier New"]
+482 -> 490 [label="Function start dummy edge int i; int best; int bestprofit; bestprofit = -10000; best = 0; for i = 0;" fontname="Courier New"]
+493 -> 481 [label="return best;" fontname="Courier New"]
+495 -> 494 [label="best = i; bestprofit = token_profit[i]; " fontname="Courier New"]
+}

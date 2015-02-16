@@ -1,0 +1,5 @@
+digraph MIPS64_r_info {
+999 [shape="circle" label="999\n1"]
+998 [shape="circle" label="998\n0"]
+999 -> 998 [label="Function start dummy edge default return" fontname="Courier New"]
+}
